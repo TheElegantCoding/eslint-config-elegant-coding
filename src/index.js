@@ -16,5 +16,6 @@ module.exports =
     './rule/variable',
     './rule/import',
     './rule/strict'
-  ]
+  ].map(require.resolve),
+  rules: {}
 };

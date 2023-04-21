@@ -1,7 +1,7 @@
 {
   "name": "eslint_coder_dev",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "description": "Eslint configuration of Luis Monsalve for personal projects and more",
   "author": "Luis Monsalve",
   "license": "MIT",
@@ -29,7 +29,9 @@
     "pnpm": ">=8.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.38.0",
-    "eslint-plugin-import": "^2.27.5"
+    "eslint": "^8.38.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0"
   }
 }

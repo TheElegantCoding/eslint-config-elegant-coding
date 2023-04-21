@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  eslint_coder_dev:
+    specifier: 'link:'
+    version: 'link:'
+
 devDependencies:
   eslint:
     specifier: ^8.38.0

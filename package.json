@@ -8,16 +8,17 @@
   "keywords": [
     "eslint"
   ],
-  "homepage": "https://www.refrigeracionharbel.com",
-  "bugs": "https://github.com/LuisCoderDev/refrigaration_harbel_web/issues",
+  "homepage": "https://github.com/LuisCoderDev/eslint_coder_dev",
+  "bugs": "https://github.com/LuisCoderDev/eslint_coder_dev/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LuisCoderDev/refrigaration_harbel_web"
+    "url": "https://github.com/LuisCoderDev/eslint_coder_dev"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "git config core.hooksPath ./script/git_hook",
-    "lint": "eslint --ext .js . --fix"
+    "lint": "eslint --ext .js . --fix",
+    "publish": "npm publish"
   },
   "engines": {
     "node": "^18.16.0",

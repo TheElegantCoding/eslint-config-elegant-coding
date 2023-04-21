@@ -1,0 +1,32 @@
+{
+  "name": "eslint_coder_dev",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Eslint configuration of Luis Monsalve for personal projects and more",
+  "author": "Luis Monsalve",
+  "license": "MIT",
+  "keywords": [
+    "eslint"
+  ],
+  "homepage": "https://www.refrigeracionharbel.com",
+  "bugs": "https://github.com/LuisCoderDev/refrigaration_harbel_web/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuisCoderDev/refrigaration_harbel_web"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "git config core.hooksPath ./script/git_hook",
+    "lint": "eslint --ext .js . --fix"
+  },
+  "engines": {
+    "node": "^18.16.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": ">=8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}

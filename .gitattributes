@@ -1,0 +1,10 @@
+# JS and TS files must always use LF for tools to work
+*.js eol=lf
+*.jsx eol=lf
+*.ts eol=lf
+*.tsx eol=lf
+*.json eol=lf
+*.css eol=lf
+*.scss eol=lf
+*.html eol=lf
+*.svg eol=lf

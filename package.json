@@ -1,7 +1,7 @@
 {
   "name": "eslint_coder_dev",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "description": "Eslint configuration of Luis Monsalve for personal projects and more",
   "author": "Luis Monsalve",
   "license": "MIT",
@@ -9,16 +9,17 @@
     "eslint"
   ],
   "homepage": "https://github.com/LuisCoderDev/eslint_coder_dev",
-  "bugs": "https://github.com/LuisCoderDev/eslint_coder_dev/issues",
+  "bugs": {
+    "url": "https://github.com/LuisCoderDev/eslint_coder_dev/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LuisCoderDev/eslint_coder_dev"
+    "url": "git+https://github.com/LuisCoderDev/eslint_coder_dev.git"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "git config core.hooksPath ./script/git_hook",
-    "lint": "eslint --ext .js . --fix",
-    "publish": "npm publish"
+    "lint": "eslint --ext .js . --fix"
   },
   "engines": {
     "node": "^18.16.0",
@@ -29,5 +30,6 @@
   "devDependencies": {
     "eslint": "^8.38.0",
     "eslint-plugin-import": "^2.27.5"
-  }
+  },
+  "main": "index.js"
 }

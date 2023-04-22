@@ -1,7 +1,3 @@
-/* eslint-disable id-length */
-/* eslint-disable max-len */
-/* eslint-disable max-lines */
-
 const indent = 2;
 const maxLen = 100;
 

@@ -1,3 +1,9 @@
 {
-  "extends": "./src/index.js"
+  "extends": "./src/index.js",
+  "rules": {
+    "strict": "off",
+    "max-len": "off",
+    "max-lines": "off",
+    "id-length": "off"
+  }
 }

@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable max-lines */
 module.exports =
 {
   rules: {
@@ -237,7 +235,7 @@ module.exports =
         message: 'Use Number.isNaN instead'
       }
     ],
-    'no-restricted-imports': 'off',
+    'no-restricted-imports': 'error',
     'no-restricted-properties': [
       'error',
       {

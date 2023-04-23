@@ -2,7 +2,7 @@
 
 <div align="center">
   <img
-    alt="Repository size"
+    alt="eslint"
     src="./.github/asset/eslint.svg"
   />
 </div>

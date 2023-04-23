@@ -1,6 +1,6 @@
-module.exports =
+const strict =
 {
-  rules: {
-    strict: ['error', 'never']
-  }
+  strict: ['error', 'never']
 };
+
+module.exports = { strict };

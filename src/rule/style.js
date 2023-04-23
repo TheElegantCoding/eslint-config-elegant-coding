@@ -1,9 +1,7 @@
 const indent = 2;
 const maxLen = 100;
 
-module.exports =
-{
-  rules:
+const style =
   {
     'arrow-body-style':
   [
@@ -371,5 +369,6 @@ module.exports =
       'error',
       'after'
     ]
-  }
-};
+  };
+
+module.exports = { style };

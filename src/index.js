@@ -1,6 +1,12 @@
 'use strict';
+const { bestPractice } = require('./rule/best_practice');
+const { error } = require('./rule/error');
+const { eslintImport } = require('./rule/import');
+const { strict } = require('./rule/strict');
+const { style } = require('./rule/style');
+const { variable } = require('./rule/variable');
 
-module.exports =
+const config =
 {
   env:
   {
@@ -11,13 +17,25 @@ module.exports =
     mocha: false,
     jasmine: false
   },
-  extends: [
-    './rule/style',
-    './rule/best_practice',
-    './rule/error',
-    './rule/variable',
-    './rule/import',
-    './rule/strict'
-  ].map(require.resolve),
-  rules: {}
+  settings:
+  {
+    ...eslintImport.settings
+  },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  plugins: [
+    ...eslintImport.plugins
+  ],
+  rules: {
+    ...style,
+    ...error,
+    ...eslintImport.rules,
+    ...strict,
+    ...bestPractice,
+    ...variable
+  }
 };
+
+module.exports = config;

@@ -1,4 +1,4 @@
-module.exports =
+const eslintImport =
 {
   plugins: [
     'import'
@@ -14,8 +14,7 @@ module.exports =
       '.mjs',
       '.jsx'
     ],
-    'import/core-modules': [
-    ],
+    'import/core-modules': [],
     'import/ignore': [
       'node_modules',
       '\\.(coffee|scss|css|less|hbs|svg|json)$'
@@ -117,3 +116,5 @@ module.exports =
 
   }
 };
+
+module.exports = { eslintImport };

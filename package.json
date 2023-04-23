@@ -8,13 +8,13 @@
   "keywords": [
     "eslint"
   ],
-  "homepage": "https://github.com/LuisCoderDev/eslint_coder_dev",
+  "homepage": "https://github.com/LuisCoderDev/eslint-config-coder-dev",
   "bugs": {
-    "url": "https://github.com/LuisCoderDev/eslint_coder_dev/issues"
+    "url": "https://github.com/LuisCoderDev/eslint-config-coder-dev/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisCoderDev/eslint_coder_dev.git"
+    "url": "git+https://github.com/LuisCoderDev/eslint-config-coder-dev.git"
   },
   "main": "src/index.js",
   "files": [

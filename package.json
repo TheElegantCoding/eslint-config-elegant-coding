@@ -6,7 +6,11 @@
   "author": "Luis Monsalve",
   "license": "MIT",
   "keywords": [
-    "eslint"
+    "eslint",
+    "eslint-config",
+    "eslint-plugin",
+    "eslint-rules",
+    "eslint-shareable-configs"
   ],
   "homepage": "https://github.com/LuisCoderDev/eslint-config-coder-dev",
   "bugs": {

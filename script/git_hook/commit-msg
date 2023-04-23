@@ -59,4 +59,7 @@ if [[ $MESSAGE_ERROR_CODE == 1 ]]; then
   for Item in "${TYPES_ICONS[@]}"; do
     echo -e "$Item"
   done
+  exit 1
 fi
+
+print_success " Commit successfully"

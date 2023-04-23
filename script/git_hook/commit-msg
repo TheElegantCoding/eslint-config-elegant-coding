@@ -16,7 +16,7 @@ TYPES=(
 ':construction_worker: ci'
 ':heavy_plus_sign: add'
 ':heavy_minus_sign: remove'
-':rocket: realease'
+':rocket: release'
 ':rotating_light: breaking'
 ':wrench: config'
 ':lock: security'

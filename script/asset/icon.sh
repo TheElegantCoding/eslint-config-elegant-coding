@@ -18,7 +18,7 @@ TYPES_ICONS=(
 '👷 ci'
 '➕ add'
 '➖ remove'
-'🚀 realease'
+'🚀 release'
 '🚨 breaking'
 '🔧 config'
 '🔒️ security'

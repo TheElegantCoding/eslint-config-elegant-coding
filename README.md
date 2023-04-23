@@ -3,7 +3,7 @@
 <div align="center">
   <img
     alt="Repository size"
-    src="./.github/assets/eslint.svg"
+    src="./.github/asset/eslint.svg"
   />
 </div>
 <br/>

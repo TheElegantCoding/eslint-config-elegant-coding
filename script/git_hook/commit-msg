@@ -22,7 +22,7 @@ TYPES=(
 ':lock: security'
 ':globe_with_meridians: locale'
 ':tada: begin'
-':pencil2: type'
+':pencil2: typo'
 ':bento: asset'
 ':package: package')
 PATTERN="([a-z:]) ([a-z]+)(\(.*\))?: .*$"

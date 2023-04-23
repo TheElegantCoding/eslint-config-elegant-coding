@@ -24,6 +24,6 @@ TYPES_ICONS=(
 '🔒️ security'
 '🌐 locale'
 '🎉 begin'
-'✏️  type'
+'✏️  typo'
 '🍱 asset'
 '📦️ package')

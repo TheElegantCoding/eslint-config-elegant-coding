@@ -24,7 +24,7 @@ pnpm i -D eslint-config-coder-dev
 
 ## 🚀 Usage
 
-To use this plugin put in your eslint cofig file this lines of codes.
+To use this plugin put in your eslint config file this lines of codes.
 
 ```json
 {

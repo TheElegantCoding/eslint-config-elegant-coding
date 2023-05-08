@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coder-dev",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "description": "Eslint configuration of Luis Monsalve for personal projects and more",
   "author": "Luis Monsalve",

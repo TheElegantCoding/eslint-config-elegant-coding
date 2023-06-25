@@ -10,12 +10,8 @@ source $(dirname $0)/../style/color.sh
 CHANGELOG_PATH=$(dirname $0)/../../CHANGELOG.md
 DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
-GIT_TAGS=$(git tag -l --sort=-version:refname)
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
 CHANGELOG_CONTENT=""
-
-TAGS=($GIT_TAGS)
-PREVIOUS_TAG=${TAGS[1]}
 
 function new_changelog()
 {
@@ -213,10 +209,9 @@ function new_changelog_item()
 function generate_changelog()
 {
   LATEST_TAG=$1
-  echo $PREVIOUS_TAG $LATEST_TAG
 
   if test -f "$CHANGELOG_PATH"; then
-    COMMIT_CODE=$(git log $PREVIOUS_TAG..$LATEST_TAG --pretty=format:"%h")
+    COMMIT_CODE=$(git log $LATEST_TAG..HEAD --pretty=format:"%h")
 
     spinner "Adding commits to changelog ..." new_changelog_item
     print_success "Succesfully commits added"

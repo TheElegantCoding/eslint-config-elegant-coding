@@ -20,6 +20,19 @@ The list of changes have the description - commit - author
  
 [v4.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v4.0.0>) - 2023-06-24
 
+### :memo: Documentation
+
+- [`6027d83`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/6027d83>) - :memo: doc: update changelog and package.jspon - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:13:20 2023
+
+### :test_tube: Test
+
+- [`86f4423`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/86f4423>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:15:51 2023
+- [`d737239`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/d737239>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:13:01 2023
+
+
+ 
+[v4.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v4.0.0>) - 2023-06-24
+
 
  
 [v2.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v2.0.0>) - 2023-06-24

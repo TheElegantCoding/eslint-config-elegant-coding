@@ -17,55 +17,43 @@ The list of changes have the description - commit - author
 ---
 
 ## Released
- 
+
 [v12.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v12.0.0>) - 2023-06-25
 
 ### :test_tube: Test
 
 - [`06ac49a`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/06ac49a>) - :test_tube: test: last test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 00:24:05 2023
 
-
- 
 [v11.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v11.0.0>) - 2023-06-25
 
 ### :bug: Fix
 
 - [`765e525`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/765e525>) - :bug: fix: fix release notes - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 00:17:46 2023
 
-
- 
 [v10.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v10.0.0>) - 2023-06-25
 
 ### :test_tube: Test
 
 - [`9351a21`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/9351a21>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 00:15:42 2023
 
-
- 
 [v9.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v9.0.0>) - 2023-06-24
 
 ### :test_tube: Test
 
 - [`7d42a44`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/7d42a44>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:51:59 2023
 
-
- 
 [v8.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v8.0.0>) - 2023-06-24
 
 ### :sparkles: Features
 
 - [`52c1d9e`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/52c1d9e>) - :sparkles: feat: notes - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:46:39 2023
 
-
- 
 [v7.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v7.0.0>) - 2023-06-24
 
 ### :sparkles: Features
 
 - [`c5140ec`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/c5140ec>) - :sparkles: feat: release notes - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:43:44 2023
 
-
- 
 [v6.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v6.0.0>) - 2023-06-24
 
 ### :bug: Fix
@@ -76,8 +64,6 @@ The list of changes have the description - commit - author
 
 - [`ef1d81e`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/ef1d81e>) - :pencil2: typo: typo in git tag - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:29:50 2023
 
-
- 
 [v4.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v4.0.0>) - 2023-06-24
 
 ### :memo: Documentation
@@ -89,16 +75,10 @@ The list of changes have the description - commit - author
 - [`86f4423`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/86f4423>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:15:51 2023
 - [`d737239`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/d737239>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:13:01 2023
 
-
- 
 [v4.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v4.0.0>) - 2023-06-24
 
-
- 
 [v2.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v2.0.0>) - 2023-06-24
 
-
- 
 [v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.0>) - 2023-06-24
 
 ### :sparkles: Features
@@ -167,5 +147,3 @@ The list of changes have the description - commit - author
 - [`27719c7`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/27719c7>) - :pencil2: typo: asset folder - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 15:43:16 2023
 - [`4804ad9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/4804ad9>) - :pencil2: typo: typo in git hooks - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:47:08 2023
 - [`e4888e9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/e4888e9>) - :pencil2: typo: typo en readme and git hok scripts - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:39:06 2023
-
-

@@ -195,6 +195,7 @@ function organize_changelog_item()
     CHANGELOG_CONTENT+="### :package: Package\n${commit_asset}\n\n"
   fi
 
+  CHANGELOG_CONTENT="${CHANGELOG_CONTENT%????}"
   CONTENT+=$CHANGELOG_CONTENT
 }
 

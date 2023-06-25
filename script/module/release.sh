@@ -87,7 +87,7 @@ function create_git_tag()
 
   get_release_notes
 
-  local notes=$(echo -e "#${title}\n\n$RELEASE_NOTES")
+  local notes=$(echo -e "# ${title}\n\n$RELEASE_NOTES")
 
   gh release create $NPM_VERSION --generate-notes --notes "${notes}"
 }

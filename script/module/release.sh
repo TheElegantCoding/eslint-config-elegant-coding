@@ -83,6 +83,7 @@ function create_git_tag()
   GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
   git tag -v $NPM_VERSION
   git push origin $NPM_VERSION
+  echo "${CHANGELOG_CONTENT} YEEEEEPPPPPPPP"
   gh release create $NPM_VERSION --generate-notes --notes "${CHANGELOG_CONTENT}"
 }
 
@@ -105,6 +106,6 @@ create_git_tag
 
 printf "\n"
 
-print_success "Release successfully you can push your changes now"
+print_success "Release successfully"
 
 # git tag | xargs git tag -d

@@ -45,7 +45,6 @@ function organize_changelog_item()
   local github_url="https://github.com/"
   local github_commit_url="${GITHUB_REPO_URL%????}/commit/"
 
-
   local commit_feature=""
   local commit_bug=""
   local commit_remove=""

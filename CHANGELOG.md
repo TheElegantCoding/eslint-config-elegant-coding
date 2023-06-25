@@ -17,6 +17,12 @@ The list of changes have the description - commit - author
 ---
 
 ## Released
+ 
+[v13.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v13.0.0>) - 2023-06-25
+
+### :bug: Fix
+
+- [`b1a04c9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/b1a04c9>) - :bug: fix: last bug - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 00:28:03 2023
 
 [v12.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v12.0.0>) - 2023-06-25
 

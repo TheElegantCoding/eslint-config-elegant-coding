@@ -18,6 +18,14 @@ The list of changes have the description - commit - author
 
 ## Released
  
+[v9.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v9.0.0>) - 2023-06-24
+
+### :test_tube: Test
+
+- [`7d42a44`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/7d42a44>) - :test_tube: test: test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:51:59 2023
+
+
+ 
 [v8.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v8.0.0>) - 2023-06-24
 
 ### :sparkles: Features

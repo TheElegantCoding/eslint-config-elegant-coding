@@ -38,14 +38,13 @@ function require_clean_work_tree()
 function get_version_title()
 {
   VERSION_TITLE=""
-  local validation_title="^[a-z]+$"
 
   while :
   do
     print_question "Enter the title of the version: "
     read VERSION_TITLE
 
-    if [[ "$VERSION_TITLE" =~ $validation_title ]]; then
+    if [[ "$VERSION_TITLE" =~ ^[a-z]+$ ]]; then
       printf "\n"
       break
     fi

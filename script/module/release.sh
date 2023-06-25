@@ -38,7 +38,7 @@ function require_clean_work_tree()
 function get_version_title()
 {
   VERSION_TITLE=""
-  local validation_title="([a-z]+)(\(.*\))?$"
+  local validation_title="^[a-z]+$"
 
   while :
   do

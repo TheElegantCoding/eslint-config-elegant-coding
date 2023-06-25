@@ -38,6 +38,7 @@ function require_clean_work_tree()
 function get_version_title()
 {
   VERSION_TITLE=""
+  local validation_title="[a-z0-9]$"
 
   while :
   do
@@ -80,14 +81,14 @@ function change_npm_version()
 
 function create_git_tag()
 {
-  local title=":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}"
+  local title=":rocket: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}"
 
   git tag -a $NPM_VERSION -m "$title"
   git push origin $NPM_VERSION
 
   get_release_notes
 
-  local notes=$(echo -e "# ${title}\n\n$RELEASE_NOTES")
+  local notes=$(echo -e "## ${title}\n\n$RELEASE_NOTES")
 
   gh release create $NPM_VERSION --generate-notes --notes "${notes}"
 }
@@ -96,7 +97,7 @@ function add_updated_files
 {
   generate_changelog $NPM_VERSION
   git add .
-  git commit -m ":memo: doc: update changelog and package.jspon"
+  git commit -m ":memo: doc: update changelog and package.json"
 }
 
 require_clean_work_tree

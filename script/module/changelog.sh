@@ -11,7 +11,6 @@ CHANGELOG_PATH=$(dirname $0)/../../CHANGELOG.md
 DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
-CHANGELOG_CONTENT=""
 
 function new_changelog()
 {
@@ -44,6 +43,7 @@ function organize_changelog_item()
 {
   local github_url="https://github.com/"
   local github_commit_url="${GITHUB_REPO_URL%????}/commit/"
+  CHANGELOG_CONTENT=""
 
   local commit_feature=""
   local commit_bug=""

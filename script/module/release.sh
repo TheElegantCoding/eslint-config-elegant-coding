@@ -83,8 +83,8 @@ function create_git_tag()
   GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
   git tag -v $NPM_VERSION
   git push origin $NPM_VERSION
-  echo "${CHANGELOG_CONTENT} YEEEEEPPPPPPPP"
-  gh release create $NPM_VERSION --generate-notes --notes "${CHANGELOG_CONTENT}"
+  echo -e "${CHANGELOG_CONTENT} YEEEEEPPPPPPPP"
+  gh release create $NPM_VERSION --notes "${CHANGELOG_CONTENT}"
 }
 
 function add_updated_files

@@ -18,6 +18,10 @@ The list of changes have the description - commit - author
 
 ## Released
  
+[v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/releases/tag/v1.0.0>) - 2023-06-24
+
+
+ 
 [v2.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/releases/tag/v2.0.0>) - 2023-06-24
 
 ### :sparkles: Features

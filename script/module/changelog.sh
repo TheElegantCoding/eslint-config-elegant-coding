@@ -201,6 +201,13 @@ function organize_changelog_item()
 
 function get_release_notes()
 {
+  if [[ "${PREVIOUS_TAG}" != ""]] then;
+    COMMIT_CODE=$(git log --pretty=format:"%h")
+    organize_changelog_item
+    RELEASE_NOTES=$CHANGELOG_CONTENT
+    return 1
+  fi
+
   COMMIT_CODE=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"%h")
   organize_changelog_item
   RELEASE_NOTES=$CHANGELOG_CONTENT

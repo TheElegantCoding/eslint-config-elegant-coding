@@ -1,6 +1,6 @@
 const strict =
 {
-  strict: ['error', 'never']
+  strict: [ 'error', 'never' ]
 };
 
 module.exports = { strict };

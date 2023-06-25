@@ -5,20 +5,9 @@ const maxStaments = 10;
 
 const bestPractice =
 {
-  'array-callback-return':
-    [
-      'error',
-      {
-        allowImplicit: true
-      }
-    ],
+  'array-callback-return': [ 'error', { allowImplicit: true } ],
   'use-isnan': 'error',
-  'valid-typeof': [
-    'error',
-    {
-      requireStringLiterals: true
-    }
-  ],
+  'valid-typeof': [ 'error', { requireStringLiterals: true } ],
   'accessor-pairs': 'error',
   'class-methods-use-this': [
     'error',
@@ -43,19 +32,13 @@ const bestPractice =
       ]
     }
   ],
-  complexity: [
-    'error',
-    complexity
-  ],
+  complexity: [ 'error', complexity ],
   'consistent-return': 'error',
   'consistent-this': 'error',
   'default-case': 'error',
   'default-case-last': 'error',
   'default-param-last': 'error',
-  eqeqeq: [
-    'error',
-    'always'
-  ],
+  eqeqeq: [ 'error', 'always' ],
   'func-name-matching': [
     'off',
     'always',
@@ -67,24 +50,12 @@ const bestPractice =
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
   'id-denylist': 'off',
-  'id-length': ['error', { min: 3 }],
+  'id-length': [ 'error', { min: 3 } ],
   'id-match': 'off',
   'init-declarations': 'off',
-  'logical-assignment-operators': [
-    'error',
-    'always',
-    {
-      enforceForIfStatements: true
-    }
-  ],
-  'max-classes-per-file': [
-    'error',
-    1
-  ],
-  'max-depth': [
-    'error',
-    maxDepth
-  ],
+  'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true } ],
+  'max-classes-per-file': [ 'error', 1 ],
+  'max-depth': [ 'error', maxDepth ],
   'max-lines': [
     'error',
     {
@@ -102,15 +73,9 @@ const bestPractice =
       IIFEs: true
     }
   ],
-  'max-nested-callbacks': ['error', { max: 3 }],
-  'max-params': [
-    'error',
-    maxParams
-  ],
-  'max-statements': [
-    'error',
-    maxStaments
-  ],
+  'max-nested-callbacks': [ 'error', { max: 3 } ],
+  'max-params': [ 'error', maxParams ],
+  'max-statements': [ 'error', maxStaments ],
   'object-shorthand': [
     'error',
     'always',
@@ -119,10 +84,7 @@ const bestPractice =
       avoidQuotes: true
     }
   ],
-  'operator-assignment': [
-    'error',
-    'always'
-  ],
+  'operator-assignment': [ 'error', 'always' ],
   'prefer-arrow-callback': [
     'error',
     {
@@ -157,18 +119,8 @@ const bestPractice =
   'prefer-numeric-literals': 'error',
   'prefer-object-has-own': 'error',
   'prefer-object-spread': 'error',
-  'prefer-promise-reject-errors': [
-    'error',
-    {
-      allowEmptyReject: true
-    }
-  ],
-  'prefer-regex-literals': [
-    'error',
-    {
-      disallowRedundantWrapping: true
-    }
-  ],
+  'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true } ],
+  'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   'prefer-template': 'error',

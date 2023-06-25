@@ -1,4 +1,3 @@
-'use strict';
 const { bestPractice } = require('./rule/best_practice');
 const { error } = require('./rule/error');
 const { eslintImport } = require('./rule/import');

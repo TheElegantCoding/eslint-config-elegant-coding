@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-coder-dev",
-  "version": "1.0.8",
+  "name": "eslint-config-aesthetic-coder",
+  "version": "2.0.0",
   "private": false,
   "description": "Eslint configuration of Luis Monsalve for personal projects and more",
   "author": "Luis Monsalve",
@@ -12,13 +12,13 @@
     "eslint-rules",
     "eslint-shareable-configs"
   ],
-  "homepage": "https://github.com/LuisCoderDev/eslint-config-coder-dev",
+  "homepage": "https://github.com/AesthetiCoder/eslint-config-aesthetic-coder",
   "bugs": {
-    "url": "https://github.com/LuisCoderDev/eslint-config-coder-dev/issues"
+    "url": "https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisCoderDev/eslint-config-coder-dev.git"
+    "url": "git+https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git"
   },
   "main": "src/index.js",
   "files": [
@@ -33,10 +33,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "git config core.hooksPath ./script/git_hook",
-    "lint": "eslint --ext .js . --fix"
+    "lint": "eslint --ext .js . --fix",
+    "release": "bash ./script/module/release.sh"
   },
   "devDependencies": {
-    "eslint": "^8.38.0"
+    "eslint": "^8.43.0"
   },
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0"

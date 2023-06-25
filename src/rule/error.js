@@ -2,20 +2,12 @@ const error =
 {
   'constructor-super': 'error',
   'for-direction': 'error',
-  'getter-return': [
-    'error',
-    {
-      allowImplicit: true
-    }
-  ],
+  'getter-return': [ 'error', { allowImplicit: true } ],
   'no-async-promise-executor': 'error',
   'no-await-in-loop': 'error',
   'no-class-assign': 'error',
   'no-compare-neg-zero': 'error',
-  'no-cond-assign': [
-    'error',
-    'always'
-  ],
+  'no-cond-assign': [ 'error', 'always' ],
   'no-constant-binary-expression': 'error',
   'no-constant-condition': 'error',
   'no-constructor-return': 'error',
@@ -53,28 +45,12 @@ const error =
   'no-unexpected-multiline': 'error',
   'no-unmodified-loop-condition': 'error',
   'no-unreachable': 'error',
-  'no-unreachable-loop': [
-    'error',
-    {
-      ignore: []
-    }
-  ],
+  'no-unreachable-loop': [ 'error', { ignore: [] } ],
   'no-unsafe-finally': 'error',
   'no-unsafe-negation': 'error',
-  'no-unsafe-optional-chaining': [
-    'error',
-    {
-      disallowArithmeticOperators: true
-    }
-  ],
+  'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true } ],
   'no-unused-private-class-members': 'error',
-  'no-unused-vars': [
-    'error',
-    {
-      vars: 'all',
-      args: 'all'
-    }
-  ],
+  'no-unused-vars': [ 'error', { vars: 'all', args: 'all' } ],
   'no-use-before-define': [
     'error',
     {
@@ -89,22 +65,12 @@ const error =
   'no-bitwise': 'error',
   'no-caller': 'error',
   'no-case-declarations': 'error',
-  'no-confusing-arrow': [
-    'error',
-    {
-      allowParens: true
-    }
-  ],
+  'no-confusing-arrow': [ 'error', { allowParens: true } ],
   'no-console': 'error',
   'no-continue': 'error',
   'no-delete-var': 'error',
   'no-div-regex': 'error',
-  'no-else-return': [
-    'error',
-    {
-      allowElseIf: false
-    }
-  ],
+  'no-else-return': [ 'error', { allowElseIf: false } ],
   'no-empty': 'error',
   'no-empty-function': 'error',
   'no-empty-static-block': 'error',
@@ -128,46 +94,27 @@ const error =
   'no-lone-blocks': 'error',
   'no-lonely-if': 'error',
   'no-loop-func': 'error',
-  'no-magic-numbers':
-    [
-      'error',
-      {
-        ignore: [1],
-        ignoreArrayIndexes: true,
-        ignoreDefaultValues: true,
-        ignoreClassFieldInitialValues: true,
-        enforceConst: true,
-        detectObjects: false
-      }
-    ],
+  'no-magic-numbers': [
+    'error',
+    {
+      ignore: [ 0, 1 ],
+      ignoreArrayIndexes: true,
+      ignoreDefaultValues: true,
+      ignoreClassFieldInitialValues: true,
+      enforceConst: true,
+      detectObjects: false
+    }
+  ],
   'no-mixed-operators': [
     'error',
     {
       groups: [
-        [
-          '%',
-          '**'
-        ],
-        [
-          '%',
-          '+'
-        ],
-        [
-          '%',
-          '-'
-        ],
-        [
-          '%',
-          '*'
-        ],
-        [
-          '%',
-          '/'
-        ],
-        [
-          '/',
-          '*'
-        ],
+        [ '%', '**' ],
+        [ '%', '+' ],
+        [ '%', '-' ],
+        [ '%', '*' ],
+        [ '%', '/' ],
+        [ '/', '*' ],
         [
           '&',
           '|',
@@ -175,23 +122,15 @@ const error =
           '>>',
           '>>>'
         ],
-        [
-          '==',
-          '!=',
-          '===',
-          '!=='
-        ],
-        [
-          '&&',
-          '||'
-        ]
+        [ '==', '!=', '===', '!==' ],
+        [ '&&', '||' ]
       ],
       allowSamePrecedence: false
     }
   ],
   'no-multi-assign': 'error',
   'no-multi-str': 'error',
-  'no-negated-condition': 'off',
+  'no-negated-condition': 'error',
   'no-nested-ternary': 'error',
   'no-new': 'error',
   'no-new-func': 'error',
@@ -290,10 +229,12 @@ const error =
     'error',
     {
       selector: 'ForInStatement',
+      // eslint-disable-next-line max-len
       message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.'
     },
     {
       selector: 'ForOfStatement',
+      // eslint-disable-next-line max-len
       message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.'
     },
     {
@@ -305,10 +246,7 @@ const error =
       message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
     }
   ],
-  'no-return-assign': [
-    'error',
-    'always'
-  ],
+  'no-return-assign': [ 'error', 'always' ],
   'no-return-await': 'error',
   'no-script-url': 'error',
   'no-sequences': 'error',
@@ -317,7 +255,7 @@ const error =
   'no-ternary': 'off',
   'no-throw-literal': 'error',
   'no-undef-init': 'error',
-  'no-undefined': 'off',
+  'no-undefined': 'error',
   'no-underscore-dangle': [
     'error',
     {
@@ -327,12 +265,7 @@ const error =
       enforceInMethodNames: true
     }
   ],
-  'no-unneeded-ternary': [
-    'error',
-    {
-      defaultAssignment: false
-    }
-  ],
+  'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
   'no-unused-expressions': [
     'error',
     {

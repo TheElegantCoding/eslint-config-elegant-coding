@@ -1,65 +1,58 @@
 #!/bin/bash
 
 source $(dirname $0)/../util/print.sh
+
 source $(dirname $0)/../asset/icon.sh
+
+source $(dirname $0)/../style/color.sh
 
 MESSAGE=`head -n 1 "$1"`
 MAX_LENGTH=80
-TYPES=(
+TYPE_ERROR=0
+PATTERN="([a-z:]) ([a-z]+)(\(.*\))?: .*$"
+COMMIT_TYPES=(
 ':sparkles: feat'
 ':bug: fix'
+':fire: remove'
 ':memo: doc'
 ':art: style'
 ':recycle: refactor'
 ':zap: perf'
 ':test_tube: test'
 ':construction_worker: ci'
-':heavy_plus_sign: add'
-':heavy_minus_sign: remove'
 ':rocket: release'
 ':rotating_light: breaking'
 ':wrench: config'
 ':lock: security'
-':globe_with_meridians: locale'
+':globe_with_meridians: language'
 ':tada: begin'
 ':pencil2: typo'
 ':bento: asset'
 ':package: package')
-PATTERN="([a-z:]) ([a-z]+)(\(.*\))?: .*$"
-
-MESSAGE_ERROR_CODE=0
 
 if [[ ${#MESSAGE} > $MAX_LENGTH ]]; then
-  print_error " Commit message was ${#MESSAGE} characters long, but should be at most $MAX_LENGTH characters"
+  print_error "Commit message was ${#MESSAGE} characters long, but should be at most $MAX_LENGTH characters"
   exit 1
-fi
-
-if [[ "$MESSAGE" =~ ^WIP ]]; then
-  exit 0
 fi
 
 if ! [[ "$MESSAGE" =~ $PATTERN ]]; then
-  print_error " Commit message did not match 'icon type(scope): subject'"
-  exit 1
+  print_error "Commit message did not match 'icon type(scope): subject'"
 fi
 
-for VALUE in "${TYPES[@]}"; do
+for VALUE in "${COMMIT_TYPES[@]}"; do
 
   if [[ $MESSAGE == *$VALUE* ]]; then
-    MESSAGE_ERROR_CODE=0
+    TYPE_ERROR=0
     break
   fi
 
-  MESSAGE_ERROR_CODE=1
+  TYPE_ERROR=1
 done
 
-if [[ $MESSAGE_ERROR_CODE == 1 ]]; then
-  print_error " Commit message's type must be one of: "
-
-  for Item in "${TYPES_ICONS[@]}"; do
-    echo -e "$Item"
-  done
+if [[ $TYPE_ERROR == 1 ]]; then
+  print_error "Commit message's type must be one of:"
+  echo -e "$COMMIT_ICONS"
   exit 1
 fi
 
-print_success " Commit successfully"
+print_success "Commit successfully"

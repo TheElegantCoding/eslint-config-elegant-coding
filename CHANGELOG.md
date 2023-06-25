@@ -18,6 +18,18 @@ The list of changes have the description - commit - author
 
 ## Released
  
+[v6.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v6.0.0>) - 2023-06-24
+
+### :bug: Fix
+
+- [`fbf75c1`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/fbf75c1>) - :bug: fix: fix changelog - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:28:25 2023
+
+### :pencil2: Typo
+
+- [`ef1d81e`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/ef1d81e>) - :pencil2: typo: typo in git tag - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 23:29:50 2023
+
+
+ 
 [v4.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v4.0.0>) - 2023-06-24
 
 ### :memo: Documentation

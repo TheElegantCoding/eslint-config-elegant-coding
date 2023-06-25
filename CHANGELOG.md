@@ -18,6 +18,14 @@ The list of changes have the description - commit - author
 
 ## Released
  
+[v12.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v12.0.0>) - 2023-06-25
+
+### :test_tube: Test
+
+- [`06ac49a`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/06ac49a>) - :test_tube: test: last test - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 00:24:05 2023
+
+
+ 
 [v11.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v11.0.0>) - 2023-06-25
 
 ### :bug: Fix

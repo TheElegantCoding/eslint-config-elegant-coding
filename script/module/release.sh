@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $(dirname $0)/../util/spinner.sh
+source $(dirname $0)/changelog.sh
 
 source $(dirname $0)/../util/print.sh
 
@@ -82,7 +82,7 @@ function create_git_tag()
 {
   GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
   git push origin $NPM_VERSION
-  gh release create $NPM_VERSION --notes "there is no notes"
+  gh release create $NPM_VERSION --notes "${RELAESE_NOTES}"
 }
 
 function add_updated_files
@@ -92,7 +92,7 @@ function add_updated_files
   git commit -m ":memo: doc: update changelog and package.jspon"
 }
 
-#require_clean_work_tree
+require_clean_work_tree
 get_version
 get_version_title
 change_npm_version

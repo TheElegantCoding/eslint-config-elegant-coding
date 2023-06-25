@@ -14,6 +14,7 @@ GITHUB_REPO_URL=$(git config --get remote.origin.url)
 GIT_TAGS=$(git tag -l --sort=-version:refname)
 TAGS=($GIT_TAGS)
 LATEST_TAG=${TAGS[0]}
+CHANGELOG_CONTENT=""
 
 function new_changelog()
 {
@@ -46,7 +47,6 @@ function organize_changelog_item()
 {
   local github_url="https://github.com/"
   local github_commit_url="${GITHUB_REPO_URL%????}/commit/"
-  CHANGELOG_CONTENT=""
 
   local commit_feature=""
   local commit_bug=""
@@ -197,6 +197,7 @@ function organize_changelog_item()
   fi
 
   CONTENT+=$CHANGELOG_CONTENT
+  RELAESE_NOTES=$CHANGELOG_CONTENT
 }
 
 function new_changelog_item()

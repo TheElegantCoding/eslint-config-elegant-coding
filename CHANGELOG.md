@@ -18,6 +18,12 @@ The list of changes have the description - commit - author
 
 ## Released
  
+[v1.0.1](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.1>) - 2023-06-25
+
+### :memo: Documentation
+
+- [`b568364`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/b568364>) - :memo: doc: update pnpm version nedeed - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sun Jun 25 01:35:04 2023
+ 
 [v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.0>) - 2023-06-25
 
 ### :sparkles: Features

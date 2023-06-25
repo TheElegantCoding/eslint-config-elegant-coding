@@ -12,6 +12,10 @@ CHANGELOG_PATH=$(dirname $0)/../../CHANGELOG.md
 DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
+GIT_TAGS=$(git tag -l --sort=-version:refname)
+TAGS=($GIT_TAGS)
+PREVIOUS_TAG=${TAGS[1]}
+PROJECT_NAME=$(git config --local remote.origin.url|sed -n 's#.*/\([^.]*\)\.git#\1#p')
 CHANGELOG_CONTENT=""
 
 function new_changelog()
@@ -216,14 +220,15 @@ function generate_changelog()
     spinner "Adding commits to changelog ..." new_changelog_item
     print_success "Succesfully commits added"
   else
+    COMMIT_CODE=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"%h")
+
     spinner "Generating changelog ..." new_changelog
     spinner "Adding commits to changelog ..." new_changelog_item
     print_success "Succesfully changelog created"
   fi
 }
 
-PROJECT_NAME=$(git config --local remote.origin.url|sed -n 's#.*/\([^.]*\)\.git#\1#p')
-DATE_TODAY="$(date '+%Y-%m-%d')"
+
 
 function require_clean_work_tree()
 {

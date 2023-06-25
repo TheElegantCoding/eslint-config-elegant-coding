@@ -11,6 +11,9 @@ CHANGELOG_PATH=$(dirname $0)/../../CHANGELOG.md
 DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
+GIT_TAGS=$(git tag -l --sort=-version:refname)
+TAGS=($GIT_TAGS)
+LATEST_TAG=${TAGS[0]}
 
 function new_changelog()
 {

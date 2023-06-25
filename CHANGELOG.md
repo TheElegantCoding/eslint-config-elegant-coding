@@ -17,7 +17,7 @@ The list of changes have the description - commit - author
 ---
 
 ## Released
- 
+
 [v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/releases/tag/v1.0.0>) - 2023-06-24
 
 ### :sparkles: Features
@@ -63,14 +63,3 @@ The list of changes have the description - commit - author
 - [`27719c7`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/27719c7>) - :pencil2: typo: asset folder - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 15:43:16 2023
 - [`4804ad9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/4804ad9>) - :pencil2: typo: typo in git hooks - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:47:08 2023
 - [`e4888e9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/e4888e9>) - :pencil2: typo: typo en readme and git hok scripts - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:39:06 2023
-
-### :pencil2: Typo
-
-- [`f58e1be`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/f58e1be>) - :pencil2: typo: typo in git package.json - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 21:33:13 2023
-- [`c6db205`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/c6db205>) - :pencil2: typo: typo in git commit relesase - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 21:28:12 2023
-- [`0f553b0`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/0f553b0>) - :pencil2: typo: typo in readme image - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 16:01:02 2023
-- [`27719c7`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/27719c7>) - :pencil2: typo: asset folder - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 15:43:16 2023
-- [`4804ad9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/4804ad9>) - :pencil2: typo: typo in git hooks - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:47:08 2023
-- [`e4888e9`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-c/commit/e4888e9>) - :pencil2: typo: typo en readme and git hok scripts - by [Luis Monsalve](<https://github.com/Luis Monsalve>) - Sun Apr 23 14:39:06 2023
-
-

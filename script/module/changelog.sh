@@ -12,6 +12,7 @@ DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
 GIT_TAGS=$(git tag -l --sort=-version:refname)
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
+CHANGELOG_CONTENT=""
 
 TAGS=($GIT_TAGS)
 PREVIOUS_TAG=${TAGS[1]}
@@ -48,7 +49,6 @@ function organize_changelog_item()
   local github_url="https://github.com/"
   local github_commit_url="${GITHUB_REPO_URL%????}/commit/"
 
-  local changelog_content=""
 
   local commit_feature=""
   local commit_bug=""
@@ -131,78 +131,74 @@ function organize_changelog_item()
   done
 
   if [[ ! -z "$commit_breaking" ]]; then
-    changelog_content+="### :rotating_light: Breaking changes\n${commit_breaking}\n\n"
+    CHANGELOG_CONTENT+="### :rotating_light: Breaking changes\n${commit_breaking}\n\n"
   fi
 
   if [[ ! -z "$commit_feature" ]]; then
-    changelog_content+="### :sparkles: Features\n${commit_feature}\n\n"
+    CHANGELOG_CONTENT+="### :sparkles: Features\n${commit_feature}\n\n"
   fi
 
   if [[ ! -z "$commit_bug" ]]; then
-    changelog_content+="### :bug: Fix\n${commit_bug}\n\n"
+    CHANGELOG_CONTENT+="### :bug: Fix\n${commit_bug}\n\n"
   fi
 
   if [[ ! -z "$commit_remove" ]]; then
-    changelog_content+="### :fire: Remove\n${commit_remove}\n\n"
+    CHANGELOG_CONTENT+="### :fire: Remove\n${commit_remove}\n\n"
   fi
 
   if [[ ! -z "$commit_doc" ]]; then
-    changelog_content+="### :memo: Documentation\n${commit_doc}\n\n"
+    CHANGELOG_CONTENT+="### :memo: Documentation\n${commit_doc}\n\n"
   fi
 
   if [[ ! -z "$commit_style" ]]; then
-    changelog_content+="### :art: Style\n${commit_style}\n\n"
+    CHANGELOG_CONTENT+="### :art: Style\n${commit_style}\n\n"
   fi
 
   if [[ ! -z "$commit_refactor" ]]; then
-    changelog_content+="### :recycle: Refactor\n${commit_refactor}\n\n"
+    CHANGELOG_CONTENT+="### :recycle: Refactor\n${commit_refactor}\n\n"
   fi
 
   if [[ ! -z "$commit_perf" ]]; then
-    changelog_content+="### :zap: Performance\n${commit_perf}\n\n"
+    CHANGELOG_CONTENT+="### :zap: Performance\n${commit_perf}\n\n"
   fi
 
   if [[ ! -z "$commit_test" ]]; then
-    changelog_content+="### :test_tube: Test\n${commit_test}\n\n"
+    CHANGELOG_CONTENT+="### :test_tube: Test\n${commit_test}\n\n"
   fi
 
   #if [[ ! -z "$commit_release" ]]; then
-    #changelog_content+="### :rocket: Release\n${commit_release}\n\n"
+    #CHANGELOG_CONTENT+="### :rocket: Release\n${commit_release}\n\n"
   #fi
 
   if [[ ! -z "$commit_config" ]]; then
-    changelog_content+="### :wrench: Configuration\n${commit_config}\n\n"
+    CHANGELOG_CONTENT+="### :wrench: Configuration\n${commit_config}\n\n"
   fi
 
   if [[ ! -z "$commit_security" ]]; then
-    changelog_content+="### :lock: Security\n${commit_security}\n\n"
+    CHANGELOG_CONTENT+="### :lock: Security\n${commit_security}\n\n"
   fi
 
   if [[ ! -z "$commit_language" ]]; then
-    changelog_content+="### :globe_with_meridians: Language\n${commit_language}\n\n"
+    CHANGELOG_CONTENT+="### :globe_with_meridians: Language\n${commit_language}\n\n"
   fi
 
   if [[ ! -z "$commit_begin" ]]; then
-    changelog_content+="### :tada: Begin\n${commit_begin}\n\n"
+    CHANGELOG_CONTENT+="### :tada: Begin\n${commit_begin}\n\n"
   fi
 
   if [[ ! -z "$commit_typo" ]]; then
-    changelog_content+="### :pencil2: Typo\n${commit_typo}\n\n"
-  fi
-
-  if [[ ! -z "$commit_typo" ]]; then
-    changelog_content+="### :pencil2: Typo\n${commit_typo}\n\n"
+    CHANGELOG_CONTENT+="### :pencil2: Typo\n${commit_typo}\n\n"
   fi
 
   if [[ ! -z "$commit_asset" ]]; then
-    changelog_content+="### :bento: Asset\n${commit_asset}\n\n"
+    CHANGELOG_CONTENT+="### :bento: Asset\n${commit_asset}\n\n"
   fi
 
   if [[ ! -z "$commit_package" ]]; then
-    changelog_content+="### :package: Package\n${commit_asset}\n\n"
+    CHANGELOG_CONTENT+="### :package: Package\n${commit_asset}\n\n"
   fi
 
-  CONTENT+=$changelog_content
+  CONTENT+=$CHANGELOG_CONTENT
 }
 
 function new_changelog_item()

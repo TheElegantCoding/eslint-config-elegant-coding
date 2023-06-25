@@ -80,7 +80,7 @@ function change_npm_version()
 
 function create_git_tag()
 {
-  GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
+  GIT_TAG=$(git tag $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}" -m "${CHANGELOG_CONTENT}")
 }
 
 function add_updated_files

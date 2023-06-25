@@ -87,21 +87,21 @@ function create_git_tag()
 {
   local title=":rocket: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}"
 
-  git tag --quiet -a $NPM_VERSION -m "$title"
-  git push --quiet origin $NPM_VERSION
+  git tag -a $NPM_VERSION -m "$title"
+  git push origin $NPM_VERSION
 
   get_release_notes
 
   local notes=$(echo -e "## ${title}\n\n$RELEASE_NOTES")
 
-  gh release create $NPM_VERSION --silent --generate-notes --notes "${notes}"
+  gh release create $NPM_VERSION --generate-notes --notes "${notes}"
 }
 
 function add_updated_files
 {
   generate_changelog $NPM_VERSION
   git add .
-  git commit --quiet -m ":memo: doc: update changelog and package.json"
+  git commit -m ":memo: doc: update changelog and package.json"
 }
 
 require_clean_work_tree

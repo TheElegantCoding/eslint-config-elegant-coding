@@ -80,9 +80,15 @@ function change_npm_version()
 
 function create_git_tag()
 {
-  GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
+  local title=":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}"
+  local notes="${title}\n\n"
+  local notes+=$(echo -e $RELEASE_NOTES)
+
+  git tag -a $NPM_VERSION -m "$title"
   git push origin $NPM_VERSION
+
   get_release_notes
+
   gh release create $NPM_VERSION --generate-notes --notes "${RELEASE_NOTES}"
 }
 

@@ -202,7 +202,7 @@ function get_release_notes()
 {
   COMMIT_CODE=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"%h")
   organize_changelog_item
-  RELEASE_NOTES=$(echo -e $CHANGELOG_CONTENT)
+  RELEASE_NOTES=$CHANGELOG_CONTENT
 }
 
 function new_changelog_item()

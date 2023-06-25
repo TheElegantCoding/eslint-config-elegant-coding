@@ -18,11 +18,13 @@ function require_clean_work_tree()
 
   if ! git diff-files --quiet --ignore-submodules --
   then
+    git diff-files --name-status -r --ignore-submodules -- >&2
     error=1
   fi
 
   if ! git diff-index --cached --quiet HEAD --ignore-submodules --
   then
+    git diff-index --cached --name-status -r --ignore-submodules HEAD -- >&2
     error=1
   fi
 
@@ -81,11 +83,11 @@ function create_git_tag()
   GIT_TAG=$(git tag -a $NPM_VERSION -m ":rocket: release: ${NPM_VERSION} - ${VERSION_TITLE} - ${DATE_TODAY}")
 }
 
-function update_release()
+function add_updated_files
 {
-  generate_changelog
+  generate_changelog $NPM_VERSION
   git add .
-  git commit -m ":doc: docs: update changelog"
+  git commit -m ":doc: docs: update changelog and package.jspon"
 }
 
 require_clean_work_tree
@@ -95,6 +97,7 @@ change_npm_version
 
 print_info "Started releasing ${NPM_VERSION} for project ${PROJECT_NAME}\n\n"
 
+add_updated_files
 create_git_tag
 
 printf "\n"

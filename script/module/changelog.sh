@@ -14,7 +14,6 @@ GIT_TAGS=$(git tag -l --sort=-version:refname)
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
 
 TAGS=($GIT_TAGS)
-LATEST_TAG=${TAGS[0]}
 PREVIOUS_TAG=${TAGS[1]}
 
 function new_changelog()
@@ -217,14 +216,14 @@ function new_changelog_item()
 
 function generate_changelog()
 {
+  LATEST_TAG=$1
+
   if test -f "$CHANGELOG_PATH"; then
     COMMIT_CODE=$(git log $PREVIOUS_TAG..$LATEST_TAG --pretty=format:"%h")
 
     spinner "Adding commits to changelog ..." new_changelog_item
     print_success "Succesfully commits added"
   else
-    GIT_TAGS=$(git tag -l --sort=-version:refname)
-
     spinner "Generating changelog ..." new_changelog
     spinner "Adding commits to changelog ..." new_changelog_item
     print_success "Succesfully changelog created"

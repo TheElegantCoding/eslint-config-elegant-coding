@@ -9,7 +9,7 @@ source $(dirname $0)/../style/color.sh
 MESSAGE=`head -n 1 "$1"`
 MAX_LENGTH=80
 TYPE_ERROR=0
-PATTERN="([a-z:]) ([a-z]+)(\(.*\))?: ^[a-z]+$"
+PATTERN="([a-z:]) ([a-z]+)(\(.*\))?: (^[a-z]+)$"
 COMMIT_TYPES=(
 ':sparkles: feat'
 ':bug: fix'

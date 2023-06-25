@@ -87,7 +87,7 @@ function add_updated_files
 {
   generate_changelog $NPM_VERSION
   git add .
-  git commit -m ":doc: doc: update changelog and package.jspon"
+  git commit -m ":memo: doc: update changelog and package.jspon"
 }
 
 require_clean_work_tree

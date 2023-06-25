@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aesthetic-coder",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": false,
   "description": "Eslint configuration of Luis Monsalve for personal projects and more",
   "author": "Luis Monsalve",

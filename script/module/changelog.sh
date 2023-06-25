@@ -11,7 +11,7 @@ CHANGELOG_PATH=$(dirname $0)/../../CHANGELOG.md
 DATE_TODAY="$(date '+%Y-%m-%d')"
 COMMIT_CODE=$(git log --pretty=format:"%h")
 GITHUB_REPO_URL=$(git config --get remote.origin.url)
-PREVIOUS_TAG=$(git describe --abbrev=)
+PREVIOUS_TAG=$(git describe --abbrev=0)
 LATEST_TAG=0
 CHANGELOG_CONTENT=""
 

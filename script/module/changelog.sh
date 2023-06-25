@@ -213,6 +213,7 @@ function new_changelog_item()
 function generate_changelog()
 {
   LATEST_TAG=$1
+  echo $PREVIOUS_TAG $LATEST_TAG
 
   if test -f "$CHANGELOG_PATH"; then
     COMMIT_CODE=$(git log $PREVIOUS_TAG..$LATEST_TAG --pretty=format:"%h")

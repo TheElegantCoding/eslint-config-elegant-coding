@@ -196,6 +196,12 @@ function organize_changelog_item()
   fi
 
   CONTENT+=$CHANGELOG_CONTENT
+}
+
+function get_release_notes()
+{
+  COMMIT_CODE=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"%h")
+  organize_changelog_item
   RELEASE_NOTES=$CHANGELOG_CONTENT
 }
 

@@ -20,6 +20,10 @@ The list of changes have the description - commit - author
  
 [v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.0>) - 2023-06-24
 
+
+ 
+[v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.0>) - 2023-06-24
+
 ### :sparkles: Features
 
 - [`3cf05e2`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/3cf05e2>) - :sparkles: feat: verify a tag - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Sat Jun 24 22:33:42 2023

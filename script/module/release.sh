@@ -38,12 +38,17 @@ function require_clean_work_tree()
 function get_version_title()
 {
   VERSION_TITLE=""
-  local validation_title="[a-z0-9]$"
+  local validation_title="([a-z]+)(\(.*\))?$"
 
   while :
   do
     print_question "Enter the title of the version: "
     read VERSION_TITLE
+
+    if [[ "$VERSION_TITLE" =~ $validation_title ]]; then
+      printf "\n"
+      break
+    fi
 
     if [[ $VERSION_TITLE != "" ]]; then
       printf "\n"
@@ -51,7 +56,7 @@ function get_version_title()
     fi
 
     clear
-    print_error "Please enter a valid title"
+    print_error "Please enter a valid title, the title should by lowercase"
   done
 }
 

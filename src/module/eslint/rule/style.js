@@ -3,112 +3,56 @@ const maxLength = 120;
 
 const style =
 {
-  'arrow-body-style': [ 'error', 'as-needed', { requireReturnForObjectLiteral: false } ],
-  camelcase: [
-    'error',
-    {
-      properties: 'never',
-      ignoreDestructuring: false
-    }
-  ],
-  'capitalized-comments': [
-    'off',
-    'never',
-    {
-      line: {
-        ignorePattern: '.*',
-        ignoreInlineComments: true,
-        ignoreConsecutiveComments: true
-      },
-      block: {
-        ignorePattern: '.*',
-        ignoreInlineComments: true,
-        ignoreConsecutiveComments: true
-      }
-    }
-  ],
-  curly: [ 'error', 'all' ],
-  'dot-notation': 'error',
-  'func-style': [ 'error', 'expression' ],
-  'multiline-comment-style': [ 'error', 'starred-block' ],
-  'new-cap': [
-    'error',
-    {
-      newIsCap: true,
-      newIsCapExceptions: [],
-      capIsNew: false,
-      capIsNewExceptions: [
-        'Immutable.Map', 'Immutable.Set', 'Immutable.List'
-      ]
-    }
-  ],
-  'quote-props': [
-    'error',
-    'as-needed',
-    {
-      keywords: false,
-      unnecessary: true,
-      numbers: false
-    }
-  ],
-  'sort-imports': [
-    'error',
-    {
-      ignoreCase: false,
-      ignoreDeclarationSort: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ]
-    }
-  ],
-  'sort-keys': [
-    'off',
-    'asc',
-    {
-      caseSensitive: false,
-      natural: true
-    }
-  ],
-  'sort-vars': 'off',
-  'spaced-comment': [ 'error', 'always' ],
   'array-bracket-newline': [ 'error', 'consistent' ],
   'array-bracket-spacing': [ 'error', 'always' ],
   'array-element-newline': [
     'error',
     {
-      multiline: true,
-      minItems: 5
+      minItems: 5,
+      multiline: true
     }
   ],
+  'arrow-body-style': [ 'error', 'as-needed', { requireReturnForObjectLiteral: false } ],
   'arrow-parens': [ 'error', 'always' ],
   'arrow-spacing': [
     'error',
     {
-      before: true,
-      after: true
+      after: true,
+      before: true
     }
   ],
   'block-spacing': [ 'error', 'always' ],
   'brace-style': [ 'error', 'allman' ],
+  camelcase: [
+    'error',
+    {
+      ignoreDestructuring: false,
+      properties: 'never'
+    }
+  ],
   'comma-dangle': [ 'error', 'never' ],
   'comma-spacing': [
     'error',
     {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }
   ],
   'comma-style': [ 'error', 'last' ],
   'computed-property-spacing': [ 'error', 'never' ],
+  curly: [ 'error', 'all' ],
   'dot-location': [ 'error', 'property' ],
+  'dot-notation': 'error',
   'eol-last': [ 'error', 'never' ],
   'func-call-spacing': [ 'error', 'never' ],
+  'func-style': [ 'error', 'expression' ],
   'function-call-argument-newline': [ 'error', 'never' ],
   'function-paren-newline': [ 'error', 'never' ],
   'generator-star-spacing': [
     'error',
     {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }
   ],
   'implicit-arrow-linebreak': [ 'error', 'beside' ],
@@ -126,6 +70,9 @@ const style =
     {
       overrides:
       {
+        case: {
+          after: true
+        },
         // eslint-disable-next-line id-length
         if:
         {
@@ -137,9 +84,6 @@ const style =
         },
         throw: {
           after: true
-        },
-        case: {
-          after: true
         }
       }
     }
@@ -147,16 +91,16 @@ const style =
   'line-comment-position': [
     'error',
     {
-      position: 'above',
-      applyDefaultPatterns: true
+      applyDefaultPatterns: true,
+      position: 'above'
     }
   ],
   'linebreak-style': [ 'error', 'unix' ],
   'lines-around-comment': [
     'error',
     {
-      beforeBlockComment: true,
-      afterBlockComment: true
+      afterBlockComment: true,
+      beforeBlockComment: true
     }
   ],
   'lines-between-class-members': [ 'error', 'always' ],
@@ -165,15 +109,27 @@ const style =
     maxLength,
     indent,
     {
-      ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
       ignoreStrings: false,
-      ignoreTemplateLiterals: false
+      ignoreTemplateLiterals: false,
+      ignoreUrls: true
     }
   ],
   'max-statements-per-line': [ 'error', { max: 1 } ],
+  'multiline-comment-style': [ 'error', 'starred-block' ],
   'multiline-ternary': [ 'error', 'never' ],
+  'new-cap': [
+    'error',
+    {
+      capIsNew: false,
+      capIsNewExceptions: [
+        'Immutable.Map', 'Immutable.Set', 'Immutable.List'
+      ],
+      newIsCap: true,
+      newIsCapExceptions: []
+    }
+  ],
   'new-parens': 'error',
   'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 4 } ],
   'no-extra-parens': [
@@ -198,8 +154,8 @@ const style =
   'no-trailing-spaces': [
     'error',
     {
-      skipBlankLines: false,
-      ignoreComments: false
+      ignoreComments: false,
+      skipBlankLines: false
     }
   ],
   'no-whitespace-before-property': 'error',
@@ -207,10 +163,10 @@ const style =
   'object-curly-newline': [
     'error',
     {
-      ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
-      ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-      ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-      ExportDeclaration: { minProperties: 4, multiline: true, consistent: true }
+      ExportDeclaration: { consistent: true, minProperties: 4, multiline: true },
+      ImportDeclaration: { consistent: true, minProperties: 4, multiline: true },
+      ObjectExpression: { consistent: true, minProperties: 4, multiline: true },
+      ObjectPattern: { consistent: true, minProperties: 4, multiline: true }
     }
   ],
   'object-curly-spacing': [ 'error', 'always' ],
@@ -229,13 +185,22 @@ const style =
     'error',
     {
       blankLine: 'always',
-      prev: [ 'const', 'let', 'var' ],
-      next: '*'
+      next: '*',
+      prev: [ 'const', 'let', 'var' ]
     },
     {
       blankLine: 'any',
-      prev: [ 'const', 'let', 'var' ],
-      next: [ 'const', 'let', 'var' ]
+      next: [ 'const', 'let', 'var' ],
+      prev: [ 'const', 'let', 'var' ]
+    }
+  ],
+  'quote-props': [
+    'error',
+    'as-needed',
+    {
+      keywords: false,
+      numbers: false,
+      unnecessary: true
     }
   ],
   quotes: [ 'error', 'single' ],
@@ -244,18 +209,27 @@ const style =
   'semi-spacing': [
     'error',
     {
-      before: false,
-      after: true
+      after: true,
+      before: false
     }
   ],
   'semi-style': [ 'error', 'last' ],
+  'sort-imports': [
+    'error',
+    {
+      ignoreCase: false,
+      ignoreDeclarationSort: false,
+      ignoreMemberSort: false,
+      memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ]
+    }
+  ],
   'space-before-blocks': 'error',
   'space-before-function-paren': [
     'error',
     {
       anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always'
+      asyncArrow: 'always',
+      named: 'never'
     }
   ],
   'space-in-parens': [ 'error', 'never' ],
@@ -263,10 +237,11 @@ const style =
   'space-unary-ops': [
     'error',
     {
-      words: true,
-      nonwords: false
+      nonwords: false,
+      words: true
     }
   ],
+  'spaced-comment': [ 'error', 'always' ],
   'switch-colon-spacing': 'error',
   'template-curly-spacing': 'error',
   'template-tag-spacing': [ 'error', 'always' ],

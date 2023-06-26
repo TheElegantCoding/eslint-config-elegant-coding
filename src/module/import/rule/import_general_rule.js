@@ -1,11 +1,26 @@
 const importGeneralRule =
 {
+  'import/consistent-type-specifier-style': [ 'error', 'prefer-top-level' ],
+  'import/default': 'error',
   'import/export': 'error',
+  'import/exports-last': 'error',
+  'import/first': 'error',
+  'import/max-dependencies': 'error',
+  'import/named': [ 'error', { commonjs: true } ],
+  'import/namespace': 'error',
+  'import/newline-after-import': 'error',
+  'import/no-absolute-path': 'error',
+  'import/no-amd': 'error',
+  'import/no-anonymous-default-export': [ 'error', { allowCallExpression: false } ],
+  'import/no-cycle': [ 'error', { commonjs: true } ],
   'import/no-deprecated': 'error',
+  'import/no-duplicates': 'error',
+  'import/no-dynamic-require': [ 'error', { esmodule: true } ],
   'import/no-empty-named-blocks': 'error',
   'import/no-extraneous-dependencies': [
     'error',
     {
+      bundledDependencies: false,
       devDependencies: [
         '**/test/**',
         '**/tests/**',
@@ -38,42 +53,43 @@ const importGeneralRule =
         '**/karma.conf.{js,cjs,mjs,ts,cts,mts}',
         '**/.eslintrc.{js,cjs,mjs,ts,cts,mts}'
       ],
+      includeTypes: true,
       optionalDependencies: false,
-      peerDependencies: false,
-      bundledDependencies: false,
-      includeTypes: true
+      peerDependencies: false
     }
   ],
+  'import/no-import-module-exports': [ 'error', { exceptions: [] } ],
   'import/no-mutable-exports': 'error',
   'import/no-named-as-default': 'error',
   'import/no-named-as-default-member': 'error',
-  'import/no-amd': 'error',
-  'import/no-import-module-exports': [ 'error', { exceptions: [] } ],
-  'import/named': [ 'error', { commonjs: true } ],
-  'import/namespace': 'error',
-  'import/no-absolute-path': 'error',
-  'import/no-cycle': [ 'error', { commonjs: true } ],
-  'import/no-dynamic-require': [ 'error', { esmodule: true } ],
+  'import/no-named-default': 'error',
+  'import/no-namespace': 'error',
   'import/no-relative-packages': 'error',
   'import/no-self-import': 'error',
   'import/no-unresolved': [
     'error',
     {
-      commonjs: true,
-      caseSensitive: true
+      caseSensitive: true,
+      commonjs: true
+    }
+  ],
+  'import/no-unused-modules': [
+    'error',
+    {
+      missingExports: false,
+      unusedExports: true
     }
   ],
   'import/no-useless-path-segments': [ 'error', { commonjs: true } ],
   'import/no-webpack-loader-syntax': 'error',
-  'import/consistent-type-specifier-style': [ 'error', 'prefer-top-level' ],
-  'import/exports-last': 'error',
-  'import/first': 'error',
-  'import/newline-after-import': 'error',
-  'import/no-duplicates': 'error',
-  'import/no-named-default': 'error',
   'import/order': [
     'error',
     {
+      alphabetize: {
+        caseInsensitive: true,
+        order: 'asc',
+        orderImportKind: 'asc'
+      },
       groups: [
         [
           'builtin',
@@ -87,26 +103,10 @@ const importGeneralRule =
           'type'
         ]
       ],
-      'newlines-between': 'always',
-      alphabetize: {
-        order: 'asc',
-        orderImportKind: 'asc',
-        caseInsensitive: true
-      }
+      'newlines-between': 'always'
     }
   ],
-  'import/prefer-default-export': 'error',
-  'import/no-unused-modules': [
-    'error',
-    {
-      missingExports: false,
-      unusedExports: true
-    }
-  ],
-  'import/default': 'error',
-  'import/no-namespace': 'error',
-  'import/max-dependencies': 'error',
-  'import/no-anonymous-default-export': [ 'error', { allowCallExpression: false } ]
+  'import/prefer-default-export': 'error'
 };
 
 module.exports = { importGeneralRule };

@@ -1,7 +1,7 @@
 const { unicornDisabledRule } = require('./rule/unicorn_disabled_rule');
 const { unicornGeneralRule } = require('./rule/unicorn_general_rule');
 
-const eslintUnicorn =
+const unicorn =
 {
   plugins: [ 'unicorn' ],
   rules: {
@@ -10,4 +10,4 @@ const eslintUnicorn =
   }
 };
 
-module.exports = { eslintUnicorn };
+module.exports = { unicorn };

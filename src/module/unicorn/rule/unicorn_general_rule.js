@@ -13,8 +13,8 @@ const unicornGeneralRule = {
     {
       cases:
         {
-          kebabCase: false,
           camelCase: false,
+          kebabCase: false,
           pascalCase: false,
           snakeCase: true
         }
@@ -113,8 +113,8 @@ const unicornGeneralRule = {
         req: true,
         res: true
       },
-      ignore: [ '\\.e2e$', '\\.e2e-spec$' ],
-      checkShorthandProperties: true
+      checkShorthandProperties: true,
+      ignore: [ '\\.e2e$', '\\.e2e-spec$' ]
     }
   ],
   'unicorn/relative-url-style': 'error',

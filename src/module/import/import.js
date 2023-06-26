@@ -5,14 +5,14 @@ const { importGeneralRule } = require('./rule/import_general_rule');
 const eslintImport =
 {
   plugins: [ 'import' ],
-  settings:
-  {
-    ...eslintImportSetting
-  },
   rules:
   {
     ...importDisabledRule,
     ...importGeneralRule
+  },
+  settings:
+  {
+    ...eslintImportSetting
   }
 };
 

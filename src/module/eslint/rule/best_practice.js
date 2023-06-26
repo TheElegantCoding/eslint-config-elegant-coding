@@ -5,10 +5,8 @@ const maxStatements = 10;
 
 const bestPractice =
 {
-  'array-callback-return': [ 'error', { allowImplicit: true } ],
-  'use-isnan': 'error',
-  'valid-typeof': [ 'error', { requireStringLiterals: true } ],
   'accessor-pairs': 'error',
+  'array-callback-return': [ 'error', { allowImplicit: true } ],
   'class-methods-use-this': [
     'error',
     {
@@ -40,19 +38,15 @@ const bestPractice =
   'default-param-last': 'error',
   eqeqeq: [ 'error', 'always' ],
   'func-name-matching': [
-    'off',
-    'always',
+    'error',
     {
-      'includeCommonJSModulemodule.exports =s': false,
       considerPropertyDescriptor: true
     }
   ],
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
-  'id-denylist': 'off',
   'id-length': [ 'error', { min: 3 } ],
-  'id-match': 'off',
-  'init-declarations': 'off',
+  'init-declarations': 'error',
   'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true } ],
   'max-classes-per-file': [ 'error', 1 ],
   'max-depth': [ 'error', maxDepth ],
@@ -67,10 +61,10 @@ const bestPractice =
   'max-lines-per-function': [
     'error',
     {
+      IIFEs: true,
       max: 50,
       skipBlankLines: true,
-      skipComments: true,
-      IIFEs: true
+      skipComments: true
     }
   ],
   'max-nested-callbacks': [ 'error', { max: 3 } ],
@@ -80,8 +74,8 @@ const bestPractice =
     'error',
     'always',
     {
-      ignoreConstructors: false,
-      avoidQuotes: true
+      avoidQuotes: true,
+      ignoreConstructors: false
     }
   ],
   'operator-assignment': [ 'error', 'always' ],
@@ -102,13 +96,13 @@ const bestPractice =
   'prefer-destructuring': [
     'error',
     {
-      VariableDeclarator: {
-        array: false,
-        object: true
-      },
       AssignmentExpression: {
         array: true,
         object: false
+      },
+      VariableDeclarator: {
+        array: false,
+        object: true
       }
     },
     {
@@ -126,10 +120,12 @@ const bestPractice =
   'prefer-template': 'error',
   radix: 'error',
   'require-await': 'error',
-  'require-unicode-regexp': 'off',
+  'require-unicode-regexp': 'error',
   'require-yield': 'error',
-  yoda: 'error',
-  'symbol-description': 'error'
+  'symbol-description': 'error',
+  'use-isnan': 'error',
+  'valid-typeof': [ 'error', { requireStringLiterals: true } ],
+  yoda: 'error'
 };
 
 module.exports = { bestPractice };

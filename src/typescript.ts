@@ -1,4 +1,3 @@
-import { base } from './base';
 import { etc } from './module/typescript/etc/etc';
 import { typescriptBestPractice } from './module/typescript/rule/typescript_best_practice';
 import { typescriptDisabledRule } from './module/typescript/rule/typescript_disabled_rule';
@@ -6,9 +5,6 @@ import { typescriptStyle } from './module/typescript/rule/typescript_style';
 
 const typescript =
 {
-  env: {
-    ...base.env
-  },
   overrides: [
     {
       files: [ '*.ts', '*.tsx' ],
@@ -21,23 +17,20 @@ const typescript =
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ...base.parserOptions,
     project: [
       './tsconfig.json'
     ]
   },
   plugins: [
-    ...base.plugins, '@typescript-eslint', ...etc.plugins
+    '@typescript-eslint', ...etc.plugins
   ],
   rules: {
-    ...base.rules,
     ...typescriptDisabledRule,
     ...typescriptStyle,
     ...typescriptBestPractice
   },
   settings:
   {
-    ...base.settings,
     'import/extensions': [ '.js',
       '.mjs',
       '.jsx',

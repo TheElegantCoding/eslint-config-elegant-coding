@@ -128,4 +128,4 @@ const bestPractice =
   yoda: 'error'
 };
 
-module.exports = { bestPractice };
+export { bestPractice };

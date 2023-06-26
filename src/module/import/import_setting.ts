@@ -9,4 +9,4 @@ const eslintImportSetting =
     }
 };
 
-module.exports = { eslintImportSetting };
+export { eslintImportSetting };

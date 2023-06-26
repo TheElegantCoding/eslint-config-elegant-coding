@@ -105,8 +105,7 @@ const importGeneralRule =
       ],
       'newlines-between': 'always'
     }
-  ],
-  'import/prefer-default-export': 'error'
+  ]
 };
 
-module.exports = { importGeneralRule };
+export { importGeneralRule };

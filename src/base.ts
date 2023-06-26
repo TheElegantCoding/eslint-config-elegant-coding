@@ -1,11 +1,12 @@
-const { eslint } = require('./module/eslint/eslint');
-const { eslintImport } = require('./module/import/import');
-const { perfectionist } = require('./module/perfectionist/perfectionist');
-const { promise } = require('./module/promise/promise');
-const { sonar } = require('./module/sonar/sonar');
-const { unicorn } = require('./module/unicorn/unicorn');
+import { eslint } from './module/eslint/eslint';
+import { eslintImport } from './module/import/import';
+import { perfectionist } from './module/perfectionist/perfectionist';
+import { promise } from './module/promise/promise';
+import { security } from './module/security/security';
+import { sonar } from './module/sonar/sonar';
+import { unicorn } from './module/unicorn/unicorn';
 
-const config =
+const base =
 {
   env:
   {
@@ -25,7 +26,8 @@ const config =
     ...unicorn.plugins,
     ...sonar.plugins,
     ...perfectionist.plugins,
-    ...promise.plugins
+    ...promise.plugins,
+    ...security.plugins
   ],
   rules: {
     ...eslint.rules,
@@ -33,11 +35,12 @@ const config =
     ...unicorn.rules,
     ...sonar.rules,
     ...perfectionist.rules,
-    ...promise.rules
+    ...promise.rules,
+    ...security.rules
   },
   settings: {
     ...eslintImport.settings
   }
 };
 
-module.exports = config;
+export { base };

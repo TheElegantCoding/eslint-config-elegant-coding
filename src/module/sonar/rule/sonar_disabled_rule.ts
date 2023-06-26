@@ -4,4 +4,4 @@ const sonarDisabledRule =
 
 };
 
-module.exports = { sonarDisabledRule };
+export { sonarDisabledRule };

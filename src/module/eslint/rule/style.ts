@@ -251,4 +251,4 @@ const style =
   'yield-star-spacing': [ 'error', 'after' ]
 };
 
-module.exports = { style };
+export { style };

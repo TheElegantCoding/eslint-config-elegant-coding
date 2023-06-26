@@ -117,4 +117,4 @@ const perfectionistGeneralRule =
   ]
 };
 
-module.exports = { perfectionistGeneralRule };
+export { perfectionistGeneralRule };

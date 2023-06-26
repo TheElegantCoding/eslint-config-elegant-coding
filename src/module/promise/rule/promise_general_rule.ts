@@ -13,4 +13,4 @@ const promiseGeneralRule = {
   'promise/valid-params': 'error'
 };
 
-module.exports = { promiseGeneralRule };
+export { promiseGeneralRule };

@@ -9,4 +9,4 @@ const disabledRule =
   'sort-vars': 'off'
 };
 
-module.exports = { disabledRule };
+export { disabledRule };

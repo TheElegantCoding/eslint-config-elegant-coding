@@ -14,4 +14,4 @@ const unicornDisabledRule =
   'unicorn/string-content': 'off'
 };
 
-module.exports = { unicornDisabledRule };
+export { unicornDisabledRule };

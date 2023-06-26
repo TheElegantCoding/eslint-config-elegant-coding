@@ -34,4 +34,4 @@ const sonarGeneralRule = {
   'sonarjs/prefer-while': 'error'
 };
 
-module.exports = { sonarGeneralRule };
+export { sonarGeneralRule };

@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": "./src/index.js"
+  "extends": "./dist/typescript.js"
 }

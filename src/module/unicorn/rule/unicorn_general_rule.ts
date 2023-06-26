@@ -127,4 +127,4 @@ const unicornGeneralRule = {
   'unicorn/throw-new-error': 'error'
 };
 
-module.exports = { unicornGeneralRule };
+export { unicornGeneralRule };

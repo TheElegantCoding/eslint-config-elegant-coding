@@ -7,4 +7,4 @@ const variable =
   'vars-on-top': 'error'
 };
 
-module.exports = { variable };
+export { variable };

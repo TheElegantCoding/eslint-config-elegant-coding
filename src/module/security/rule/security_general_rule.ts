@@ -14,4 +14,4 @@ const securityGeneralRule =
   'security/detect-unsafe-regex': 'error'
 };
 
-module.exports = { securityGeneralRule };
+export { securityGeneralRule };

@@ -294,4 +294,4 @@ const error =
   'no-with': 'error'
 };
 
-module.exports = { error };
+export { error };

@@ -7,10 +7,21 @@
   "license": "MIT",
   "keywords": [
     "eslint",
+    "eslintconfig",
     "eslint-config",
+    "eslintplugin",
     "eslint-plugin",
     "eslint-rules",
-    "eslint-shareable-configs"
+    "eslint-shareable-configs",
+    "linter",
+    "linter-eslint",
+    "linter-config",
+    "style-guide",
+    "styleguide",
+    "typescript",
+    "clean-code",
+    "javascript",
+    "code-style"
   ],
   "homepage": "https://github.com/AesthetiCoder/eslint-config-aesthetic-coder",
   "bugs": {

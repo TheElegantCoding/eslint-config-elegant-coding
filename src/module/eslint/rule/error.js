@@ -255,7 +255,7 @@ const error =
   'no-ternary': 'off',
   'no-throw-literal': 'error',
   'no-undef-init': 'error',
-  'no-undefined': 'error',
+  'no-undefined': 'off',
   'no-underscore-dangle': [
     'error',
     {

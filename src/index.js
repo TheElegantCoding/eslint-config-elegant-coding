@@ -1,9 +1,6 @@
-const { bestPractice } = require('./rule/best_practice');
-const { error } = require('./rule/error');
-const { eslintImport } = require('./rule/import');
-const { strict } = require('./rule/strict');
-const { style } = require('./rule/style');
-const { variable } = require('./rule/variable');
+const { eslint } = require('./module/eslint/eslint');
+const { eslintImport } = require('./module/import/import');
+const { eslintUnicorn } = require('./module/unicorn/unicorn');
 
 const config =
 {
@@ -16,24 +13,20 @@ const config =
     mocha: false,
     jasmine: false
   },
-  settings:
-  {
-    ...eslintImport.settings
-  },
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: [
-    ...eslintImport.plugins
+    ...eslintImport.plugins, ...eslintUnicorn.plugins
   ],
+  settings: {
+    ...eslintImport.settings
+  },
   rules: {
-    ...style,
-    ...error,
+    ...eslint.rules,
     ...eslintImport.rules,
-    ...strict,
-    ...bestPractice,
-    ...variable
+    ...eslintUnicorn.rules
   }
 };
 

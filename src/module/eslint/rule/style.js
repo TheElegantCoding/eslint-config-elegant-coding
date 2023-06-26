@@ -1,5 +1,5 @@
 const indent = 2;
-const maxLen = 120;
+const maxLength = 120;
 
 const style =
 {
@@ -162,7 +162,7 @@ const style =
   'lines-between-class-members': [ 'error', 'always' ],
   'max-len': [
     'error',
-    maxLen,
+    maxLength,
     indent,
     {
       ignoreUrls: true,

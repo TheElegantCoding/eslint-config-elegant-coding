@@ -195,7 +195,9 @@ function organize_changelog_item()
     CHANGELOG_CONTENT+="### :package: Package\n${commit_asset}\n\n"
   fi
 
-  CHANGELOG_CONTENT="${CHANGELOG_CONTENT%????}"
+  CHANGELOG_CONTENT+="<p align="right">(<a href="[${LATEST_TAG}](<${GITHUB_REPO_URL}/releases/tag/${LATEST_TAG}>) - ${DATE_TODAY}">back to top</a>)</p>"
+  CHANGELOG_CONTENT+="\n\n"
+  CHANGELOG_CONTENT+="---"
   CONTENT+=$CHANGELOG_CONTENT
 }
 
@@ -215,7 +217,7 @@ function get_release_notes()
 
 function new_changelog_item()
 {
-  CONTENT="[${LATEST_TAG}](<${GITHUB_REPO_URL}/releases/tag/${LATEST_TAG}>) - ${DATE_TODAY}"
+  CONTENT="## [${LATEST_TAG}](<${GITHUB_REPO_URL}/releases/tag/${LATEST_TAG}>) - ${DATE_TODAY}"
   CONTENT+='\n\n'
   organize_changelog_item
 

@@ -37,7 +37,9 @@
     "release": "bash ./script/module/release.sh"
   },
   "devDependencies": {
-    "eslint": "^8.43.0"
+    "eslint": "^8.43.0",
+    "eslint-plugin-unicorn": "^47.0.0",
+    "install": "^0.13.0"
   },
   "peerDependencies": {
     "eslint": "^7.32.0 || ^8.2.0"

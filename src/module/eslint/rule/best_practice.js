@@ -1,7 +1,7 @@
 const complexity = 20;
 const maxDepth = 4;
-const maxParams = 4;
-const maxStaments = 10;
+const maxParameters = 4;
+const maxStatements = 10;
 
 const bestPractice =
 {
@@ -74,8 +74,8 @@ const bestPractice =
     }
   ],
   'max-nested-callbacks': [ 'error', { max: 3 } ],
-  'max-params': [ 'error', maxParams ],
-  'max-statements': [ 'error', maxStaments ],
+  'max-params': [ 'error', maxParameters ],
+  'max-statements': [ 'error', maxStatements ],
   'object-shorthand': [
     'error',
     'always',

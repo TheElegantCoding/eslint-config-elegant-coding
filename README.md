@@ -108,7 +108,7 @@ The following scripts are available in the `package.json`:
 
 <h3 id="dependencies">Dependencies</h3>
 
-- [**typescript**](hhttps://www.typescriptlang.org) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+- [**typescript**](https://www.typescriptlang.org) - TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 - [**eslint**](https://eslint.org) - ESLint is an open source project that helps you find and fix problems with your JavaScript code.
 - [**rimraf**](https://github.com/isaacs/rimraf) - A `rm -rf` util for nodejs
 

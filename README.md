@@ -3,7 +3,7 @@
 <div align="center">
   <img
     alt="eslint"
-    src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/eslint.svg"
+    src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/eslint.svg?token=GHSAT0AAAAAACDWERCTDZ2B6LXNTTGMHTKYZE2EXZQ"
   />
 </div>
 

@@ -22,7 +22,7 @@ The list of changes have the description - commit - author
 
 ### :memo: Documentation
 
-- [`86b7efd`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/86b7efd>) - :memo: doc: change package.json version to 0.0.1 - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:19:20 2023
+- [`5c112d1`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/5c112d1>) - :memo: doc: update changelog and package.json - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:19:36 2023
 
 <p align=right>(<a href='[v1.0.0](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.0>) - 2023-06-26'>back to top</a>)</p>
 

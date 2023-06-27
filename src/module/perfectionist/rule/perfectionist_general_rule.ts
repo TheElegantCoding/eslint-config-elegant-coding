@@ -97,10 +97,9 @@ const perfectionistGeneralRule =
   'perfectionist/sort-object-types': [
     'error',
     {
-      'always-on-top': [ 'id' ],
       'ignore-case': true,
       order: 'asc',
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-objects': [

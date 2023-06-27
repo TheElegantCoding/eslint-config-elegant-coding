@@ -18,6 +18,27 @@ The list of changes have the description - commit - author
 
 ## Released
  
+## [v1.0.3](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.3>) - 2023-06-26
+
+### :sparkles: Features
+
+- [`baae5a7`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/baae5a7>) - :sparkles: feat: readd validation of git tree - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:42:22 2023
+
+### :bug: Fix
+
+- [`424e870`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/424e870>) - :bug: fix: error during release - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:47:25 2023
+- [`0e2a9e6`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/0e2a9e6>) - :bug: fix: error during release - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:44:40 2023
+- [`0238481`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/0238481>) - :bug: fix: perfectionist/sort-object-types error - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:40:18 2023
+- [`a424003`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/a424003>) - :bug: fix: fix images in readme - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:35:03 2023
+
+### :memo: Documentation
+
+- [`817d563`](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/commit/817d563>) - :memo: doc: update readme - by [AesthetiCoder](<https://github.com/AesthetiCoder>) - Mon Jun 26 23:29:55 2023
+
+<p align=right>(<a href='[v1.0.3](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.3>) - 2023-06-26'>back to top</a>)</p>
+
+---
+ 
 ## [v1.0.2](<https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git/releases/tag/v1.0.2>) - 2023-06-26
 
 ### :sparkles: Features

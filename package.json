@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aesthetic-coder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "Eslint configuration of AesthetiCoder for personal projects and more",
   "author": "AesthetiCoder",

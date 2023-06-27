@@ -3,7 +3,7 @@
 <div align="center">
   <img
     alt="eslint"
-    src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/eslint.svg?token=GHSAT0AAAAAACDWERCTDZ2B6LXNTTGMHTKYZE2EXZQ"
+    src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/eslint.svg"
   />
 </div>
 
@@ -135,7 +135,7 @@ The following scripts are available in the `package.json`:
 </div>
 </br ></br >
 
-<img src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/footer.svg?token=GHSAT0AAAAAACDWERCTTTJS57YWIVR57TVQZE2EVZQ" alt="footer" width="100%" />
+<img src="https://raw.githubusercontent.com/AesthetiCoder/eslint-config-aesthetic-coder/master/.github/asset/icon/footer.svg" alt="footer" width="100%" />
 </br ></br >
 <div align="center">
 

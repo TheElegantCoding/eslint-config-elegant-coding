@@ -5,6 +5,7 @@ const disabledRule =
   'id-match': 'off',
   'no-ternary': 'off',
   'no-undefined': 'off',
+  'sort-imports': 'off',
   'sort-keys': 'off',
   'sort-vars': 'off'
 };

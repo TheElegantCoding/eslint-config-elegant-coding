@@ -73,39 +73,8 @@ const importGeneralRule =
       commonjs: true
     }
   ],
-  'import/no-unused-modules': [
-    'error',
-    {
-      missingExports: false,
-      unusedExports: true
-    }
-  ],
   'import/no-useless-path-segments': [ 'error', { commonjs: true } ],
-  'import/no-webpack-loader-syntax': 'error',
-  'import/order': [
-    'error',
-    {
-      alphabetize: {
-        caseInsensitive: true,
-        order: 'asc',
-        orderImportKind: 'asc'
-      },
-      groups: [
-        [
-          'builtin',
-          'external',
-          'internal',
-          'unknown',
-          'parent',
-          'sibling',
-          'object',
-          'index',
-          'type'
-        ]
-      ],
-      'newlines-between': 'always'
-    }
-  ]
+  'import/no-webpack-loader-syntax': 'error'
 };
 
 export { importGeneralRule };

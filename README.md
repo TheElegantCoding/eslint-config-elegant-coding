@@ -72,7 +72,7 @@ To use this plugin put in your eslint config file this lines of codes.
 ```json
 {
   "root": true,
-  "extends": "coder-dev"
+  "extends": "aesthetic-coder"
 }
 ```
 
@@ -81,7 +81,7 @@ To use this plugin put in your eslint config file this lines of codes.
 ```json
 {
   "root": true,
-  "extends": ["coder-dev", "coder-dev/typescript"]
+  "extends": ["aesthetic-coder", "aesthetic-coder/typescript"]
 }
 ```
 

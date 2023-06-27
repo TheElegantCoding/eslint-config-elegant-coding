@@ -4,7 +4,7 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-classes': [
@@ -27,14 +27,14 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-exports': [
     'error',
     {
       order: 'asc',
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-imports': [
@@ -56,7 +56,7 @@ const perfectionistGeneralRule =
       ],
       'newlines-between': 'always',
       order: 'asc',
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-interfaces': [
@@ -77,7 +77,7 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-named-exports': [
@@ -97,7 +97,9 @@ const perfectionistGeneralRule =
   'perfectionist/sort-object-types': [
     'error',
     {
+      'always-on-top': [ 'id' ],
       'ignore-case': true,
+      order: 'asc',
       type: 'natural'
     }
   ],
@@ -105,14 +107,14 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'natural'
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-union-types': [
     'error',
     {
       order: 'asc',
-      type: 'natural'
+      type: 'line-length'
     }
   ]
 };

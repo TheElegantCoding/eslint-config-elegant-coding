@@ -214,15 +214,6 @@ const style =
     }
   ],
   'semi-style': [ 'error', 'last' ],
-  'sort-imports': [
-    'error',
-    {
-      ignoreCase: false,
-      ignoreDeclarationSort: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: [ 'none', 'all', 'multiple', 'single' ]
-    }
-  ],
   'space-before-blocks': 'error',
   'space-before-function-paren': [
     'error',

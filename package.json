@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aesthetic-coder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "Eslint configuration of AesthetiCoder for personal projects and more",
   "author": "AesthetiCoder",
@@ -39,6 +39,11 @@
       "require": "./dist/index.js",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
+    },
+    "./typescript": {
+      "require": "./dist/typescript.js",
+      "import": "./dist/typescript.mjs",
+      "types": "./dist/typescript.d.ts"
     },
     "./package.json": "./package.json"
   },

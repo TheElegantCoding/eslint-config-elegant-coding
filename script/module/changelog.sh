@@ -230,12 +230,21 @@ function generate_changelog()
 
   if test -f "$CHANGELOG_PATH"; then
     COMMIT_CODE=$(git log $PREVIOUS_TAG..HEAD --pretty=format:"%h")
+    SAVEIFS=$IFS
+    IFS=$'\n'
+    COMMIT_CODE=($COMMIT_CODE)
+    IFS=$SAVEIFS
+
     local array_commit=($COMMIT_CODE)
     local commit_count=${#COMMIT_CODE[@]}
 
     spinner "Adding ${commit_count} commits to changelog ..." new_changelog_item
     print_success "Succesfully commits added"
   else
+    SAVEIFS=$IFS
+    IFS=$'\n'
+    COMMIT_CODE=($COMMIT_CODE)
+    IFS=$SAVEIFS
     local array_commit=($COMMIT_CODE)
     local commit_count=${#COMMIT_CODE[@]}
 

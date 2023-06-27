@@ -97,9 +97,8 @@ const perfectionistGeneralRule =
   'perfectionist/sort-object-types': [
     'error',
     {
-      'ignore-case': true,
-      order: 'asc',
-      type: 'line-length'
+      'type': 'natural',
+      'ignore-case': true
     }
   ],
   'perfectionist/sort-objects': [

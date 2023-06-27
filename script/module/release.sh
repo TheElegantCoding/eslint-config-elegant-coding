@@ -104,7 +104,8 @@ function add_updated_files
   git commit -m ":memo: doc: update changelog and package.json"
 }
 
-
+require_clean_work_tree
+clear
 get_version
 get_version_title
 change_npm_version

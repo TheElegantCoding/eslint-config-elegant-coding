@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aesthetic-coder",
-  "version": "1.0.4",
+  "version": "1.1.4",
   "private": false,
   "description": "Eslint configuration of AesthetiCoder for personal projects and more",
   "author": "AesthetiCoder",
@@ -50,6 +50,11 @@
       "import": "./dist/qwik.mjs",
       "types": "./dist/qwik.d.ts"
     },
+    "./jsx_a11y": {
+      "require": "./dist/jsx_a11y.js",
+      "import": "./dist/jsx_a11y.mjs",
+      "types": "./dist/jsx_a11y.d.ts"
+    },
     "./package.json": "./package.json"
   },
   "engines": {
@@ -68,6 +73,7 @@
   },
   "devDependencies": {
     "eslint": "^8.43.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-qwik": "^1.1.5",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.3"

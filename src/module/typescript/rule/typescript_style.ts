@@ -30,7 +30,10 @@ const typescriptStyle =
   '@typescript-eslint/no-restricted-imports': error['no-restricted-imports'],
   '@typescript-eslint/no-shadow': error['no-shadow'],
   '@typescript-eslint/no-throw-literal': error['no-throw-literal'],
-  '@typescript-eslint/no-unused-expressions': error['no-unused-expressions'],
+  '@typescript-eslint/no-unused-expressions': [
+    'error',
+    { 'enforceForJSX': true }
+  ],
   '@typescript-eslint/no-unused-vars': error['no-unused-vars'],
   '@typescript-eslint/no-use-before-define': error['no-use-before-define'],
   '@typescript-eslint/no-useless-constructor': error['no-useless-constructor'],

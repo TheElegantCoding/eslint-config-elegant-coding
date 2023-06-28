@@ -6,7 +6,6 @@
 .gitattributes
 
 node_modules
-dist
 src
 script
 

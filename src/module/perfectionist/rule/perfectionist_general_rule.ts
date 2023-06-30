@@ -56,7 +56,7 @@ const perfectionistGeneralRule =
       ],
       'newlines-between': 'always',
       order: 'asc',
-      type: 'line-length'
+      type: 'natural'
     }
   ],
   'perfectionist/sort-interfaces': [

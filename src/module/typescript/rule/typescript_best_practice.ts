@@ -97,8 +97,7 @@ const typescriptBestPractice =
   '@typescript-eslint/restrict-template-expressions': 'error',
   '@typescript-eslint/switch-exhaustiveness-check': 'error',
   '@typescript-eslint/unbound-method': 'error',
-  '@typescript-eslint/unified-signatures': 'error',
-  'no-undef-init': 'off'
+  '@typescript-eslint/unified-signatures': 'error'
 };
 
 export { typescriptBestPractice };

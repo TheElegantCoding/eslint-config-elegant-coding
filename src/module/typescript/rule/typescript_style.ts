@@ -13,7 +13,6 @@ const typescriptStyle =
   '@typescript-eslint/dot-notation': style['dot-notation'],
   '@typescript-eslint/func-call-spacing': style['func-call-spacing'],
   '@typescript-eslint/indent': style.indent,
-  '@typescript-eslint/init-declarations': bestPractice['init-declarations'],
   '@typescript-eslint/key-spacing': style['key-spacing'],
   '@typescript-eslint/lines-between-class-members': style['lines-between-class-members'],
   '@typescript-eslint/no-array-constructor': error['no-array-constructor'],

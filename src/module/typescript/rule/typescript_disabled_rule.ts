@@ -7,12 +7,14 @@ const typescriptDisabledRule =
   '@typescript-eslint/no-non-null-assertion': 'off',
   '@typescript-eslint/no-redundant-type-constituents': 'off',
   '@typescript-eslint/prefer-enum-initializers': 'off',
+  '@typescript-eslint/prefer-readonly-parameter-types': [ 'off', { ignoreInferredTypes: true } ],
   '@typescript-eslint/prefer-ts-expect-error': 'off',
   '@typescript-eslint/sort-type-constituents': 'off',
   '@typescript-eslint/strict-boolean-expressions': 'off',
   '@typescript-eslint/triple-slash-reference': 'off',
   '@typescript-eslint/type-annotation-spacing': 'off',
   '@typescript-eslint/typedef': 'off'
+
 };
 
 export { typescriptDisabledRule };

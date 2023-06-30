@@ -86,7 +86,6 @@ const typescriptBestPractice =
   '@typescript-eslint/prefer-nullish-coalescing': [ 'error', { ignoreTernaryTests: false } ],
   '@typescript-eslint/prefer-optional-chain': 'error',
   '@typescript-eslint/prefer-readonly': 'error',
-  '@typescript-eslint/prefer-readonly-parameter-types': [ 'error', { ignoreInferredTypes: true } ],
   '@typescript-eslint/prefer-reduce-type-parameter': 'error',
   '@typescript-eslint/prefer-regexp-exec': 'error',
   '@typescript-eslint/prefer-return-this-type': 'error',

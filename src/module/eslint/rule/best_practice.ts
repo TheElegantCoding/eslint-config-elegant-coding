@@ -58,15 +58,7 @@ const bestPractice =
       skipComments: true
     }
   ],
-  'max-lines-per-function': [
-    'error',
-    {
-      IIFEs: true,
-      max: 50,
-      skipBlankLines: true,
-      skipComments: true
-    }
-  ],
+
   'max-nested-callbacks': [ 'error', { max: 3 } ],
   'max-params': [ 'error', maxParameters ],
   'max-statements': [ 'error', maxStatements ],

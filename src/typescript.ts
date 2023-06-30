@@ -1,7 +1,7 @@
 import { etc } from './module/typescript/etc/etc';
+import { typescriptStyle } from './module/typescript/rule/typescript_style';
 import { typescriptBestPractice } from './module/typescript/rule/typescript_best_practice';
 import { typescriptDisabledRule } from './module/typescript/rule/typescript_disabled_rule';
-import { typescriptStyle } from './module/typescript/rule/typescript_style';
 
 const typescript =
 {

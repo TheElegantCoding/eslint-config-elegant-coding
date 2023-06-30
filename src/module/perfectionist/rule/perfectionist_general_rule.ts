@@ -4,7 +4,7 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'line-length'
+      type: 'natural'
     }
   ],
   'perfectionist/sort-classes': [
@@ -41,7 +41,6 @@ const perfectionistGeneralRule =
     'error',
     {
       groups: [
-        'type',
         'react',
         'nanostores',
         [ 'builtin', 'external' ],
@@ -50,9 +49,10 @@ const perfectionistGeneralRule =
         [ 'parent-type', 'sibling-type', 'index-type' ],
         [ 'parent', 'sibling', 'index' ],
         'side-effect',
-        'style',
         'object',
-        'unknown'
+        'unknown',
+        'type',
+        'style'
       ],
       'newlines-between': 'always',
       order: 'asc',
@@ -77,7 +77,7 @@ const perfectionistGeneralRule =
     'error',
     {
       'ignore-case': true,
-      type: 'line-length'
+      type: 'natural'
     }
   ],
   'perfectionist/sort-named-exports': [
@@ -97,15 +97,15 @@ const perfectionistGeneralRule =
   'perfectionist/sort-object-types': [
     'error',
     {
-      'type': 'natural',
-      'ignore-case': true
+      'ignore-case': true,
+      type: 'line-length'
     }
   ],
   'perfectionist/sort-objects': [
     'error',
     {
       'ignore-case': true,
-      type: 'line-length'
+      type: 'natural'
     }
   ],
   'perfectionist/sort-union-types': [

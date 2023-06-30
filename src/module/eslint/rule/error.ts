@@ -234,6 +234,7 @@ const error =
   'no-this-before-super': 'error',
   'no-throw-literal': 'error',
   'no-undef': 'error',
+  'no-undef-init': 'error',
   'no-underscore-dangle': [
     'error',
     {

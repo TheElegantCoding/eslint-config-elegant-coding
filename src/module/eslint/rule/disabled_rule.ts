@@ -14,12 +14,10 @@ const disabledRule =
   ],
   'no-duplicate-imports': 'off',
   'no-ternary': 'off',
-  'no-undef-init': 'off',
   'no-undefined': 'off',
   'sort-imports': 'off',
   'sort-keys': 'off',
   'sort-vars': 'off'
-
 };
 
 export { disabledRule };

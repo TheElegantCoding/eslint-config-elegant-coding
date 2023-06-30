@@ -3,6 +3,7 @@ const disabledRule =
   'capitalized-comments': 'off',
   'id-denylist': 'off',
   'id-match': 'off',
+  'no-duplicate-imports': 'off',
   'no-ternary': 'off',
   'no-undefined': 'off',
   'sort-imports': 'off',

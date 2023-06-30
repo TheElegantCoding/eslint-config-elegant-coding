@@ -73,7 +73,6 @@ const style =
         case: {
           after: true
         },
-        // eslint-disable-next-line id-length
         if:
         {
           after: false,

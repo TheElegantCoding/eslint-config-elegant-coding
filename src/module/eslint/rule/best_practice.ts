@@ -45,7 +45,7 @@ const bestPractice =
   ],
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
-  'id-length': [ 'error', { min: 3 } ],
+  'id-length': [ 'error', { min: 2 } ],
   'init-declarations': 'error',
   'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true } ],
   'max-classes-per-file': [ 'error', 1 ],

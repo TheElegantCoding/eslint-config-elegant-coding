@@ -15,7 +15,6 @@ const importGeneralRule =
   'import/no-cycle': [ 'error', { commonjs: true } ],
   'import/no-deprecated': 'error',
   'import/no-duplicates': 'error',
-  'import/no-dynamic-require': [ 'error', { esmodule: true } ],
   'import/no-empty-named-blocks': 'error',
   'import/no-extraneous-dependencies': [
     'error',

@@ -2,8 +2,10 @@
 .vscode
 .editorconfig
 .eslintrc
+.eslintignore
 .gitignore
 .gitattributes
+.markdownlint.json
 
 node_modules
 src

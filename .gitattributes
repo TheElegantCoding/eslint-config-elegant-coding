@@ -1,6 +1,7 @@
 * text=auto
 * text eol=lf
 
+*.sh eol=lf
 *.js eol=lf
 *.jsx eol=lf
 *.ts eol=lf
@@ -9,4 +10,5 @@
 *.css eol=lf
 *.scss eol=lf
 *.html eol=lf
+*.md eol=lf
 *.svg eol=lf

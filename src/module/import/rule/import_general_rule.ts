@@ -5,7 +5,6 @@ const importGeneralRule =
   'import/export': 'error',
   'import/exports-last': 'error',
   'import/first': 'error',
-  'import/max-dependencies': 'error',
   'import/named': [ 'error', { commonjs: true } ],
   'import/namespace': 'error',
   'import/newline-after-import': 'error',

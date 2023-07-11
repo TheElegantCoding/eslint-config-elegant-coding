@@ -3,6 +3,7 @@ const importDisabledRule =
   'import/consistent-type-specifier-style': 'off',
   'import/dynamic-import-chunkname': 'off',
   'import/group-exports': 'off',
+  'import/max-dependencies': 'off',
   'import/no-commonjs': 'off',
   'import/no-default-export': 'off',
   'import/no-dynamic-require': [ 'off', { esmodule: true } ],

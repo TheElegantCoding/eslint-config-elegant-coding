@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 const perfectionistGeneralRule =
 {
   'perfectionist/sort-array-includes': [
@@ -41,13 +42,16 @@ const perfectionistGeneralRule =
     'error',
     {
       groups: [
-        'react',
-        'nanostores',
-        [ 'builtin', 'external' ],
+        'builtin',
+        'external',
         'internal-type',
         'internal',
-        [ 'parent-type', 'sibling-type', 'index-type' ],
-        [ 'parent', 'sibling', 'index' ],
+        'parent-type',
+        'sibling-type',
+        'index-type',
+        'parent',
+        'sibling',
+        'index',
         'side-effect',
         'object',
         'unknown',

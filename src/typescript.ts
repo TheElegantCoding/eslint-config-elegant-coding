@@ -1,20 +1,12 @@
 import { etc } from './module/typescript/etc/etc';
-import { typescriptStyle } from './module/typescript/rule/typescript_style';
 import { typescriptBestPractice } from './module/typescript/rule/typescript_best_practice';
 import { typescriptDisabledRule } from './module/typescript/rule/typescript_disabled_rule';
+import { typescriptOverrides } from './module/typescript/rule/typescript_overrides';
+import { typescriptStyle } from './module/typescript/rule/typescript_style';
 
 const typescript =
 {
-  overrides: [
-    {
-      files: [ '*.ts', '*.tsx' ],
-      rules: {
-        'import/named': 'off',
-        'import/no-named-as-default-member': 'off',
-        'import/no-unresolved': 'off'
-      }
-    }
-  ],
+  overrides: [ ...typescriptOverrides ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: [

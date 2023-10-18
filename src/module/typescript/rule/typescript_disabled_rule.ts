@@ -14,7 +14,6 @@ const typescriptDisabledRule =
   '@typescript-eslint/triple-slash-reference': 'off',
   '@typescript-eslint/type-annotation-spacing': 'off',
   '@typescript-eslint/typedef': 'off'
-
 };
 
 export { typescriptDisabledRule };

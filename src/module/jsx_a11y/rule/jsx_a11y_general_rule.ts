@@ -27,7 +27,19 @@ const jsxA11yGeneralRule =
   'jsx-a11y/no-autofocus': 'error',
   'jsx-a11y/no-distracting-elements': 'error',
   'jsx-a11y/no-interactive-element-to-noninteractive-role': 'error',
-  'jsx-a11y/no-noninteractive-element-interactions': 'error',
+  'jsx-a11y/no-noninteractive-element-interactions': [
+    'error',
+    {
+      handlers: [
+        'onClick',
+        'onMouseDown',
+        'onMouseUp',
+        'onKeyPress',
+        'onKeyDown',
+        'onKeyUp'
+      ]
+    }
+  ],
   'jsx-a11y/no-noninteractive-element-to-interactive-role': 'error',
   'jsx-a11y/no-noninteractive-tabindex': 'error',
   'jsx-a11y/no-redundant-roles': 'error',

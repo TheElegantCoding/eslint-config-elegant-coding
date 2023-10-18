@@ -55,6 +55,7 @@ const typescriptStyle =
   'lines-between-class-members': 'off',
   'no-array-constructor': 'off',
   'no-dupe-class-members': 'off',
+  'no-duplicate-imports': 'off',
   'no-empty-function': 'off',
   'no-extra-parens': 'off',
   'no-extra-semi': 'off',

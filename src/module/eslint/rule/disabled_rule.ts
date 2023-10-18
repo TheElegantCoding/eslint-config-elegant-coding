@@ -12,7 +12,6 @@ const disabledRule =
       skipComments: true
     }
   ],
-  'no-duplicate-imports': 'off',
   'no-ternary': 'off',
   'no-undefined': 'off',
   'sort-imports': 'off',

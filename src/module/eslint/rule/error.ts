@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 const error =
 {
   'constructor-super': 'error',
@@ -28,6 +29,7 @@ const error =
   'no-dupe-else-if': 'error',
   'no-dupe-keys': 'error',
   'no-duplicate-case': 'error',
+  'no-duplicate-imports': 'error',
   'no-else-return': [ 'error', { allowElseIf: false } ],
   'no-empty': 'error',
   'no-empty-character-class': 'error',

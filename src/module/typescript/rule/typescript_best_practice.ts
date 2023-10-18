@@ -9,7 +9,7 @@ const typescriptBestPractice =
   '@typescript-eslint/consistent-generic-constructors': 'error',
   '@typescript-eslint/consistent-indexed-object-style': 'error',
   '@typescript-eslint/consistent-type-assertions': 'error',
-  '@typescript-eslint/consistent-type-definitions': 'error',
+  '@typescript-eslint/consistent-type-definitions': [ 'error', 'type' ],
   '@typescript-eslint/consistent-type-exports': 'error',
   '@typescript-eslint/consistent-type-imports': [
     'error',
@@ -37,7 +37,13 @@ const typescriptBestPractice =
   '@typescript-eslint/no-invalid-void-type': 'error',
   '@typescript-eslint/no-meaningless-void-operator': 'error',
   '@typescript-eslint/no-misused-new': 'error',
-  '@typescript-eslint/no-misused-promises': 'error',
+  '@typescript-eslint/no-misused-promises': [
+    'error',
+    {
+      checksVoidReturn: false,
+      checksVoidReturningArgument: false
+    }
+  ],
   '@typescript-eslint/no-mixed-enums': 'error',
   '@typescript-eslint/no-namespace': 'error',
   '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',

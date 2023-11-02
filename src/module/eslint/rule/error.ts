@@ -120,6 +120,7 @@ const error =
         'acc',
         'accumulator',
         'e',
+        'event',
         'ctx',
         'context',
         'req',
@@ -264,7 +265,7 @@ const error =
   ],
   'no-unused-labels': 'error',
   'no-unused-private-class-members': 'error',
-  'no-unused-vars': [ 'error', { args: 'all', vars: 'all' } ],
+  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_' } ],
   'no-use-before-define': [
     'error',
     {

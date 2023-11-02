@@ -46,7 +46,7 @@ const style =
   'eol-last': [ 'error', 'never' ],
   'func-call-spacing': [ 'error', 'never' ],
   'func-style': [ 'error', 'expression' ],
-  'function-call-argument-newline': [ 'error', 'never' ],
+  'function-call-argument-newline': [ 'error', 'consistent' ],
   'function-paren-newline': [ 'error', 'never' ],
   'generator-star-spacing': [
     'error',

@@ -17,6 +17,7 @@ const typescriptBestPractice =
       prefer: 'type-imports'
     }
   ],
+  '@typescript-eslint/explicit-function-return-type': 'error',
   '@typescript-eslint/member-delimiter-style': 'error',
   '@typescript-eslint/method-signature-style': 'error',
   '@typescript-eslint/no-base-to-string': 'error',

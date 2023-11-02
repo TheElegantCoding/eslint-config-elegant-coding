@@ -32,7 +32,6 @@ const typescriptBestPractice =
   '@typescript-eslint/no-extraneous-class': 'error',
   '@typescript-eslint/no-floating-promises': 'error',
   '@typescript-eslint/no-for-in-array': 'error',
-  '@typescript-eslint/no-implicit-any-catch': 'error',
   '@typescript-eslint/no-import-type-side-effects': 'error',
   '@typescript-eslint/no-inferrable-types': 'error',
   '@typescript-eslint/no-invalid-void-type': 'error',
@@ -41,8 +40,10 @@ const typescriptBestPractice =
   '@typescript-eslint/no-misused-promises': [
     'error',
     {
-      checksVoidReturn: false,
-      checksVoidReturningArgument: false
+      checksVoidReturn: {
+        arguments: false,
+        attributes: false
+      }
     }
   ],
   '@typescript-eslint/no-mixed-enums': 'error',
@@ -67,23 +68,7 @@ const typescriptBestPractice =
   '@typescript-eslint/no-useless-empty-export': 'error',
   '@typescript-eslint/no-var-requires': 'error',
   '@typescript-eslint/non-nullable-type-assertion-style': 'error',
-  '@typescript-eslint/parameter-properties': [
-    'error',
-    true,
-    {
-      allow: [
-        'public',
-        'readonly',
-        'private',
-        'protected',
-        'public',
-        'private readonly',
-        'protected readonly',
-        'public readonly',
-        'parameter-property'
-      ]
-    }
-  ],
+  '@typescript-eslint/parameter-properties': 'error',
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/prefer-for-of': 'error',
   '@typescript-eslint/prefer-function-type': 'error',

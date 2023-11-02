@@ -1,4 +1,3 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 const perfectionistGeneralRule =
 {
   'perfectionist/sort-array-includes': [
@@ -77,7 +76,7 @@ const perfectionistGeneralRule =
       type: 'line-length'
     }
   ],
-  'perfectionist/sort-map-elements': [
+  'perfectionist/sort-maps': [
     'error',
     {
       'ignore-case': true,

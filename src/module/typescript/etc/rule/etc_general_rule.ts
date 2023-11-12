@@ -8,7 +8,7 @@ const etcGeneralRule =
   'etc/no-internal': 'error',
   'etc/no-misused-generics': 'error',
   'etc/no-t': 'error',
-  'etc/prefer-interface': [ 'error', { allowIntersection: false } ],
+  'etc/prefer-interface': [ 'error', { allowIntersection: false }],
   'etc/throw-error': 'error',
   'import/no-deprecated': 'error'
 };

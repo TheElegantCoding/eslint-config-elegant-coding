@@ -3,7 +3,7 @@ const error =
 {
   'constructor-super': 'error',
   'for-direction': 'error',
-  'getter-return': [ 'error', { allowImplicit: true } ],
+  'getter-return': [ 'error', { allowImplicit: true }],
   'no-alert': 'error',
   'no-array-constructor': 'error',
   'no-async-promise-executor': 'error',
@@ -15,11 +15,7 @@ const error =
   'no-compare-neg-zero': 'error',
   'no-cond-assign': [ 'error', 'always' ],
   'no-console': 'error',
-  'no-shadow': ["error", {
-    builtinGlobals: false,
-    hoist: "all",
-    ignoreOnInitialization: false
-   }],
+  'no-const-assign': 'error',
   'no-constant-binary-expression': 'error',
   'no-constant-condition': 'error',
   'no-constructor-return': 'error',
@@ -34,7 +30,7 @@ const error =
   'no-dupe-keys': 'error',
   'no-duplicate-case': 'error',
   'no-duplicate-imports': 'error',
-  'no-else-return': [ 'error', { allowElseIf: false } ],
+  'no-else-return': [ 'error', { allowElseIf: false }],
   'no-empty': 'error',
   'no-empty-character-class': 'error',
   'no-empty-function': 'error',
@@ -51,7 +47,7 @@ const error =
   'no-func-assign': 'error',
   'no-global-assign': 'error',
   'no-implicit-coercion': 'error',
-  'no-implicit-globals': [ 'error', { lexicalBindings: true } ],
+  'no-implicit-globals': [ 'error', { lexicalBindings: true }],
   'no-implied-eval': 'error',
   'no-import-assign': 'error',
   'no-inline-comments': 'error',
@@ -89,10 +85,9 @@ const error =
   'no-new-wrappers': 'error',
   'no-nonoctal-decimal-escape': 'error',
   'no-obj-calls': 'error',
+  'no-object-constructor': 'error',
   'no-octal': 'error',
   'no-octal-escape': 'error',
-  "no-unsafe-negation": ["error", {"enforceForOrderingRelations": false}],
-  'no-object-constructor': "error",
   'no-param-reassign': [
     'error',
     {
@@ -202,12 +197,19 @@ const error =
     }
   ],
   'no-return-assign': [ 'error', 'always' ],
+  'no-return-await': 'error',
   'no-script-url': 'error',
   'no-self-assign': 'error',
-  "no-const-assign": 'error',
   'no-self-compare': 'error',
   'no-sequences': 'error',
   'no-setter-return': 'error',
+  'no-shadow': [
+    'error', {
+      builtinGlobals: false,
+      hoist: 'all',
+      ignoreOnInitialization: false
+    }
+  ],
   'no-shadow-restricted-names': 'error',
   'no-sparse-arrays': 'error',
   'no-template-curly-in-string': 'error',
@@ -226,12 +228,12 @@ const error =
   ],
   'no-unexpected-multiline': 'error',
   'no-unmodified-loop-condition': 'error',
-  'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
+  'no-unneeded-ternary': [ 'error', { defaultAssignment: false }],
   'no-unreachable': 'error',
-  "no-return-await": "error",
-  'no-unreachable-loop': [ 'error', { ignore: [] } ],
+  'no-unreachable-loop': [ 'error', { ignore: [] }],
   'no-unsafe-finally': 'error',
-  'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true } ],
+  'no-unsafe-negation': [ 'error', { enforceForOrderingRelations: false }],
+  'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true }],
   'no-unused-expressions': [
     'error',
     {
@@ -242,7 +244,7 @@ const error =
   ],
   'no-unused-labels': 'error',
   'no-unused-private-class-members': 'error',
-  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_' } ],
+  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_' }],
   'no-use-before-define': [
     'error',
     {

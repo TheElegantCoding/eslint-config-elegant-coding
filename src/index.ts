@@ -1,10 +1,10 @@
-import { stylistic } from './module/stylistic/stylistic';
 import { eslint } from './module/eslint/eslint';
 import { eslintImport } from './module/import/import';
 import { perfectionist } from './module/perfectionist/perfectionist';
 import { promise } from './module/promise/promise';
 import { security } from './module/security/security';
 import { sonar } from './module/sonar/sonar';
+import { stylistic } from './module/stylistic/stylistic';
 import { unicorn } from './module/unicorn/unicorn';
 
 const index =

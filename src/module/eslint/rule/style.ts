@@ -1,6 +1,6 @@
 const style =
 {
-  'arrow-body-style': [ 'error', 'as-needed', { requireReturnForObjectLiteral: false } ],
+  'arrow-body-style': [ 'error', 'as-needed', { requireReturnForObjectLiteral: false }],
   camelcase: [
     'error',
     {
@@ -23,9 +23,7 @@ const style =
     'error',
     {
       capIsNew: false,
-      capIsNewExceptions: [
-        'Immutable.Map', 'Immutable.Set', 'Immutable.List'
-      ],
+      capIsNewExceptions: [ 'Immutable.Map', 'Immutable.Set', 'Immutable.List' ],
       newIsCap: true,
       newIsCapExceptions: []
     }

@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-aesthetic-coding",
-  "version": "2.1.10",
+  "name": "eslint-config-elegant-coding",
+  "version": "3.0.0",
   "private": false,
   "description": "Eslint configuration of AesthetiCoder for personal projects and more",
   "author": "AesthetiCoder",
@@ -23,14 +23,6 @@
     "javascript",
     "code-style"
   ],
-  "homepage": "https://github.com/AesthetiCoder/eslint-config-aesthetic-coder",
-  "bugs": {
-    "url": "https://github.com/AesthetiCoder/eslint-config-aesthetic-coder/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AesthetiCoder/eslint-config-aesthetic-coder.git"
-  },
   "files": [
     "./dist"
   ],
@@ -86,12 +78,14 @@
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",
     "eslint-plugin-etc": "2.0.3",
+    "eslint-plugin-github": "4.10.1",
     "eslint-plugin-import": "2.29.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-perfectionist": "2.3.0",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-qwik": "1.2.17",
     "eslint-plugin-security": "1.7.1",
+    "eslint-plugin-solid": "0.13.0",
     "eslint-plugin-sonarjs": "0.23.0",
     "eslint-plugin-unicorn": "49.0.0"
   }

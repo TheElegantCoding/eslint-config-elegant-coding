@@ -9,13 +9,9 @@ const typescript =
   overrides: [ ...typescriptOverrides ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: [
-      './tsconfig.json'
-    ]
+    project: [ './tsconfig.json' ]
   },
-  plugins: [
-    '@typescript-eslint', ...etc.plugins
-  ],
+  plugins: [ '@typescript-eslint', ...etc.plugins ],
   rules: {
     ...typescriptDisabledRule,
     ...typescriptStyle,
@@ -23,12 +19,14 @@ const typescript =
   },
   settings:
   {
-    'import/extensions': [ '.js',
+    'import/extensions': [
+      '.js',
       '.mjs',
       '.jsx',
       '.ts',
       '.tsx',
-      '.d.ts' ],
+      '.d.ts'
+    ],
     'import/external-module-folders': [ 'node_modules', 'node_modules/@types' ],
     'import/parsers':
     {
@@ -37,11 +35,13 @@ const typescript =
     'import/resolver':
     {
       node: {
-        extensions: [ '.mjs',
+        extensions: [
+          '.mjs',
           '.js',
           '.json',
           '.ts',
-          '.d.ts' ],
+          '.d.ts'
+        ],
         tryExtensions: [
           '.mjs',
           '.cjs',

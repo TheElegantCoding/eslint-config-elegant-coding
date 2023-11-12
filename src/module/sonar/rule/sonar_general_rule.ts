@@ -1,4 +1,4 @@
-const complexity = 10;
+const complexity = 20;
 
 const sonarGeneralRule = {
   'sonarjs/cognitive-complexity': [ 'error', complexity ],

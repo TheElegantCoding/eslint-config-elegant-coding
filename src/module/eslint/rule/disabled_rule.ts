@@ -12,10 +12,10 @@ const disabledRule =
       skipComments: true
     }
   ],
-  'prefer-named-capture-group': 'off',
-  "no-restricted-exports": "off",
+  'no-restricted-exports': 'off',
   'no-ternary': 'off',
   'no-undefined': 'off',
+  'prefer-named-capture-group': 'off',
   'sort-imports': 'off',
   'sort-keys': 'off',
   'sort-vars': 'off'

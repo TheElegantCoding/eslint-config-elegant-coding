@@ -5,7 +5,7 @@ const maxStatements = 10;
 const bestPractice =
 {
   'accessor-pairs': 'error',
-  'array-callback-return': [ 'error', { allowImplicit: true } ],
+  'array-callback-return': [ 'error', { allowImplicit: true }],
   'class-methods-use-this': [
     'error',
     {
@@ -44,9 +44,9 @@ const bestPractice =
   ],
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
-  'id-length': [ 'error', { min: 2 } ],
+  'id-length': [ 'error', { min: 2 }],
   'init-declarations': 'error',
-  'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true } ],
+  'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true }],
   'max-classes-per-file': [ 'error', 1 ],
   'max-depth': [ 'error', maxDepth ],
   'max-lines': [
@@ -57,8 +57,8 @@ const bestPractice =
       skipComments: true
     }
   ],
-  'max-nested-callbacks': [ 'error', { max: 3 } ],
-  'max-params': [ 'error', { max: 4 } ],
+  'max-nested-callbacks': [ 'error', { max: 3 }],
+  'max-params': [ 'error', { max: 4 }],
   'max-statements': [ 'error', maxStatements ],
   'object-shorthand': [
     'error',
@@ -103,8 +103,8 @@ const bestPractice =
   'prefer-numeric-literals': 'error',
   'prefer-object-has-own': 'error',
   'prefer-object-spread': 'error',
-  'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true } ],
-  'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
+  'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true }],
+  'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true }],
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   'prefer-template': 'error',
@@ -114,7 +114,7 @@ const bestPractice =
   'require-yield': 'error',
   'symbol-description': 'error',
   'use-isnan': 'error',
-  'valid-typeof': [ 'error', { requireStringLiterals: true } ],
+  'valid-typeof': [ 'error', { requireStringLiterals: true }],
   yoda: 'error'
 };
 

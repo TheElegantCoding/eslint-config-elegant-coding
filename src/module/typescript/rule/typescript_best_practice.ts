@@ -3,14 +3,16 @@ const typescriptBestPractice =
 {
   '@typescript-eslint/array-type': 'error',
   '@typescript-eslint/await-thenable': 'error',
-  '@typescript-eslint/ban-ts-comment': [ 'error',
-  {
-    minimumDescriptionLength: 3,
-    'ts-check': false,
-    'ts-expect-error': 'allow-with-description',
-    'ts-ignore': true,
-    'ts-nocheck': true,
-  }, ],
+  '@typescript-eslint/ban-ts-comment': [
+    'error',
+    {
+      minimumDescriptionLength: 3,
+      'ts-check': false,
+      'ts-expect-error': 'allow-with-description',
+      'ts-ignore': true,
+      'ts-nocheck': true
+    }
+  ],
   '@typescript-eslint/ban-tslint-comment': 'error',
   '@typescript-eslint/ban-types': 'error',
   '@typescript-eslint/class-literal-property-style': 'error',
@@ -28,22 +30,22 @@ const typescriptBestPractice =
   ],
   '@typescript-eslint/explicit-function-return-type': 'error',
   '@typescript-eslint/explicit-module-boundary-types': 'error',
-  "@typescript-eslint/member-ordering": "error",
+  '@typescript-eslint/member-ordering': 'error',
   '@typescript-eslint/method-signature-style': 'error',
-  "@typescript-eslint/naming-convention": [
-    "error",
+  '@typescript-eslint/naming-convention': [
+    'error',
     {
-      "format": null,
-      "modifiers": [ "requiresQuotes" ],
-      "selector": [
-        "classProperty",
-        "objectLiteralProperty",
-        "typeProperty",
-        "classMethod",
-        "objectLiteralMethod",
-        "typeMethod",
-        "accessor",
-        "enumMember"
+      format: null,
+      modifiers: [ 'requiresQuotes' ],
+      selector: [
+        'classProperty',
+        'objectLiteralProperty',
+        'typeProperty',
+        'classMethod',
+        'objectLiteralMethod',
+        'typeMethod',
+        'accessor',
+        'enumMember'
       ]
     }
   ],
@@ -102,9 +104,9 @@ const typescriptBestPractice =
   '@typescript-eslint/prefer-includes': 'error',
   '@typescript-eslint/prefer-literal-enum-member': 'error',
   '@typescript-eslint/prefer-namespace-keyword': 'error',
-  '@typescript-eslint/prefer-nullish-coalescing': [ 'error', { ignoreTernaryTests: false } ],
+  '@typescript-eslint/prefer-nullish-coalescing': [ 'error', { ignoreTernaryTests: false }],
   '@typescript-eslint/prefer-optional-chain': 'error',
-  "@typescript-eslint/prefer-readonly": "error",
+  '@typescript-eslint/prefer-readonly': 'error',
   '@typescript-eslint/prefer-reduce-type-parameter': 'error',
   '@typescript-eslint/prefer-regexp-exec': 'error',
   '@typescript-eslint/prefer-return-this-type': 'error',

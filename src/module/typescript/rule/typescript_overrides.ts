@@ -7,6 +7,13 @@ const typescriptOverrides =
       'import/no-named-as-default-member': 'off',
       'import/no-unresolved': 'off'
     }
+  },
+  {
+    files: [ 'env.d.ts' ],
+    rules:
+    {
+      '@typescript-eslint/consistent-type-definitions': 'off'
+    }
   }
 ];
 

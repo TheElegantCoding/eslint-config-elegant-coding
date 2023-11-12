@@ -119,7 +119,7 @@ const unicornGeneralRule = {
         res: true
       },
       checkShorthandProperties: true,
-      ignore: [ '\\.e2e$', '\\.e2e-spec$', 'env.d.ts' ]
+      ignore: [ '\\.e2e$', '\\.e2e-spec$', 'env.d', 'ImportMetaEnv' ]
     }
   ],
   'unicorn/relative-url-style': 'error',

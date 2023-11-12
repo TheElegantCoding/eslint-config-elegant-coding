@@ -1,3 +1,4 @@
+import { stylistic } from './module/stylistic/stylistic';
 import { eslint } from './module/eslint/eslint';
 import { eslintImport } from './module/import/import';
 import { perfectionist } from './module/perfectionist/perfectionist';
@@ -23,6 +24,7 @@ const index =
   },
   plugins: [
     ...eslintImport.plugins,
+    ...stylistic.plugins,
     ...unicorn.plugins,
     ...sonar.plugins,
     ...perfectionist.plugins,
@@ -31,6 +33,7 @@ const index =
   ],
   rules: {
     ...eslint.rules,
+    ...stylistic.rules,
     ...eslintImport.rules,
     ...unicorn.rules,
     ...sonar.rules,

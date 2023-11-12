@@ -15,5 +15,3 @@ source $(dirname $0)/../asset/icon.sh
 source $(dirname $0)/../style/color.sh
 
 printf "\n"
-
-eslint_hook

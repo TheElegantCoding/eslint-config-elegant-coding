@@ -1,8 +1,16 @@
+/* eslint-disable unicorn/no-null */
 const typescriptBestPractice =
 {
   '@typescript-eslint/array-type': 'error',
   '@typescript-eslint/await-thenable': 'error',
-  '@typescript-eslint/ban-ts-comment': 'error',
+  '@typescript-eslint/ban-ts-comment': [ 'error',
+  {
+    minimumDescriptionLength: 3,
+    'ts-check': false,
+    'ts-expect-error': 'allow-with-description',
+    'ts-ignore': true,
+    'ts-nocheck': true,
+  }, ],
   '@typescript-eslint/ban-tslint-comment': 'error',
   '@typescript-eslint/ban-types': 'error',
   '@typescript-eslint/class-literal-property-style': 'error',
@@ -14,12 +22,31 @@ const typescriptBestPractice =
   '@typescript-eslint/consistent-type-imports': [
     'error',
     {
+      fixStyle: 'separate-type-imports',
       prefer: 'type-imports'
     }
   ],
   '@typescript-eslint/explicit-function-return-type': 'error',
-  '@typescript-eslint/member-delimiter-style': 'error',
+  '@typescript-eslint/explicit-module-boundary-types': 'error',
+  "@typescript-eslint/member-ordering": "error",
   '@typescript-eslint/method-signature-style': 'error',
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      "format": null,
+      "modifiers": [ "requiresQuotes" ],
+      "selector": [
+        "classProperty",
+        "objectLiteralProperty",
+        "typeProperty",
+        "classMethod",
+        "objectLiteralMethod",
+        "typeMethod",
+        "accessor",
+        "enumMember"
+      ]
+    }
+  ],
   '@typescript-eslint/no-base-to-string': 'error',
   '@typescript-eslint/no-confusing-non-null-assertion': 'error',
   '@typescript-eslint/no-confusing-void-expression': 'error',
@@ -77,7 +104,7 @@ const typescriptBestPractice =
   '@typescript-eslint/prefer-namespace-keyword': 'error',
   '@typescript-eslint/prefer-nullish-coalescing': [ 'error', { ignoreTernaryTests: false } ],
   '@typescript-eslint/prefer-optional-chain': 'error',
-  '@typescript-eslint/prefer-readonly': 'error',
+  "@typescript-eslint/prefer-readonly": "error",
   '@typescript-eslint/prefer-reduce-type-parameter': 'error',
   '@typescript-eslint/prefer-regexp-exec': 'error',
   '@typescript-eslint/prefer-return-this-type': 'error',
@@ -87,6 +114,7 @@ const typescriptBestPractice =
   '@typescript-eslint/restrict-plus-operands': 'error',
   '@typescript-eslint/restrict-template-expressions': 'error',
   '@typescript-eslint/switch-exhaustiveness-check': 'error',
+  '@typescript-eslint/triple-slash-reference': 'error',
   '@typescript-eslint/unbound-method': 'error',
   '@typescript-eslint/unified-signatures': 'error'
 };

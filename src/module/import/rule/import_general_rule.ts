@@ -1,6 +1,8 @@
 const importGeneralRule =
 {
   'import/consistent-type-specifier-style': [ 'error', 'prefer-top-level' ],
+
+  'import/group-exports': 'error',
   'import/default': 'error',
   'import/export': 'error',
   'import/exports-last': 'error',

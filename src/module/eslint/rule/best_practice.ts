@@ -1,6 +1,5 @@
 const complexity = 20;
 const maxDepth = 4;
-const maxParameters = 4;
 const maxStatements = 10;
 
 const bestPractice =
@@ -58,9 +57,8 @@ const bestPractice =
       skipComments: true
     }
   ],
-
   'max-nested-callbacks': [ 'error', { max: 3 } ],
-  'max-params': [ 'error', maxParameters ],
+  'max-params': [ 'error', { max: 4 } ],
   'max-statements': [ 'error', maxStatements ],
   'object-shorthand': [
     'error',

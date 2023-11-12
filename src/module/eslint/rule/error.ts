@@ -14,8 +14,12 @@ const error =
   'no-class-assign': 'error',
   'no-compare-neg-zero': 'error',
   'no-cond-assign': [ 'error', 'always' ],
-  'no-confusing-arrow': [ 'error', { allowParens: true } ],
   'no-console': 'error',
+  'no-shadow': ["error", {
+    builtinGlobals: false,
+    hoist: "all",
+    ignoreOnInitialization: false
+   }],
   'no-constant-binary-expression': 'error',
   'no-constant-condition': 'error',
   'no-constructor-return': 'error',
@@ -43,9 +47,7 @@ const error =
   'no-extra-bind': 'error',
   'no-extra-boolean-cast': 'error',
   'no-extra-label': 'error',
-  'no-extra-semi': 'error',
   'no-fallthrough': 'error',
-  'no-floating-decimal': 'error',
   'no-func-assign': 'error',
   'no-global-assign': 'error',
   'no-implicit-coercion': 'error',
@@ -76,29 +78,6 @@ const error =
     }
   ],
   'no-misleading-character-class': 'error',
-  'no-mixed-operators': [
-    'error',
-    {
-      allowSamePrecedence: false,
-      groups: [
-        [ '%', '**' ],
-        [ '%', '+' ],
-        [ '%', '-' ],
-        [ '%', '*' ],
-        [ '%', '/' ],
-        [ '/', '*' ],
-        [
-          '&',
-          '|',
-          '<<',
-          '>>',
-          '>>>'
-        ],
-        [ '==', '!=', '===', '!==' ],
-        [ '&&', '||' ]
-      ]
-    }
-  ],
   'no-multi-assign': 'error',
   'no-multi-str': 'error',
   'no-negated-condition': 'error',
@@ -106,13 +85,14 @@ const error =
   'no-new': 'error',
   'no-new-func': 'error',
   'no-new-native-nonconstructor': 'error',
-  'no-new-object': 'error',
   'no-new-symbol': 'error',
   'no-new-wrappers': 'error',
   'no-nonoctal-decimal-escape': 'error',
   'no-obj-calls': 'error',
   'no-octal': 'error',
   'no-octal-escape': 'error',
+  "no-unsafe-negation": ["error", {"enforceForOrderingRelations": false}],
+  'no-object-constructor': "error",
   'no-param-reassign': [
     'error',
     {
@@ -205,12 +185,10 @@ const error =
   'no-restricted-syntax': [
     'error',
     {
-      // eslint-disable-next-line max-len
       message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
       selector: 'ForInStatement'
     },
     {
-      // eslint-disable-next-line max-len
       message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
       selector: 'ForOfStatement'
     },
@@ -224,13 +202,12 @@ const error =
     }
   ],
   'no-return-assign': [ 'error', 'always' ],
-  'no-return-await': 'error',
   'no-script-url': 'error',
   'no-self-assign': 'error',
+  "no-const-assign": 'error',
   'no-self-compare': 'error',
   'no-sequences': 'error',
   'no-setter-return': 'error',
-  'no-shadow': 'error',
   'no-shadow-restricted-names': 'error',
   'no-sparse-arrays': 'error',
   'no-template-curly-in-string': 'error',
@@ -251,9 +228,9 @@ const error =
   'no-unmodified-loop-condition': 'error',
   'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
   'no-unreachable': 'error',
+  "no-return-await": "error",
   'no-unreachable-loop': [ 'error', { ignore: [] } ],
   'no-unsafe-finally': 'error',
-  'no-unsafe-negation': 'error',
   'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true } ],
   'no-unused-expressions': [
     'error',

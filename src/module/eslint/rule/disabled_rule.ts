@@ -12,6 +12,8 @@ const disabledRule =
       skipComments: true
     }
   ],
+  'prefer-named-capture-group': 'off',
+  "no-restricted-exports": "off",
   'no-ternary': 'off',
   'no-undefined': 'off',
   'sort-imports': 'off',

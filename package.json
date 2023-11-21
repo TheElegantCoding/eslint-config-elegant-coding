@@ -1,9 +1,9 @@
 {
   "name": "eslint-config-elegant-coding",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "private": false,
-  "description": "Eslint configuration of AesthetiCoder for personal projects and more",
-  "author": "AesthetiCoder",
+  "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
+  "author": "Luis Monsalve <TheElegantCoding>",
   "license": "MIT",
   "keywords": [
     "eslint",
@@ -59,14 +59,12 @@
     "preinstall": "npx only-allow pnpm",
     "postinstall": "git config core.hooksPath ./script/git_hook",
     "type-check": "tsc --pretty --noEmit",
-    "lint": "pnpm lint-eslint && pnpm lint-markdown",
+    "lint": "pnpm lint-eslint",
     "lint-eslint": "eslint --color --ext .js,.jsx,.ts,.tsx --fix ",
-    "lint-markdown": "markdownlint-cli2 --fix '**/*.md' '#node_modules'",
     "build": "pnpm type-check && pnpm lint && rimraf dist && tsc"
   },
   "devDependencies": {
     "eslint": "8.53.0",
-    "markdownlint-cli2": "0.10.0",
     "rimraf": "5.0.5",
     "typescript": "5.2.2"
   },

@@ -78,8 +78,8 @@ const stylisticRule =
   '@stylistic/jsx-curly-newline': [
     'error',
     {
-      multiline: 'require',
-      singleline: 'require'
+      multiline: 'forbid',
+      singleline: 'forbid'
     }
   ],
   '@stylistic/jsx-curly-spacing': [

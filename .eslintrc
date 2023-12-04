@@ -1,7 +1,4 @@
 {
   "root": true,
-  "extends": [
-    "./dist/index.js",
-    "./dist/typescript.js"
-  ]
+  "extends": ["./dist/index.js", "./dist/typescript.js", "./dist/astro.js"]
 }

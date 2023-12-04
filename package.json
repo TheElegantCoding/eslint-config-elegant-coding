@@ -73,9 +73,6 @@
     "rimraf": "5.0.5",
     "typescript": "5.2.2"
   },
-  "peerDependencies": {
-    "eslint": "latest"
-  },
   "dependencies": {
     "@stylistic/eslint-plugin": "1.1.0",
     "@typescript-eslint/eslint-plugin": "6.10.0",

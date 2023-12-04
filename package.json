@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-elegant-coding",
-  "version": "3.1.8",
+  "version": "3.1.9",
   "private": false,
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
@@ -74,7 +74,7 @@
     "typescript": "5.2.2"
   },
   "peerDependencies": {
-    "eslint": "8.53.0"
+    "eslint": "latest"
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "1.1.0",

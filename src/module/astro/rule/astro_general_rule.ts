@@ -1,4 +1,14 @@
+const indent = 2;
+
 const astroGeneralRule = {
+  '@stylistic/jsx-indent': [
+    0,
+    indent,
+    {
+      checkAttributes: false,
+      indentLogicalExpressions: false
+    }
+  ],
   'astro/jsx-a11y/alt-text': 'error',
   'astro/jsx-a11y/anchor-ambiguous-text': 'error',
   'astro/jsx-a11y/anchor-has-content': 'error',

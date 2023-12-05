@@ -9,6 +9,15 @@ const astro =
   rules: {
     ...astroGeneralRule,
     ...astroDisabledRule
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js', '.jsx', '.ts', '.tsx', '.astro'
+        ]
+      }
+    }
   }
 };
 

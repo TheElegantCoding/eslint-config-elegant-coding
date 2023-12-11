@@ -1,5 +1,6 @@
-const stylisticDisabledRule = {
-  'jsx-sort-props': 'off'
+const stylisticDisabledRule =
+{
+  'style/jsx-sort-props': 'off'
 };
 
 export { stylisticDisabledRule };

@@ -66,13 +66,6 @@ const importGeneralRule =
   'import/no-namespace': 'error',
   'import/no-relative-packages': 'error',
   'import/no-self-import': 'error',
-  'import/no-unresolved': [
-    'error',
-    {
-      caseSensitive: true,
-      commonjs: true
-    }
-  ],
   'import/no-useless-path-segments': [ 'error', { commonjs: true }],
   'import/no-webpack-loader-syntax': 'error'
 };

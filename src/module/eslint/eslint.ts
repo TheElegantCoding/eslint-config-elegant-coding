@@ -7,6 +7,20 @@ import { variable } from './rule/variable';
 
 const eslint =
 {
+  languageOptions: {
+    ecmaVersion: 'latest',
+    parserOptions: {
+      ecmaFeatures: {
+        jsx: true
+      },
+      ecmaVersion: 'latest',
+      sourceType: 'module'
+    },
+    sourceType: 'module'
+  },
+  linterOptions: {
+    reportUnusedDisableDirectives: true
+  },
   rules:
   {
     ...disabledRule,

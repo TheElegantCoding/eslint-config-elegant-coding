@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "rootDir": "./src",
     "baseUrl": "./",
     "outDir": "./dist",
+    "paths": {
+      "@global/*": ["src/global/*"],
+      "@module/*": ["src/module/*"]
+    },
     "resolveJsonModule": true,
     "declaration": true,
     "sourceMap": true,
@@ -33,11 +37,11 @@
     "noPropertyAccessFromIndexSignature": false,
     "skipLibCheck": true
   },
-  "include": [
-    "./src/**/*",
-  ],
+  "include": ["./src/**/*"],
   "exclude": [
     "./node_modules/",
-    "./script/**/*"
+    "./script/**/*",
+    "tsup.config.ts",
+    "eslint.config.js"
   ]
 }

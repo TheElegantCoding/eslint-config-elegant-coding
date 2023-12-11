@@ -11,7 +11,14 @@ const importDisabledRule =
   'import/no-relative-parent-imports': 'off',
   'import/no-restricted-paths': 'off',
   'import/no-unassigned-import': 'off',
-  'import/no-unused-modules': 'off',
+  'import/no-unresolved': 'off',
+  'import/no-unused-modules': [
+    'off',
+    {
+      missingExports: true,
+      unusedExports: true
+    }
+  ],
   'import/order': 'off',
   'import/prefer-default-export': 'off',
   'import/unambiguous': 'off'

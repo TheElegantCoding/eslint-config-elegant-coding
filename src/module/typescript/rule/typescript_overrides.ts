@@ -7,7 +7,7 @@ const typescriptOverrides =
     }
   },
   {
-    files: [ '*.ts', '*.tsx' ],
+    files: [ '*.ts', '*.tsx', '*.astro' ],
     rules: {
       'import/named': 'off',
       'import/no-named-as-default-member': 'off',
@@ -18,7 +18,7 @@ const typescriptOverrides =
     files: [ 'env.d.ts' ],
     rules:
     {
-      '@typescript-eslint/consistent-type-definitions': 'off'
+      'ts/consistent-type-definitions': 'off'
     }
   }
 ];

@@ -1,49 +1,74 @@
-import { eslint } from './module/eslint/eslint';
-import { eslintImport } from './module/import/import';
-import { perfectionist } from './module/perfectionist/perfectionist';
-import { promise } from './module/promise/promise';
-import { security } from './module/security/security';
-import { sonar } from './module/sonar/sonar';
-import { stylistic } from './module/stylistic/stylistic';
-import { unicorn } from './module/unicorn/unicorn';
+/* eslint-disable max-statements */
+import { IGNORE } from '@global/constant/ignore';
+import astro from '@module/astro/astro';
+import { eslint } from '@module/eslint/eslint';
+import { github } from '@module/github/gihub';
+import { eslintImport } from '@module/import/import';
+import jsxA11y from '@module/jsx_a11y/jsx_a11y';
+import { node } from '@module/node/node';
+import { perfectionist } from '@module/perfectionist/perfectionist';
+import { promise } from '@module/promise/promise';
+import { qwik } from '@module/qwik/qwik';
+import { security } from '@module/security/security';
+import { solid } from '@module/solid/solid';
+import { sonar } from '@module/sonar/sonar';
+import { stylistic } from '@module/stylistic/stylistic';
+import { typescript } from '@module/typescript/typescript';
+import { unicorn } from '@module/unicorn/unicorn';
 
-const index =
+import type { ConfigurationOption } from '@global/type/configuration_option';
+
+const elegantCoding = (option: ConfigurationOption) =>
 {
-  env:
+  const config = [];
+
+  const generalConfig =
   {
-    amd: false,
-    browser: true,
-    es6: true,
-    jasmine: false,
-    mocha: false,
-    node: true
-  },
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
-  plugins: [
-    ...eslintImport.plugins,
-    ...stylistic.plugins,
-    ...unicorn.plugins,
-    ...sonar.plugins,
-    ...perfectionist.plugins,
-    ...promise.plugins,
-    ...security.plugins
-  ],
-  rules: {
-    ...eslint.rules,
-    ...stylistic.rules,
-    ...eslintImport.rules,
-    ...unicorn.rules,
-    ...sonar.rules,
-    ...perfectionist.rules,
-    ...promise.rules,
-    ...security.rules
-  },
-  settings: {
-    ...eslintImport.settings
+    ignores: [ ...IGNORE, ...option.ignore ?? [] ]
+  };
+
+  config.push(generalConfig,
+    eslint,
+    ...eslintImport,
+    unicorn,
+    perfectionist,
+    promise,
+    github,
+    security,
+    node,
+    sonar);
+
+  if(option.stylistic)
+  {
+    config.push(stylistic);
   }
+
+  if(option.typescript)
+  {
+    config.push(...typescript);
+  }
+
+  if(option.jsxA11y)
+  {
+    config.push(jsxA11y);
+  }
+
+  if(option.qwik)
+  {
+    config.push(qwik);
+  }
+
+  if(option.solid)
+  {
+    config.push(solid);
+  }
+
+  if(option.astro)
+  {
+    config.push(astro);
+  }
+
+  return config;
 };
 
-export = index;
+export default elegantCoding;

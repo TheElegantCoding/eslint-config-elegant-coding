@@ -1,6 +1,5 @@
 /* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
-import astro from '@module/astro/astro';
 import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
 import { eslintImport } from '@module/import/import';
@@ -63,10 +62,12 @@ const elegantCoding = (option: ConfigurationOption) =>
     config.push(solid);
   }
 
-  if(option.astro)
-  {
-    config.push(astro);
-  }
+  /*
+   * if(option.astro)
+   * {
+   *   config.push(astro);
+   * }
+   */
 
   return config;
 };

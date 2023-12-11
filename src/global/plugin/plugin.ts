@@ -8,7 +8,6 @@ export * as pluginSonar from 'eslint-plugin-sonarjs';
 export { default as pluginNode } from 'eslint-plugin-n';
 export { default as pluginQwik } from 'eslint-plugin-qwik';
 export { default as pluginSolid } from 'eslint-plugin-solid';
-export { default as pluginAstro } from 'eslint-plugin-astro';
 export { default as pluginGithub } from 'eslint-plugin-github';
 export { default as parserTs } from '@typescript-eslint/parser';
 export { default as pluginUnicorn } from 'eslint-plugin-unicorn';

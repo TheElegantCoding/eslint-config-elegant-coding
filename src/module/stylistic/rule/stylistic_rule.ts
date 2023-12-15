@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 const indent = 2;
 const maxLength = 120;
 
@@ -413,16 +414,15 @@ const stylisticRule =
   'style/template-curly-spacing': 'error',
   'style/template-tag-spacing': [ 'error', 'always' ],
   'style/type-annotation-spacing': 'error',
+  'style/type-generic-spacing': 'error',
+  'style/type-named-tuple-spacing': 'error',
   'style/wrap-iife': [
     'error',
     'outside',
     { functionPrototypeMethods: false }
   ],
   'style/wrap-regex': 'error',
-  'style/yield-star-spacing': [ 'error', 'after' ],
-  'style/indent-binary-ops': ['error', 2],
-  'style/type-named-tuple-spacing': 'error',
-  'style/type-generic-spacing': 'error'
+  'style/yield-star-spacing': [ 'error', 'after' ]
 };
 
 export { stylisticRule };

@@ -11,7 +11,6 @@ const githubRule =
   'github/get-attribute': 'error',
   'github/no-blur': 'error',
   'github/no-d-none': 'error',
-  'github/no-dataset': 'error',
   'github/no-dynamic-script-tag': 'error',
   'github/no-implicit-buggy-globals': 'error',
   'github/no-inner-html': 'error',

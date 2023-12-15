@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-elegant-coding",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "private": false,
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
@@ -43,6 +43,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch & eslint-flat-config-viewer",
     "postinstall": "git config core.hooksPath ./script/git_hook",
     "type-check": "tsc --pretty --noEmit",

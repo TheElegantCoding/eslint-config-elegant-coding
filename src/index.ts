@@ -2,7 +2,6 @@
 import { IGNORE } from '@global/constant/ignore';
 import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
-import { eslintImport } from '@module/import/import';
 import jsxA11y from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
@@ -28,7 +27,6 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   config.push(generalConfig,
     eslint,
-    ...eslintImport,
     unicorn,
     perfectionist,
     promise,

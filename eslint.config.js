@@ -4,6 +4,5 @@ export default elegantCoding({
   ignore: [],
   typescript: true,
   stylistic: true,
-  jsxA11y: true,
-  astro: true
+  jsxA11y: true
 });

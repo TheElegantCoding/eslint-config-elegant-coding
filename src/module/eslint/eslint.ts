@@ -11,7 +11,7 @@ const eslint =
 {
 
   languageOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 2022,
     globals: {
       ...globals.browser,
       ...globals.es2021,
@@ -24,7 +24,7 @@ const eslint =
       ecmaFeatures: {
         jsx: true
       },
-      ecmaVersion: 'latest',
+      ecmaVersion: 2022,
       sourceType: 'module'
     },
     sourceType: 'module'

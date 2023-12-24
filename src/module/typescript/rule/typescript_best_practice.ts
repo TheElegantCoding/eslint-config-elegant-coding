@@ -91,6 +91,7 @@ const typescriptBestPractice =
   'ts/no-unsafe-enum-comparison': 'error',
   'ts/no-unsafe-member-access': 'error',
   'ts/no-unsafe-return': 'error',
+  'ts/no-unsafe-unary-minus': 'error',
   'ts/no-useless-empty-export': 'error',
   'ts/no-var-requires': 'error',
   'ts/non-nullable-type-assertion-style': 'error',
@@ -115,8 +116,7 @@ const typescriptBestPractice =
   'ts/switch-exhaustiveness-check': 'error',
   'ts/triple-slash-reference': 'error',
   'ts/unbound-method': 'error',
-  'ts/unified-signatures': 'error',
-  'ts/no-unsafe-unary-minus': 'error'
+  'ts/unified-signatures': 'error'
 };
 
 export { typescriptBestPractice };

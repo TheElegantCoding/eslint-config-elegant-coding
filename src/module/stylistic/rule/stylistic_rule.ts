@@ -2,7 +2,7 @@
 const indent = 2;
 const maxLength = 120;
 
-const stylisticRule =
+const stylisticGeneralRule =
 {
   'style/array-bracket-newline': [
     'error',
@@ -158,6 +158,7 @@ const stylisticRule =
     'error',
     {
       afterColon: true,
+      beforeColon: false,
       mode: 'strict'
     }
   ],
@@ -425,4 +426,4 @@ const stylisticRule =
   'style/yield-star-spacing': [ 'error', 'after' ]
 };
 
-export { stylisticRule };
+export { stylisticGeneralRule };

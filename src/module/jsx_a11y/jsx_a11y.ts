@@ -1,4 +1,6 @@
+/* eslint-disable ts/no-unsafe-assignment */
 import { pluginJsxA11y } from '@global/plugin/plugin';
+
 import { jsxA11yGeneralRule } from './rule/jsx_a11y_general_rule';
 
 const jsxA11y =
@@ -13,4 +15,4 @@ const jsxA11y =
   }
 };
 
-export default jsxA11y;
+export { jsxA11y };

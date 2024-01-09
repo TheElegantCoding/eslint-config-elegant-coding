@@ -1,6 +1,5 @@
 {
   "eslint.experimental.useFlatConfig": true,
-  // editor
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -8,22 +7,24 @@
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-
-  // formatting
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
   "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
   "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
   "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-
-  // linter
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "astro",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "html",
+    "json",
+    "jsonc",
+    "json5",
+    "yaml",
+    "github-actions-workflow"
   ],
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
@@ -41,15 +42,15 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   }
 }

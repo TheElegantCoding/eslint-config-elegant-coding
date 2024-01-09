@@ -1,9 +1,8 @@
 import elegantCoding from './dist/index.js';
 
 export default elegantCoding({
-  astro: true,
-  ignore: [],
-  jsxA11y: true,
+  json: true,
   stylistic: true,
-  typescript: true
+  typescript: true,
+  yml: true
 });

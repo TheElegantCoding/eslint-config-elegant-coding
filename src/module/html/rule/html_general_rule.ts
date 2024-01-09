@@ -1,0 +1,40 @@
+const indent = 2;
+
+const htmlGeneralRule =
+{
+  'html/element-newline': 'error',
+  'html/id-naming-convention': 'error',
+  'html/indent': [ 'error', indent ],
+  'html/lowercase': 'error',
+  'html/no-abstract-roles': 'error',
+  'html/no-accesskey-attrs': 'error',
+  'html/no-aria-hidden-body': 'error',
+  'html/no-duplicate-attrs': 'error',
+  'html/no-duplicate-id': 'error',
+  'html/no-extra-spacing-attrs': 'error',
+  'html/no-inline-styles': 'error',
+  'html/no-multiple-empty-lines': [ 'error', { max: 1 }],
+  'html/no-multiple-h1': 'error',
+  'html/no-non-scalable-viewport': 'error',
+  'html/no-obsolete-tags': 'error',
+  'html/no-positive-tabindex': 'error',
+  'html/no-script-style-type': 'error',
+  'html/no-skip-heading-levels': 'error',
+  'html/no-target-blank': 'error',
+  'html/no-trailing-spaces': 'error',
+  'html/quotes': [ 'error', 'single' ],
+  'html/require-closing-tags': 'error',
+  'html/require-doctype': 'error',
+  'html/require-frame-title': 'error',
+  'html/require-img-alt': 'error',
+  'html/require-lang': 'error',
+  'html/require-li-container': 'error',
+  'html/require-meta-charset': 'error',
+  'html/require-meta-description': 'error',
+  'html/require-meta-viewport': 'error',
+  'html/require-open-graph-protocol': 'error',
+  'html/require-title': 'error',
+  'html/sort-attrs': [ 'error', { priority: [] }]
+};
+
+export { htmlGeneralRule };

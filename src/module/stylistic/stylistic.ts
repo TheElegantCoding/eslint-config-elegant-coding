@@ -1,7 +1,6 @@
+import { stylisticDisabledRule } from '@module/stylistic/rule/stylistic_disabled_rule';
+import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_rule';
 import pluginStylistic from '@stylistic/eslint-plugin';
-
-import { stylisticDisabledRule } from './rule/stylistic_disabled_rule.js';
-import { stylisticRule } from './rule/stylistic_rule.js';
 
 const stylistic =
 {
@@ -11,7 +10,7 @@ const stylistic =
   },
   rules:
   {
-    ...stylisticRule,
+    ...stylisticGeneralRule,
     ...stylisticDisabledRule
   }
 };

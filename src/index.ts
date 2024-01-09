@@ -1,9 +1,11 @@
 /* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
-import astro from '@module/astro/astro';
+import { astro } from '@module/astro/astro';
 import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
-import jsxA11y from '@module/jsx_a11y/jsx_a11y';
+import { html } from '@module/html/html';
+import { json } from '@module/json/json';
+import { jsxA11y } from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
 import { promise } from '@module/promise/promise';
@@ -14,6 +16,7 @@ import { sonar } from '@module/sonar/sonar';
 import { stylistic } from '@module/stylistic/stylistic';
 import { typescript } from '@module/typescript/typescript';
 import { unicorn } from '@module/unicorn/unicorn';
+import { yml } from '@module/yml/yml';
 
 import type { ConfigurationOption } from '@global/type/configuration_option';
 
@@ -44,6 +47,21 @@ const elegantCoding = (option: ConfigurationOption) =>
   if(option.typescript)
   {
     config.push(...typescript);
+  }
+
+  if(option.html)
+  {
+    config.push(html);
+  }
+
+  if(option.json)
+  {
+    config.push(...json);
+  }
+
+  if(option.yml)
+  {
+    config.push(yml);
   }
 
   if(option.jsxA11y)

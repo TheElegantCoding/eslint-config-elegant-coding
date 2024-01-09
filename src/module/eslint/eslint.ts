@@ -9,10 +9,11 @@ import { variable } from './rule/variable';
 
 const eslint =
 {
-
-  languageOptions: {
+  languageOptions:
+  {
     ecmaVersion: 2022,
-    globals: {
+    globals:
+    {
       ...globals.browser,
       ...globals.es2021,
       ...globals.node,

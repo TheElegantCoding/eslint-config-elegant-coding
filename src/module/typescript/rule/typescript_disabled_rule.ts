@@ -10,6 +10,7 @@ const typescriptDisabledRule =
   'ts/prefer-enum-initializers': 'off',
   'ts/prefer-readonly-parameter-types': [ 'off', { ignoreInferredTypes: true }],
   'ts/prefer-ts-expect-error': 'off',
+  'ts/require-array-sort-compare': 'off',
   'ts/sort-type-constituents': 'off',
   'ts/strict-boolean-expressions': 'off',
   'ts/typedef': 'off'

@@ -1,8 +1,9 @@
 type ConfigurationOption =
 {
   readonly qwik?: boolean;
+  readonly html?: boolean;
   readonly solid?: boolean;
-  // readonly astro?: boolean;
+  readonly astro?: boolean;
   readonly ignore?: string[];
   readonly jsxA11y?: boolean;
   readonly stylistic?: boolean;

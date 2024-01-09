@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    // language and environment
     "target": "ESNext",
+
+    // modules
     "module": "ESNext",
     "moduleResolution": "node",
-    "rootDir": "./src",
+    "rootDir": "./",
     "baseUrl": "./",
     "outDir": "./dist",
     "paths": {
@@ -11,14 +14,20 @@
       "@module/*": ["src/module/*"]
     },
     "resolveJsonModule": true,
+
+    // emit
     "declaration": true,
     "sourceMap": true,
     "removeComments": true,
-    "noEmit": false,
+    "noEmit": true,
     "newLine": "lf",
+
+    // interop constraints
     "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+
+    // type checking
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -35,13 +44,13 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": false,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    // completeness
     "skipLibCheck": true
   },
-  "include": ["./src/**/*"],
-  "exclude": [
-    "./node_modules/",
-    "./script/**/*",
-    "tsup.config.ts",
-    "eslint.config.js"
-  ]
+  // files
+  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx"],
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
 }

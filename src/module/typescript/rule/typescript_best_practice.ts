@@ -93,6 +93,7 @@ const typescriptBestPractice =
   'ts/no-unsafe-return': 'error',
   'ts/no-unsafe-unary-minus': 'error',
   'ts/no-useless-empty-export': 'error',
+  'ts/no-useless-template-literals': 'error',
   'ts/no-var-requires': 'error',
   'ts/non-nullable-type-assertion-style': 'error',
   'ts/parameter-properties': 'error',

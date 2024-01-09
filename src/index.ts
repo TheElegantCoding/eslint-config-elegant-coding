@@ -1,7 +1,9 @@
 /* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
+import astro from '@module/astro/astro';
 import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
+import { html } from '@module/html/html';
 import jsxA11y from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
@@ -40,6 +42,11 @@ const elegantCoding = (option: ConfigurationOption) =>
     config.push(stylistic);
   }
 
+  if(option.solid)
+  {
+    config.push(html);
+  }
+
   if(option.typescript)
   {
     config.push(...typescript);
@@ -60,12 +67,10 @@ const elegantCoding = (option: ConfigurationOption) =>
     config.push(solid);
   }
 
-  /*
-   * if(option.astro)
-   * {
-   *   config.push(astro);
-   * }
-   */
+  if(option.astro)
+  {
+    config.push(astro);
+  }
 
   return config;
 };

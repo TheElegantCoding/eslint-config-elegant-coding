@@ -1,9 +1,5 @@
 /* eslint-disable ts/no-unsafe-assignment */
-import {
-  parserTs,
-  parserAstro,
-  pluginAstro
-} from '@global/plugin/plugin';
+import { parserTs, parserAstro, pluginAstro } from '@global/plugin/plugin';
 
 import { astroDisabledRule } from './rule/astro_disabled_rule';
 import { astroGeneralRule } from './rule/astro_general_rule';

@@ -54,15 +54,7 @@ const astroGeneralRule = {
       omitLastInOneLineBlock: false
     }
   ],
-  'astro/valid-compile': 'error',
-  'style/jsx-indent': [
-    0,
-    indent,
-    {
-      checkAttributes: false,
-      indentLogicalExpressions: false
-    }
-  ]
+  'astro/valid-compile': 'error'
 };
 
 export { astroGeneralRule };

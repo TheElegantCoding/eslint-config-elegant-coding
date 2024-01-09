@@ -51,6 +51,12 @@
     "skipLibCheck": true
   },
   // files
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx"],
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.js",
+    "./**/*.jsx",
+    "./**/*.astro"
+  ],
   "exclude": ["node_modules", "**/node_modules/*", "dist"]
 }

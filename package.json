@@ -40,7 +40,6 @@
     "preinstall": "npx only-allow pnpm",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch & eslint-flat-config-viewer",
-    "postinstall": "git config core.hooksPath ./script/git_hook",
     "type-check": "tsc --pretty --noEmit",
     "lint": "pnpm lint-eslint",
     "lint-eslint": "eslint . --fix "

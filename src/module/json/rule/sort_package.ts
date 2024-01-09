@@ -76,7 +76,8 @@ const sortPackageJson = [
           ],
           pathPattern: '^exports.*$'
         }
-      ]
+      ],
+      'jsonc/auto': 'off'
     }
   }
 ];

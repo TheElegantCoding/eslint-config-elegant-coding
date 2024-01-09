@@ -5,7 +5,6 @@ const jsonGeneralRule =
   'json/array-bracket-newline': stylisticGeneralRule['style/array-bracket-newline'],
   'json/array-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing'],
   'json/array-element-newline': stylisticGeneralRule['style/array-element-newline'],
-  'json/auto': 'error',
   'json/comma-dangle': stylisticGeneralRule['style/comma-dangle'],
   'json/comma-style': stylisticGeneralRule['style/comma-style'],
   'json/indent': stylisticGeneralRule['style/indent'],

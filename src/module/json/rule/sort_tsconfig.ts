@@ -110,7 +110,8 @@ const sortTsconfig =
           ],
           pathPattern: '^compilerOptions$'
         }
-      ]
+      ],
+      'jsonc/auto': 'off'
     }
   }
 ];

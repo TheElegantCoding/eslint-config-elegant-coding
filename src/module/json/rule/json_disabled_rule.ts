@@ -1,5 +1,6 @@
 const jsonDisabledRule =
 {
+  'json/auto': 'off',
   'json/key-name-casing': [
     'off',
     {

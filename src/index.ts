@@ -34,7 +34,7 @@ const elegantCoding = (option: ConfigurationOption) =>
     unicorn,
     perfectionist,
     promise,
-    github,
+    ...github,
     security,
     node,
     sonar);

@@ -1,19 +1,21 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { pluginGithub } from '@global/plugin/plugin';
+import { githubDisabledRule } from '@module/github/rule/github_disabled_rule';
+import { githubOverride } from '@module/github/rule/github_override';
+import { githubRule } from '@module/github/rule/github_rule';
 
-import { githubDisabledRule } from './rule/github_disabled_rule';
-import { githubRule } from './rule/github_rule';
-
-const github =
-{
-  plugins:
+const github = [
   {
-    github: pluginGithub
+    plugins:
+    {
+      github: pluginGithub
+    },
+    rules: {
+      ...githubRule,
+      ...githubDisabledRule
+    }
   },
-  rules: {
-    ...githubRule,
-    ...githubDisabledRule
-  }
-};
+  ...githubOverride
+];
 
 export { github };

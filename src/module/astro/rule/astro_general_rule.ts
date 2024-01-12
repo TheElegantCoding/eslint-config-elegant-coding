@@ -1,5 +1,3 @@
-const indent = 2;
-
 const astroGeneralRule = {
   'astro/jsx-a11y/alt-text': 'error',
   'astro/jsx-a11y/anchor-ambiguous-text': 'error',
@@ -42,8 +40,6 @@ const astroGeneralRule = {
   'astro/no-deprecated-astro-fetchcontent': 'error',
   'astro/no-deprecated-astro-resolve': 'error',
   'astro/no-deprecated-getentrybyslug': 'error',
-  'astro/no-set-html-directive': 'error',
-  'astro/no-set-text-directive': 'error',
   'astro/no-unused-css-selector': 'error',
   'astro/no-unused-define-vars-in-style': 'error',
   'astro/prefer-class-list-directive': 'error',

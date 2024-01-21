@@ -1,6 +1,6 @@
 const qwikDisabledRule =
 {
-  'qwik/jsx-img': 'error'
+  'qwik/jsx-img': 'off'
 };
 
 export { qwikDisabledRule };

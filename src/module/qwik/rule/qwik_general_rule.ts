@@ -1,7 +1,6 @@
 const qwikGeneralRule =
 {
   'qwik/jsx-a': 'error',
-  'qwik/jsx-img': 'error',
   'qwik/jsx-key': 'error',
   'qwik/jsx-no-script-url': 'error',
   'qwik/loader-location': 'error',

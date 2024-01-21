@@ -1,7 +1,7 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { pluginQwik } from '@global/plugin/plugin';
-
-import { qwikGeneralRule } from './rule/qwik_general_rule';
+import { qwikDisabledRule } from '@module/qwik/rule/qwik_disabled_rule';
+import { qwikGeneralRule } from '@module/qwik/rule/qwik_general_rule';
 
 const qwik =
 {
@@ -10,7 +10,8 @@ const qwik =
     qwik: pluginQwik
   },
   rules: {
-    ...qwikGeneralRule
+    ...qwikGeneralRule,
+    ...qwikDisabledRule
   }
 };
 

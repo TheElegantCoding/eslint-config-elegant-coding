@@ -11,7 +11,8 @@ const typescriptOverrides =
     rules: {
       'import/named': 'off',
       'import/no-named-as-default-member': 'off',
-      'import/no-unresolved': 'off'
+      'import/no-unresolved': 'off',
+      'no-duplicate-imports': 'off'
     }
   },
   {

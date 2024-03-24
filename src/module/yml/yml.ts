@@ -1,6 +1,7 @@
-import { parserYml, pluginYml } from '@global/plugin/plugin';
 import { ymlDisabledRule } from '@module/yml/rule/yml_disabled_rule';
 import { ymlGeneralRule } from '@module/yml/rule/yml_general_rule';
+import pluginYml from 'eslint-plugin-yml';
+import parserYml from 'yaml-eslint-parser';
 
 const yml =
 {

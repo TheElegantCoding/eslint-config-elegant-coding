@@ -4,6 +4,7 @@ import { astro } from '@module/astro/astro';
 import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
 import { html } from '@module/html/html';
+import { imports } from '@module/import/import';
 import { json } from '@module/json/json';
 import { jsxA11y } from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
@@ -31,7 +32,8 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   config.push(generalConfig,
     eslint,
-    unicorn,
+    imports,
+    ...unicorn,
     perfectionist,
     promise,
     ...github,

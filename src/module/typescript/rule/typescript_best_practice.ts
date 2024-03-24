@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-null */
 const typescriptBestPractice =
 {
   'ts/array-type': 'error',
@@ -46,6 +47,7 @@ const typescriptBestPractice =
       ]
     }
   ],
+  'ts/no-array-delete': 'error',
   'ts/no-base-to-string': 'error',
   'ts/no-confusing-non-null-assertion': 'error',
   'ts/no-confusing-void-expression': 'error',
@@ -98,6 +100,7 @@ const typescriptBestPractice =
   'ts/non-nullable-type-assertion-style': 'error',
   'ts/parameter-properties': 'error',
   'ts/prefer-as-const': 'error',
+  'ts/prefer-find': 'error',
   'ts/prefer-for-of': 'error',
   'ts/prefer-function-type': 'error',
   'ts/prefer-includes': 'error',

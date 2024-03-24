@@ -1,5 +1,5 @@
 /* eslint-disable ts/no-unsafe-assignment */
-import { parserTs, pluginTs } from '@global/plugin/plugin';
+import { parserTs, pluginTs } from '@global/plugin/plugin.js';
 
 import { typescriptBestPractice } from './rule/typescript_best_practice.js';
 import { typescriptDisabledRule } from './rule/typescript_disabled_rule.js';

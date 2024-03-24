@@ -18,7 +18,6 @@ const jsxA11yGeneralRule =
   'jsx-a11y/img-redundant-alt': 'error',
   'jsx-a11y/interactive-supports-focus': 'error',
   'jsx-a11y/lang': 'error',
-  'jsx-a11y/media-has-caption': 'error',
   'jsx-a11y/mouse-events-have-key-events': 'error',
   'jsx-a11y/no-access-key': 'error',
   'jsx-a11y/no-aria-hidden-on-focusable': 'error',

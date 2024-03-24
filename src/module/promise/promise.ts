@@ -1,4 +1,6 @@
+/* eslint-disable ts/no-unsafe-assignment */
 import { pluginPromise } from '@global/plugin/plugin';
+
 import { promiseGeneralRule } from './rule/promise_general_rule';
 
 const promise =

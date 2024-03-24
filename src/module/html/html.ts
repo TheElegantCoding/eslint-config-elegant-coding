@@ -1,5 +1,6 @@
 /* eslint-disable ts/no-unsafe-assignment */
-import { parserHtml, pluginHtml } from '@global/plugin/plugin';
+import pluginHtml from '@html-eslint/eslint-plugin';
+import parserHtml from '@html-eslint/parser';
 import { htmlDisabledRule } from '@module/html/rule/html_disabled_rule';
 import { htmlGeneralRule } from '@module/html/rule/html_general_rule';
 

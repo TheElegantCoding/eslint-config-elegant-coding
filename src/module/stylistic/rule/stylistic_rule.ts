@@ -92,7 +92,6 @@ const stylisticGeneralRule =
     }
   ],
   'style/jsx-equals-spacing': 'error',
-
   'style/jsx-first-prop-new-line': [ 'error', 'multiline-multiprop' ],
   'style/jsx-indent': [
     indent,
@@ -102,6 +101,7 @@ const stylisticGeneralRule =
       indentLogicalExpressions: true
     }
   ],
+
   'style/jsx-indent-props': [
     indent,
     {
@@ -124,6 +124,7 @@ const stylisticGeneralRule =
     }
   ],
   'style/jsx-one-expression-per-line': [ 'error', { allow: 'single-child' }],
+  'style/jsx-pascal-case': 'error',
   'style/jsx-props-no-multi-spaces': 'error',
   'style/jsx-quotes': [ 'error', 'prefer-single' ],
   'style/jsx-self-closing-comp': [
@@ -208,9 +209,7 @@ const stylisticGeneralRule =
       ignoreUrls: true
     }
   ],
-
   'style/max-statements-per-line': [ 'error', { max: 1 }],
-
   'style/member-delimiter-style': 'error',
   'style/multiline-ternary': [ 'error', 'always-multiline' ],
   'style/new-parens': 'error',
@@ -302,7 +301,6 @@ const stylisticGeneralRule =
   ],
   'style/object-curly-spacing': [ 'error', 'always' ],
   'style/object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: false }],
-
   'style/one-var-declaration-per-line': [ 'error', 'initializations' ],
   'style/operator-linebreak': [ 'error', 'after' ],
   'style/padded-blocks': [
@@ -378,7 +376,6 @@ const stylisticGeneralRule =
   ],
   'style/quotes': [ 'error', 'single' ],
   'style/rest-spread-spacing': [ 'error', 'never' ],
-
   'style/semi': [ 'error', 'always' ],
   'style/semi-spacing': [
     'error',

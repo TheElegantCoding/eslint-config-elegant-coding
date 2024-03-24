@@ -1,25 +1,19 @@
 /* eslint-disable ts/no-unsafe-assignment */
-import { parserTs, parserAstro, pluginAstro } from '@global/plugin/plugin';
+import { parserTs } from '@global/plugin/plugin';
+import parserAstro from 'astro-eslint-parser';
+import pluginAstro from 'eslint-plugin-astro';
 
 import { astroDisabledRule } from './rule/astro_disabled_rule';
 import { astroGeneralRule } from './rule/astro_general_rule';
-
-const indent = 2;
 
 const astro =
 {
   files: [ '**/*.astro' ],
   languageOptions: {
-    globals: {
-      'astro/astro': true,
-      es2020: true,
-      node: true
-    },
     parser: parserAstro,
     parserOptions: {
       extraFileExtensions: [ '.astro' ],
-      parser: parserTs,
-      sourceType: 'module'
+      parser: parserTs
     }
   },
   plugins:
@@ -30,9 +24,11 @@ const astro =
   {
     ...astroGeneralRule,
     ...astroDisabledRule,
-    'style/indent': [ 'error', indent ],
+    'style/indent': 'off',
+    'style/jsx-closing-tag-location': 'off',
     'style/jsx-indent': 'off',
-    'style/jsx-one-expression-per-line': 'off'
+    'style/jsx-one-expression-per-line': 'off',
+    'style/no-multiple-empty-lines': 'off'
   }
 };
 

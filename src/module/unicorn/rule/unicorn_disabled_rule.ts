@@ -4,6 +4,7 @@ const unicornDisabledRule =
   'unicorn/no-array-for-each': 'off',
   'unicorn/no-array-reduce': 'off',
   'unicorn/no-keyword-prefix': 'off',
+  'unicorn/numeric-separators-style': 'off',
   'unicorn/prefer-module': 'off',
   'unicorn/prefer-set-has': 'off'
 };

@@ -18,7 +18,6 @@ const astroGeneralRule = {
   'astro/jsx-a11y/interactive-supports-focus': 'error',
   'astro/jsx-a11y/label-has-associated-control': 'error',
   'astro/jsx-a11y/lang': 'error',
-  'astro/jsx-a11y/media-has-caption': 'error',
   'astro/jsx-a11y/mouse-events-have-key-events': 'error',
   'astro/jsx-a11y/no-access-key': 'error',
   'astro/jsx-a11y/no-aria-hidden-on-focusable': 'error',

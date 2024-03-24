@@ -10,6 +10,7 @@ const yml =
   {
     parser: parserYml
   },
+  name: 'yml',
   plugins:
   {
     yml: pluginYml

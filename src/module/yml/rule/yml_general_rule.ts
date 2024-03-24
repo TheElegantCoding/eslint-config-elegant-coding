@@ -1,4 +1,4 @@
-import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_rule';
+import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_general_rule';
 
 const indent = 2;
 

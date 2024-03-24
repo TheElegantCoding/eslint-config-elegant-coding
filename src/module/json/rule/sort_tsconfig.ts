@@ -2,6 +2,7 @@ const sortTsconfig =
 [
   {
     files: [ '**/tsconfig.json', '**/tsconfig.*.json' ],
+    name: 'json:sort-tsconfig',
     rules:
     {
       'json/sort-keys': [

@@ -1,10 +1,9 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { parserTs } from '@global/plugin/plugin';
+import { astroDisabledRule } from '@module/astro/rule/astro_disabled_rule';
+import { astroGeneralRule } from '@module/astro/rule/astro_general_rule';
 import parserAstro from 'astro-eslint-parser';
 import pluginAstro from 'eslint-plugin-astro';
-
-import { astroDisabledRule } from './rule/astro_disabled_rule';
-import { astroGeneralRule } from './rule/astro_general_rule';
 
 const astro =
 {
@@ -16,6 +15,7 @@ const astro =
       parser: parserTs
     }
   },
+  name: 'astro',
   plugins:
   {
     astro: pluginAstro

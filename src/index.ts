@@ -1,10 +1,10 @@
 /* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
 import { astro } from '@module/astro/astro';
-import { eslint } from '@module/eslint/eslint';
 import { github } from '@module/github/gihub';
 import { html } from '@module/html/html';
 import { imports } from '@module/import/import';
+import { javascript } from '@module/javascript/javascript';
 import { json } from '@module/json/json';
 import { jsxA11y } from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
@@ -27,15 +27,16 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   const generalConfig =
   {
-    ignores: [ ...IGNORE, ...option.ignore ?? [] ]
+    ignores: [ ...IGNORE, ...option.ignore ?? [] ],
+    name: 'ignores'
   };
 
   config.push(generalConfig,
-    eslint,
+    javascript,
     imports,
     ...unicorn,
     perfectionist,
-    promise,
+    ...promise,
     ...github,
     security,
     node,

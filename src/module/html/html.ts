@@ -1,4 +1,3 @@
-/* eslint-disable ts/no-unsafe-assignment */
 import pluginHtml from '@html-eslint/eslint-plugin';
 import parserHtml from '@html-eslint/parser';
 import { htmlDisabledRule } from '@module/html/rule/html_disabled_rule';
@@ -11,6 +10,7 @@ const html =
   {
     parser: parserHtml
   },
+  name: 'html',
   plugins:
   {
     html: pluginHtml

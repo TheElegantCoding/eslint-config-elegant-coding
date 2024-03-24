@@ -5,13 +5,15 @@ import { sortTsconfig } from '@module/json/rule/sort_tsconfig';
 import pluginJson from 'eslint-plugin-jsonc';
 import parserJson from 'jsonc-eslint-parser';
 
-const json = [
+const json =
+[
   {
     files: [ '**/*.json', '**/*.json5', '**/*.jsonc' ],
     languageOptions:
     {
       parser: parserJson
     },
+    name: 'json',
     plugins:
     {
       json: pluginJson

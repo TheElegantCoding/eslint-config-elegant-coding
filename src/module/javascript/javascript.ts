@@ -1,13 +1,12 @@
+import { bestPractice } from '@module/javascript/rule/best_practice';
+import { disabledRule } from '@module/javascript/rule/disabled_rule';
+import { error } from '@module/javascript/rule/error';
+import { strict } from '@module/javascript/rule/strict';
+import { style } from '@module/javascript/rule/style';
+import { variable } from '@module/javascript/rule/variable';
 import globals from 'globals';
 
-import { bestPractice } from './rule/best_practice';
-import { disabledRule } from './rule/disabled_rule';
-import { error } from './rule/error';
-import { strict } from './rule/strict';
-import { style } from './rule/style';
-import { variable } from './rule/variable';
-
-const eslint =
+const javascript =
 {
   languageOptions:
   {
@@ -33,6 +32,7 @@ const eslint =
   linterOptions: {
     reportUnusedDisableDirectives: true
   },
+  name: 'javascript',
   rules:
   {
     ...disabledRule,
@@ -44,4 +44,4 @@ const eslint =
   }
 };
 
-export { eslint };
+export { javascript };

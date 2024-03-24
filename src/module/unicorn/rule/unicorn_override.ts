@@ -1,10 +1,11 @@
 const unicornOverride =
 [
   {
-    files: [ '**/pages/*.astro' ],
+    files: [ '**/pages/*' ],
+    name: 'unicorn:pages',
     rules: {
       'unicorn/filename-case': [
-        'error',
+        'off',
         {
           cases:
           {

@@ -4,8 +4,10 @@ import { githubDisabledRule } from '@module/github/rule/github_disabled_rule';
 import { githubOverride } from '@module/github/rule/github_override';
 import { githubRule } from '@module/github/rule/github_rule';
 
-const github = [
+const github =
+[
   {
+    name: 'github',
     plugins:
     {
       github: pluginGithub

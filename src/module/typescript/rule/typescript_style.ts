@@ -1,6 +1,6 @@
-import { bestPractice } from '../../eslint/rule/best_practice';
-import { error } from '../../eslint/rule/error';
-import { style } from '../../eslint/rule/style';
+import { bestPractice } from '@module/javascript/rule/best_practice';
+import { error } from '@module/javascript/rule/error';
+import { style } from '@module/javascript/rule/style';
 
 const typescriptStyle =
 {

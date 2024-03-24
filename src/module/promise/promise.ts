@@ -1,17 +1,21 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { pluginPromise } from '@global/plugin/plugin';
-
-import { promiseGeneralRule } from './rule/promise_general_rule';
+import { promiseGeneralRule } from '@module/promise/rule/promise_general_rule';
+import { promiseOverride } from '@module/promise/rule/promise_override';
 
 const promise =
-{
-  plugins:
+[
   {
-    promise: pluginPromise
+    name: 'promise',
+    plugins:
+    {
+      promise: pluginPromise
+    },
+    rules: {
+      ...promiseGeneralRule
+    }
   },
-  rules: {
-    ...promiseGeneralRule
-  }
-};
+  ...promiseOverride
+];
 
 export { promise };

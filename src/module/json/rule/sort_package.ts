@@ -1,6 +1,8 @@
-const sortPackageJson = [
+const sortPackageJson =
+[
   {
     files: [ '**/package.json' ],
+    name: 'json:sort-package-json',
     rules: {
       'json/sort-array-values': [
         'error',

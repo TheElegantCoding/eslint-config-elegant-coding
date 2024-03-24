@@ -1,10 +1,10 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { pluginSecurity } from '@global/plugin/plugin';
-
-import { securityGeneralRule } from './rule/security_general_rule.js';
+import { securityGeneralRule } from '@module/security/rule/security_general_rule';
 
 const security =
 {
+  name: 'security',
   plugins:
   {
     security: pluginSecurity

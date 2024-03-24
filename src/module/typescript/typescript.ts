@@ -1,10 +1,9 @@
 /* eslint-disable ts/no-unsafe-assignment */
 import { parserTs, pluginTs } from '@global/plugin/plugin.js';
-
-import { typescriptBestPractice } from './rule/typescript_best_practice.js';
-import { typescriptDisabledRule } from './rule/typescript_disabled_rule.js';
-import { typescriptOverrides } from './rule/typescript_overrides.js';
-import { typescriptStyle } from './rule/typescript_style.js';
+import { typescriptBestPractice } from '@module/typescript/rule/typescript_best_practice';
+import { typescriptDisabledRule } from '@module/typescript/rule/typescript_disabled_rule';
+import { typescriptOverrides } from '@module/typescript/rule/typescript_overrides';
+import { typescriptStyle } from '@module/typescript/rule/typescript_style';
 
 const typescript =
 [
@@ -17,6 +16,7 @@ const typescript =
         sourceType: 'module'
       }
     },
+    name: 'typescript',
     plugins: {
       ts: pluginTs
     },

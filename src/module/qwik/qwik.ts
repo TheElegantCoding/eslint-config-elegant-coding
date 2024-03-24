@@ -5,6 +5,7 @@ import { qwikGeneralRule } from '@module/qwik/rule/qwik_general_rule';
 
 const qwik =
 {
+  name: 'qwik',
   plugins:
   {
     qwik: pluginQwik

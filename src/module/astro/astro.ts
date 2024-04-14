@@ -24,6 +24,7 @@ const astro =
   {
     ...astroGeneralRule,
     ...astroDisabledRule,
+    'promise/no-native': 'off',
     'style/indent': 'off',
     'style/jsx-closing-tag-location': 'off',
     'style/jsx-indent': 'off',

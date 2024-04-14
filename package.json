@@ -2,7 +2,7 @@
   "name": "eslint-config-elegant-coding",
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "7.0.3",
+  "version": "7.0.4",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -32,10 +32,9 @@
   "types": "./dist/index.d.ts",
   "files": [ "./dist" ],
   "engines": {
-    "npm": "please-use-bum",
-    "yarn": "please-use-bum",
-    "pnpm": "please-use-bum",
-    "bun": ">=1.1.3"
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": ">=8.0.0"
   },
   "scripts": {
     "preinstall": "npx only-allow bun",

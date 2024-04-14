@@ -2,7 +2,7 @@
   "name": "eslint-config-elegant-coding",
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -32,12 +32,13 @@
   "types": "./dist/index.d.ts",
   "files": [ "./dist" ],
   "engines": {
-    "npm": "please-use-pnpm",
-    "yarn": "please-use-pnpm",
-    "pnpm": ">=8.6.1"
+    "npm": "please-use-bum",
+    "yarn": "please-use-bum",
+    "pnpm": "please-use-bum",
+    "bun": ">=1.1.3"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch & eslint-flat-config-viewer",
     "type-check": "tsc --pretty --noEmit",
@@ -48,36 +49,35 @@
     "eslint": ">=8.40.0"
   },
   "dependencies": {
-    "@html-eslint/eslint-plugin": "0.24.0",
-    "@html-eslint/parser": "0.24.0",
+    "@html-eslint/eslint-plugin": "0.24.1",
+    "@html-eslint/parser": "0.24.1",
     "@stylistic/eslint-plugin": "1.7.0",
-    "@typescript-eslint/eslint-plugin": "7.3.1",
-    "@typescript-eslint/parser": "7.3.1",
-    "astro-eslint-parser": "0.16.3",
-    "eslint-plugin-astro": "0.32.0",
+    "@typescript-eslint/eslint-plugin": "7.6.0",
+    "@typescript-eslint/parser": "7.6.0",
+    "astro-eslint-parser": "0.17.0",
+    "eslint-plugin-astro": "0.34.0",
     "eslint-plugin-github": "4.10.2",
-    "eslint-plugin-import-x": "^0.4.1",
-    "eslint-plugin-jsonc": "2.14.1",
+    "eslint-plugin-import-x": "0.5.0",
+    "eslint-plugin-jsonc": "2.15.1",
     "eslint-plugin-jsx-a11y": "6.8.0",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-perfectionist": "2.7.0",
+    "eslint-plugin-n": "17.2.0",
+    "eslint-plugin-perfectionist": "2.9.0",
     "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-qwik": "1.5.1",
-    "eslint-plugin-security": "2.1.1",
+    "eslint-plugin-qwik": "1.5.2",
+    "eslint-plugin-security": "3.0.0",
     "eslint-plugin-solid": "0.13.2",
-    "eslint-plugin-sonarjs": "0.24.0",
-    "eslint-plugin-unicorn": "51.0.1",
-    "eslint-plugin-yml": "1.13.2",
-    "globals": "^14.0.0",
+    "eslint-plugin-sonarjs": "0.25.1",
+    "eslint-plugin-unicorn": "52.0.0",
+    "eslint-plugin-yml": "1.14.0",
+    "globals": "^15.0.0",
     "jsonc-eslint-parser": "2.4.0",
     "yaml-eslint-parser": "1.2.2"
   },
   "devDependencies": {
-    "@eslint-types/typescript-eslint": "7.2.0",
-    "@types/eslint": "8.56.6",
+    "@types/eslint": "8.56.9",
     "eslint": "8.57.0",
-    "eslint-flat-config-viewer": "0.1.14",
+    "eslint-flat-config-viewer": "0.1.20",
     "tsup": "8.0.2",
-    "typescript": "5.4.3"
+    "typescript": "5.4.5"
   }
 }

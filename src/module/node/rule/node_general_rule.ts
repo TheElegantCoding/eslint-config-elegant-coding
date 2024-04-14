@@ -29,7 +29,7 @@ const nodeGeneralRule =
   'node/prefer-promises/dns': 'error',
   'node/prefer-promises/fs': 'error',
   'node/process-exit-as-throw': 'error',
-  'node/shebang': 'error'
+  'node/prefer-node-protocol': 'error'
 };
 
 export { nodeGeneralRule };

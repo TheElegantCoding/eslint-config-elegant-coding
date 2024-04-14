@@ -44,7 +44,6 @@ const typescriptStyle =
   'ts/no-redeclare': error['no-redeclare'],
   'ts/no-restricted-imports': error['no-restricted-imports'],
   'ts/no-shadow': error['no-shadow'],
-  'ts/no-throw-literal': error['no-throw-literal'],
   'ts/no-unused-expressions': [ 'error', { enforceForJSX: true }],
   'ts/no-unused-vars': error['no-unused-vars'],
   'ts/no-use-before-define': error['no-use-before-define'],

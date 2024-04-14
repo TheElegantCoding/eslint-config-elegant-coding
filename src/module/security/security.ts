@@ -1,4 +1,3 @@
-/* eslint-disable ts/no-unsafe-assignment */
 import { pluginSecurity } from '@global/plugin/plugin';
 import { securityGeneralRule } from '@module/security/rule/security_general_rule';
 

@@ -1,4 +1,3 @@
-/* eslint-disable ts/no-unsafe-assignment */
 import { pluginNode } from '@global/plugin/plugin';
 import { nodeDisabledRule } from '@module/node/rule/node_disabled_rule';
 import { nodeGeneralRule } from '@module/node/rule/node_general_rule';

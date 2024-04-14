@@ -71,6 +71,13 @@ const perfectionistGeneralRule =
       type: 'line-length'
     }
   ],
+  'perfectionist/sort-intersection-types': [
+    'error',
+    {
+      order: 'asc',
+      type: 'line-length'
+    }
+  ],
   'perfectionist/sort-jsx-props': [
     'error',
     {
@@ -114,13 +121,6 @@ const perfectionistGeneralRule =
     }
   ],
   'perfectionist/sort-union-types': [
-    'error',
-    {
-      order: 'asc',
-      type: 'line-length'
-    }
-  ],
-  'perfectionist/sort-intersection-types': [
     'error',
     {
       order: 'asc',

@@ -27,8 +27,7 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   const generalConfig =
   {
-    ignores: [ ...IGNORE, ...option.ignore ?? [] ],
-    name: 'ignores'
+    ignores: [ ...IGNORE, ...option.ignore ?? [] ]
   };
 
   config.push(generalConfig,

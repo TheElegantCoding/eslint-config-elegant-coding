@@ -2,7 +2,7 @@
   "name": "eslint-config-elegant-coding",
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "7.0.4",
+  "version": "7.0.5",
   "keywords": [
     "eslint",
     "eslintconfig",

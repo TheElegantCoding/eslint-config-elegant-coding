@@ -2,7 +2,7 @@
   "name": "eslint-config-elegant-coding",
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "7.0.5",
+  "version": "7.0.6",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -37,7 +37,6 @@
     "pnpm": ">=8.0.0"
   },
   "scripts": {
-    "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch & eslint-flat-config-viewer",
     "type-check": "tsc --pretty --noEmit",

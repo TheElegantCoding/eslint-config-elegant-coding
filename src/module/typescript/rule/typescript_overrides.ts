@@ -1,14 +1,14 @@
 const typescriptOverrides =
 [
   {
-    files: [ 'vite.config.ts', 'vite.config.js', 'astro.config.mjs' ],
+    files: [ 'vite.config.ts', 'vite.config.js' ],
     name: 'typescript:vite',
     rules: {
       'import/no-anonymous-default-export': 'off'
     }
   },
   {
-    files: [ '*.ts', '*.tsx', '*.astro' ],
+    files: [ '*.ts', '*.tsx' ],
     name: 'typescript:import',
     rules: {
       'import/named': 'off',

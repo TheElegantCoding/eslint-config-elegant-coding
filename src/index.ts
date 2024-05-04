@@ -33,10 +33,10 @@ const elegantCoding = (option: ConfigurationOption) =>
   config.push(generalConfig,
     javascript,
     imports,
-    ...unicorn,
+    unicorn,
     perfectionist,
-    ...promise,
-    ...github,
+    promise,
+    github,
     security,
     node,
     sonar);
@@ -83,7 +83,7 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   if(option.astro)
   {
-    config.push(astro);
+    config.push(...astro);
   }
 
   return config;

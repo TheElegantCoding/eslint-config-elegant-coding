@@ -1,6 +1,6 @@
-import { pluginSonar } from '@global/plugin/plugin.js';
 import { sonarDisabledRule } from '@module/sonar/rule/sonar_disabled_rule';
 import { sonarGeneralRule } from '@module/sonar/rule/sonar_general_rule';
+import pluginSonar from 'eslint-plugin-sonarjs';
 
 const sonar =
 {

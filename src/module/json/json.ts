@@ -1,7 +1,6 @@
 import { jsonDisabledRule } from '@module/json/rule/json_disabled_rule';
 import { jsonGeneralRule } from '@module/json/rule/json_general_rule';
-import { sortPackageJson } from '@module/json/rule/sort_package';
-import { sortTsconfig } from '@module/json/rule/sort_tsconfig';
+import { jsonOverride } from '@module/json/rule/json_override';
 import pluginJson from 'eslint-plugin-jsonc';
 import parserJson from 'jsonc-eslint-parser';
 
@@ -24,8 +23,7 @@ const json =
       ...jsonDisabledRule
     }
   },
-  ...sortPackageJson,
-  ...sortTsconfig
+  ...jsonOverride
 ];
 
 export { json };

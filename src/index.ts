@@ -32,7 +32,7 @@ const elegantCoding = (option: ConfigurationOption) =>
 
   config.push(generalConfig,
     javascript,
-    imports,
+    ...imports,
     unicorn,
     perfectionist,
     promise,

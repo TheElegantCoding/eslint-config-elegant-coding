@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "rootDir": "./",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "paths": {
       "@global/*": [ "src/global/*" ],
       "@module/*": [ "src/module/*" ]

@@ -7,9 +7,9 @@ const github =
 {
   name: 'github',
   plugins:
-    {
-      github: pluginGithub
-    },
+  {
+    github: pluginGithub
+  },
   rules: {
     ...githubRule,
     ...githubDisabledRule

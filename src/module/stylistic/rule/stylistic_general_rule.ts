@@ -93,6 +93,8 @@ const stylisticGeneralRule =
   ],
   'style/jsx-equals-spacing': 'error',
   'style/jsx-first-prop-new-line': [ 'error', 'multiline-multiprop' ],
+  'style/jsx-function-call-newline': [ 'error', 'multiline' ],
+
   'style/jsx-indent': [
     indent,
     indent,
@@ -101,7 +103,6 @@ const stylisticGeneralRule =
       indentLogicalExpressions: true
     }
   ],
-
   'style/jsx-indent-props': [
     indent,
     {

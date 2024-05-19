@@ -43,7 +43,8 @@ const astroGeneralRule = {
   'astro/no-unused-css-selector': 'error',
   'astro/no-unused-define-vars-in-style': 'error',
   'astro/prefer-class-list-directive': 'error',
-  'astro/semi': [
+  'astro/semi':
+  [
     'error',
     'always',
     {

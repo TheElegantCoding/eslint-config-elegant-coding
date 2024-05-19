@@ -1,7 +1,7 @@
 const typescriptOverrides =
 [
   {
-    files: [ 'env.d.ts' ],
+    files: [ '**/env.d.ts' ],
     name: 'typescript:definitions',
     rules:
     {

@@ -52,5 +52,8 @@
   },
   "[yaml]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-issue-forms.json": "file:///c%3A/Users/luism/Desktop/codernaut/project/eslint-config-elegant-coding/.github/ISSUE_TEMPLATE/config.yml"
   }
 }

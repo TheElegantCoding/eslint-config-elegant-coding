@@ -1,3 +1,5 @@
+import { typescriptDisableTypeAware } from '@module/typescript/rule/typescript_disable_type_aware';
+
 const astroOverride =
 [
   {
@@ -9,10 +11,18 @@ const astroOverride =
     }
   },
   {
-    files: [ '**/*.astro' ],
+    files: [
+      '**/*.astro',
+      '*.astro',
+      '**/*.astro/*.js',
+      '*.astro/*.js',
+      '**/*.astro/*.ts',
+      '*.astro/*.ts'
+    ],
     name: 'astro:style',
     rules:
     {
+      'style/eol-last': 'off',
       'style/indent': 'off',
       'style/jsx-closing-tag-location': 'off',
       'style/jsx-indent': 'off',
@@ -43,7 +53,7 @@ const astroOverride =
   },
   {
     files: [ 'astro.config.mjs' ],
-    name: 'astro-config:import',
+    name: 'astro:import:config',
     rules: {
       'import/no-anonymous-default-export': 'off'
     }
@@ -66,6 +76,14 @@ const astroOverride =
           }
         }
       ]
+    }
+  },
+  {
+    files: [ '**/*.astro/*.ts', '*.astro/*.ts' ],
+    name: 'astro:typescript',
+    rules:
+    {
+      ...typescriptDisableTypeAware
     }
   }
 ];

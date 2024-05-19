@@ -18,7 +18,7 @@ const style =
       position: 'above'
     }
   ],
-  'multiline-comment-style': [ 'error', 'starred-block' ],
+  'multiline-comment-style': [ 'error', 'bare-block' ],
   'new-cap': [
     'error',
     {

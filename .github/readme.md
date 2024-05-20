@@ -67,8 +67,8 @@ The configuration enforces consistent coding style and best practices, making yo
 
 <h2 id="requirements">⚡️ Requirements</h2>
 
-* node >= **18.16.0**
-* eslint >= **8.40**
+- node >= **18.16.0**
+- eslint >= **8.40**
 
 <p align="right">(<a href="#eslint-config-elegant-coding">back to top</a>)</p>
 

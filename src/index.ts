@@ -11,6 +11,7 @@ import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
 import { promise } from '@module/promise/promise';
 import { qwik } from '@module/qwik/qwik';
+import { regex } from '@module/regex/regex';
 import { security } from '@module/security/security';
 import { solid } from '@module/solid/solid';
 import { sonar } from '@module/sonar/sonar';
@@ -39,7 +40,8 @@ const elegantCoding = (option: ConfigurationOption) =>
     github,
     security,
     node,
-    sonar);
+    sonar,
+    regex);
 
   if(option.stylistic)
   {

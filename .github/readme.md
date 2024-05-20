@@ -90,6 +90,18 @@ pnpm i -D eslint eslint-config-elegant-coding
 bun i -D eslint eslint-config-elegant-coding
 ```
 
+<h3><img src="./asset/yarn.svg" width="20px"/> Yarn</h3>
+
+```bash
+yarn i -D eslint eslint-config-elegant-coding
+```
+
+<h3><img src="./asset/npm.svg" width="20px"/> Npm</h3>
+
+```bash
+npm i -D eslint eslint-config-elegant-coding
+```
+
 <p align="right">(<a href="#eslint-config-elegant-coding">back to top</a>)</p>
 
 ---

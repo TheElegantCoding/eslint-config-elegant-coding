@@ -1,6 +1,7 @@
 <img src="./asset/cover.svg" alt="cover" width="100%" align="center" />
 <br />
 <h1 id="eslint-config-elegant-coding">⚙️ Eslint elegant coder configuration</h1>
+
 ---
 
 <pre align="center">
@@ -28,11 +29,11 @@ The configuration enforces consistent coding style and best practices, making yo
 
 ## 📚 Table of content
 
-* [📝 About](#about)
+- [📝 About](#about)
 - [🛰️ Features](#features)
-* [⚡️ Requirements](#requirements)
-* [📦 Installation](#installation)
-* [🚀 Usage](#usage)
+- [⚡️ Requirements](#requirements)
+- [📦 Installation](#installation)
+- [🚀 Usage](#usage)
 - [⚙️ Configuration](#configuration)
 
 <p align="right">(<a href="#eslint-config-elegant-coding">back to top</a>)</p>
@@ -41,28 +42,26 @@ The configuration enforces consistent coding style and best practices, making yo
 
 <h2 id="features">🛰️ Features</h2>
 
-- <img src="./asset/eslint.svg" width="16px"/> `Eslint` - Eslint linter
-- `⚙️ Eslint` - Eslint Linter
-- `🦾 Typescript` -  Enforce type safety and code clarity with a robust set of ESLint rules for TypeScript projects.
-- `🌌 Astro` - Astro rules to prevent errors and enforce best practices in your Astro components.
-- `🕹️ Git` - Github eslint standard rules
-- `Html` -
-- `Import` -
-- `Javascript` -
-- `Json` -
-- `Jsx a11y` -
-- `Node` -
-- `Perfectionist` -
-- `Promise` -
-- `Qwik` -
-- `Regex` -
-- `Security` -
-- `Solid` -
-- `Sonar` -
-- `Stylistic` -
-- `Typescript` -
-- `Unicorn` -
-- `Yaml` -
+- <img src="./asset/eslint.svg" width="20px"/> `Eslint` - Eslint linter
+- <img src="./asset/astro.svg" width="20px"/> `Astro` - Catch errors and write awesome Astro components!
+- <img src="./asset/github.svg" width="20px"/> `Github` - Github rules for javascript errors
+- <img src="./asset/html.svg" width="20px"/> `Html` - Keep your HTML files tidy and consistent.
+- <img src="./asset/import.svg" width="20px"/> `Import` - Make your imports easy to find and manage.
+- <img src="./asset/javascript.svg" width="20px"/> `Javascript` - Write clean and maintainable JavaScript code.
+- <img src="./asset/json.svg" width="20px"/> `Json` - Ensure your JSON data is well-structured.
+- <img src="./asset/a11y.svg" width="20px"/> `Jsx a11y` -  Write code that's accessible to everyone.
+- <img src="./asset/node.svg" width="20px"/> `Node` - Follow recommended practices for Node.js environments.
+- <img src="./asset/perfectionist.svg" width="20px"/> `Perfectionist` -  Go beyond the basics with stricter code quality checks.
+- <img src="./asset/promise.svg" width="20px"/> `Promise` - Write clear and easy-to-understand promises.
+- <img src="./asset/qwik.svg" width="20px"/> `Qwik` - Build high-quality Qwik components.
+- <img src="./asset/regex.svg" width="20px"/> `Regex` - Craft powerful and maintainable regular expressions.
+- <img src="./asset/security.svg" width="20px"/> `Security` - Identify potential security vulnerabilities.
+- <img src="./asset/solid.svg" width="20px"/> `Solid` -  Write robust Solid components with confidence.
+- <img src="./asset/sonar.svg" width="20px"/> `Sonar` - Sonar eslint rules for javascript
+- <img src="./asset/stylistic.svg" width="20px"/> `Stylistic` - Improve readability and maintainability with stylistic rules.
+- <img src="./asset/typescript.svg" width="20px"/> `Typescript` -  Enforce type safety and keep your code clear.
+- <img src="./asset/unicorn.svg" width="20px"/> `Unicorn` - Leverage advanced rules for an extra quality boost.
+- <img src="./asset/yml.svg" width="20px"/> `Yaml` - Keep your YAML files clean and consistent.
 
 ---
 
@@ -79,13 +78,13 @@ The configuration enforces consistent coding style and best practices, making yo
 
 Run this command to install eslint and the plugin.
 
-### 📦 Pnpm
+<h3><img src="./asset/pnpm.svg" width="20px"/> Pnpm</h3>
 
 ```bash
 pnpm i -D eslint eslint-config-elegant-coding
 ```
 
-### 📦 Bun
+<h3><img src="./asset/bun.svg" width="20px"/> Bun</h3>
 
 ```bash
 bun i -D eslint eslint-config-elegant-coding
@@ -151,4 +150,3 @@ Extra settings that can be added.
 ```
 
 <p align="right">(<a href="#eslint-config-elegant-coding">back to top</a>)</p>
-

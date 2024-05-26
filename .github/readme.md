@@ -18,9 +18,9 @@
 <br />
 
 <div align="center">
-  <img src="./asset/badget/eslint_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/bun_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/github_badget.svg" height="36px" />
+  <img src="./asset/badget/eslint_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/bun_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/github_badget.svg" height="32px" />
 </div>
 
 ---
@@ -38,7 +38,12 @@ This GitHub repository offers a powerful ESLint configuration to elevate your co
 
 The configuration enforces consistent coding style and best practices, making your codebase easier to understand, modify, and collaborate on in the long run. It's built to be adaptable, allowing you to fine-tune the rules to your project's specific needs. Leverage a curated set of pre-configured ESLint rules, easily add or remove rules for further customization, and benefit from clear documentation that explains the reasoning behind each rule.
 
-<p align="right">(<a href="#eslint-config-elegant-coding">⬆️ back to top</a>)</p>
+<p align="right">
+  ( <a href="#eslint-config-elegant-coding">
+    <img src="./asset/icon/arrow_up.svg" width="20px" align="center" />
+    Back to top
+  </a> )
+</p>
 </td>
 </tr>
 </table>
@@ -92,6 +97,13 @@ The configuration enforces consistent coding style and best practices, making yo
 - <img src="./asset/icon/unicorn.svg" width="24px" align="center" /> `Unicorn` - Leverage advanced rules for an extra quality boost.
 - <img src="./asset/icon/yml.svg" width="24px" align="center" /> `Yaml` - Keep your YAML files clean and consistent.
 
+<p align="right">
+  ( <a href="#eslint-config-elegant-coding">
+    <img src="./asset/icon/arrow_up.svg" width="20px" align="center" />
+    Back to top
+  </a> )
+</p>
+
 ---
 
 <h2 id="requirements">
@@ -100,7 +112,7 @@ The configuration enforces consistent coding style and best practices, making yo
 </h2>
 
 - <img src="./asset/icon/node.svg" width="20px" align="center" /> node >= **18.16.0**
-- <img src="./asset/icon/eslint.svg" width="20px"  align="center" /> eslint >= **8.40**
+- <img src="./asset/icon/eslint.svg" width="20px" align="center" /> eslint >= **8.40**
 
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">
@@ -223,7 +235,6 @@ Extra settings that can be added.
     Back to top
   </a> )
 </p>
-
 
 ---
 

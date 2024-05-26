@@ -1,7 +1,7 @@
-<img src="./asset/illustration/wave_header.svg" alt="wave" width="100%" align="center"/>
+<img src="./asset/illustration/wave_header.svg" width="100%" align="center"/>
 
 <h1 id="eslint-config-elegant-coding">
-  <img src="./asset/icon/gear.svg" alt="Gear icon" width="20px" />
+  <img src="./asset/icon/gear.svg" width="32px" align="center" />
   Eslint elegant coder configuration
 </h1>
 
@@ -13,18 +13,20 @@
 
 ---
 
-<img src="./asset/icon/cover.svg" alt="cover" width="100%" align="center" />
+<img src="./asset/icon/cover.svg" width="100%" align="center" />
 
 <br />
 
 <div align="center">
-  <img src="./asset/badget/eslint_badget.svg" height="32px" />
+  <img src="./asset/badget/eslint_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/bun_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/github_badget.svg" height="32px" />
 </div>
 
 ---
 
 <h2 id="about">
-  <img src="./asset/icon/information.svg" alt="Information icon" width="20px" />
+  <img src="./asset/icon/information.svg" width="24px" align="center"/>
   About
 </h2>
 
@@ -44,7 +46,7 @@ The configuration enforces consistent coding style and best practices, making yo
 ---
 
 <h2>
-  <img src="./asset/icon/book.svg" alt="Book icon" width="20px" />
+  <img src="./asset/icon/book.svg" width="20px" />
   Table of content
 </h2>
 
@@ -60,7 +62,7 @@ The configuration enforces consistent coding style and best practices, making yo
 ---
 
 <h2 id="features">
-  <img src="./asset/icon/satellite.svg" alt="Satellite icon" width="20px" />
+  <img src="./asset/icon/satellite.svg" width="20px" />
   Features
 </h2>
 
@@ -88,7 +90,7 @@ The configuration enforces consistent coding style and best practices, making yo
 ---
 
 <h2 id="requirements">
-  <img src="./asset/icon/thunder.svg" alt="Thunder icon" width="20px" />
+  <img src="./asset/icon/thunder.svg" width="20px" />
   Requirements
 </h2>
 
@@ -100,7 +102,7 @@ The configuration enforces consistent coding style and best practices, making yo
 ---
 
 <h2 id="installation">
-  <img src="./asset/icon/package.svg" alt="Package icon" width="20px" />
+  <img src="./asset/icon/package.svg" width="20px" />
   Installation
 </h2>
 
@@ -112,7 +114,7 @@ Run this command to install eslint and the plugin.
 bun i -D eslint eslint-config-elegant-coding
 ```
 
-<h3><img src="./asset/icon/pnpm.svg" width="20px"/> Pnpm</h3>
+<h3><img src="./asset/icon/pnpm.svg" width="20px" align="center"/> Pnpm</h3>
 
 ```bash
 pnpm i -D eslint eslint-config-elegant-coding
@@ -135,7 +137,7 @@ npm i -D eslint eslint-config-elegant-coding
 ---
 
 <h2 id="usage">
-  <img src="./asset/icon/rocket.svg" alt="Rocket icon" width="20px" />
+  <img src="./asset/icon/rocket.svg" width="20px" />
   Usage
 </h2>
 
@@ -152,7 +154,7 @@ To use this plugin put in your repositorie you need to create an `eslint.config.
 ---
 
 <h2 id="configuration">
-  <img src="./asset/icon/gear.svg" alt="Gear icon" width="20px" />
+  <img src="./asset/icon/gear.svg" width="20px" />
   Configuration
 </h2>
 
@@ -195,7 +197,9 @@ Extra settings that can be added.
   });
 ```
 
-<p align="right">(<a href="#eslint-config-elegant-coding">back to top</a>)</p>
+<pre align="right">
+  (<a href="#eslint-config-elegant-coding"><img src="./asset/icon/arrow_up.svg" width="24px" align="center"/> Back to top</a>)
+</pre>
 
 
-<img src="./asset/illustration/wave_footer.svg" alt="wave" width="100%" align="center"/>
+<img src="./asset/illustration/wave_footer.svg" width="100%" align="center"/>

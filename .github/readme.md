@@ -18,9 +18,9 @@
 <br />
 
 <div align="center">
-  <img src="./asset/badget/eslint_badget.svg" height="40px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/bun_badget.svg" height="40px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/github_badget.svg" height="40px" />
+  <img src="./asset/badget/eslint_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/bun_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/github_badget.svg" height="36px" />
 </div>
 
 ---
@@ -50,12 +50,12 @@ The configuration enforces consistent coding style and best practices, making yo
   Table of content
 </h2>
 
-- [<img src="./asset/icon/information.svg" width="16px" align="center" /> About](#about)
-- [<img src="./asset/icon/satellite.svg" width="16px" align="center" /> Features](#features)
-- [<img src="./asset/icon/thunder.svg" width="16px" align="center" /> Requirements](#requirements)
-- [<img src="./asset/icon/package.svg" width="16px" align="center" /> Installation](#installation)
-- [<img src="./asset/icon/rocket.svg" width="16px" align="center" /> Usage](#usage)
-- [<img src="./asset/icon/gear.svg" width="16px" align="center" /> Configuration](#configuration)
+- [<img src="./asset/icon/information.svg" width="20px" align="center" /> About](#about)
+- [<img src="./asset/icon/satellite.svg" width="20px" align="center" /> Features](#features)
+- [<img src="./asset/icon/thunder.svg" width="20px" align="center" /> Requirements](#requirements)
+- [<img src="./asset/icon/package.svg" width="20px" align="center" /> Installation](#installation)
+- [<img src="./asset/icon/rocket.svg" width="20px" align="center" /> Usage](#usage)
+- [<img src="./asset/icon/gear.svg" width="20px" align="center" /> Configuration](#configuration)
 
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">
@@ -99,8 +99,8 @@ The configuration enforces consistent coding style and best practices, making yo
   Requirements
 </h2>
 
-- <img src="./asset/icon/node.svg" width="16px" align="center" /> node >= **18.16.0**
-- <img src="./asset/icon/eslint.svg" width="16px"  align="center" /> eslint >= **8.40**
+- <img src="./asset/icon/node.svg" width="20px" align="center" /> node >= **18.16.0**
+- <img src="./asset/icon/eslint.svg" width="20px"  align="center" /> eslint >= **8.40**
 
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">
@@ -224,5 +224,13 @@ Extra settings that can be added.
   </a> )
 </p>
 
+
+---
+
+<pre align="center">
+  Copyright © All rights reserved,
+  developed by ElegantCoder and
+  <img src="./asset/illustration/astralys_logo.svg" width="120px" align="center" />
+</pre>
 
 <img src="./asset/illustration/wave_footer.svg" width="100%" align="center" />

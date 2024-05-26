@@ -13,7 +13,7 @@
 
 ---
 
-<img src="./asset/icon/cover.svg" width="100%" align="center" />
+<img src="./asset/illustration/cover.svg" width="100%" align="center" />
 
 <br />
 

@@ -230,7 +230,9 @@ Extra settings that can be added.
 <pre align="center">
   Copyright © All rights reserved,
   developed by ElegantCoder and
-  <img src="./asset/illustration/astralys_logo.svg" width="120px" align="center" />
 </pre>
+<div align="center">
+  <img src="./asset/illustration/astralys_logo.svg" width="120px" align="center" />
+</div>
 
 <img src="./asset/illustration/wave_footer.svg" width="100%" align="center" />

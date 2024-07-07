@@ -21,6 +21,7 @@ const typescriptDisableTypeAware: Linter.RulesRecord =
   'ts/no-unnecessary-boolean-literal-compare': 'off',
   'ts/no-unnecessary-condition': 'off',
   'ts/no-unnecessary-qualifier': 'off',
+  'ts/no-unnecessary-template-expression': 'off',
   'ts/no-unnecessary-type-arguments': 'off',
   'ts/no-unnecessary-type-assertion': 'off',
   'ts/no-unsafe-argument': 'off',

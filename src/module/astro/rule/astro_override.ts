@@ -47,7 +47,9 @@ const astroOverride: Linter.FlatConfig[] =
   {
     files: [ 'astro.config.mjs' ],
     name: 'astro:import:config',
-    rules: {
+    rules:
+    {
+      'import/exports-last': 'off',
       'import/no-anonymous-default-export': 'off'
     }
   },

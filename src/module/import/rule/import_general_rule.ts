@@ -18,12 +18,14 @@ const importGeneralRule: Linter.RulesRecord =
   'import/no-deprecated': 'error',
   'import/no-duplicates': [ 'error', { 'prefer-inline': false } ],
   'import/no-empty-named-blocks': 'error',
-  'import/no-extraneous-dependencies': [
+  'import/no-extraneous-dependencies':
+  [
     'error',
     {
       bundledDependencies: false,
       devDependencies: [
         '**/test/**',
+        '**/script/**',
         '**/tests/**',
         '**/spec/**',
         '**/__tests__/**',
@@ -52,7 +54,8 @@ const importGeneralRule: Linter.RulesRecord =
         '**/protractor.conf.{js,cjs,mjs,ts,cts,mts}',
         '**/protractor.conf.*.{js,cjs,mjs,ts,cts,mts}',
         '**/karma.conf.{js,cjs,mjs,ts,cts,mts}',
-        '**/.eslint.config.{js,cjs,mjs,ts,cts,mts}',
+        '**/eslint.config.{js,cjs,mjs,ts,cts,mts}',
+        '**/astro.config.{js,cjs,mjs,ts,cts,mts}',
         '**/tsup.config.{js,cjs,mjs,ts,cts,mts}'
       ],
       includeTypes: true,

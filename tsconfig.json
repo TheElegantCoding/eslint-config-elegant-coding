@@ -39,9 +39,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": [
-    "./**/*.ts",
-    "./**/*.js"
-  ],
+  "include": [ "./**/*.ts", "./**/*.js" ],
   "exclude": [ "node_modules", "dist" ]
 }

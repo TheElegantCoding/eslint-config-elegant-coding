@@ -6,7 +6,7 @@ const importDisabledRule: Linter.RulesRecord =
   'import/max-dependencies': 'off',
   'import/no-commonjs': 'off',
   'import/no-default-export': 'off',
-  'import/no-dynamic-require': [ 'off', { esmodule: true }],
+  'import/no-dynamic-require': [ 'off', { esmodule: true } ],
   'import/no-internal-modules': 'off',
   'import/no-named-export': 'off',
   'import/no-nodejs-modules': 'off',

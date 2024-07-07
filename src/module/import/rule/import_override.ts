@@ -7,7 +7,8 @@ const importOverride: Linter.FlatConfig[] =
     [
       'vite.config.ts',
       'vite.config.js',
-      'eslint.config.js'
+      'eslint.config.js',
+      'tsup.config.ts'
     ],
     name: 'import:vite',
     rules:

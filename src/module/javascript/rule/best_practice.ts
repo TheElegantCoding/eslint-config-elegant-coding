@@ -7,7 +7,7 @@ const maxStatements = 10;
 const bestPractice: Linter.RulesRecord =
 {
   'accessor-pairs': 'error',
-  'array-callback-return': [ 'error', { allowImplicit: true }],
+  'array-callback-return': [ 'error', { allowImplicit: true } ],
   'class-methods-use-this': [
     'error',
     {
@@ -46,7 +46,7 @@ const bestPractice: Linter.RulesRecord =
   ],
   'grouped-accessor-pairs': 'error',
   'guard-for-in': 'error',
-  'id-length': [ 'error', { min: 2 }],
+  'id-length': [ 'error', { min: 2 } ],
   'init-declarations': 'error',
   'logical-assignment-operators': [
     'error',
@@ -63,8 +63,8 @@ const bestPractice: Linter.RulesRecord =
       skipComments: true
     }
   ],
-  'max-nested-callbacks': [ 'error', { max: 3 }],
-  'max-params': [ 'error', { max: 4 }],
+  'max-nested-callbacks': [ 'error', { max: 3 } ],
+  'max-params': [ 'error', { max: 4 } ],
   'max-statements': [ 'error', maxStatements ],
   'object-shorthand': [
     'error',
@@ -109,8 +109,8 @@ const bestPractice: Linter.RulesRecord =
   'prefer-numeric-literals': 'error',
   'prefer-object-has-own': 'error',
   'prefer-object-spread': 'error',
-  'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true }],
-  'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true }],
+  'prefer-promise-reject-errors': [ 'error', { allowEmptyReject: true } ],
+  'prefer-regex-literals': [ 'error', { disallowRedundantWrapping: true } ],
   'prefer-rest-params': 'error',
   'prefer-spread': 'error',
   'prefer-template': 'error',
@@ -120,7 +120,7 @@ const bestPractice: Linter.RulesRecord =
   'require-yield': 'error',
   'symbol-description': 'error',
   'use-isnan': 'error',
-  'valid-typeof': [ 'error', { requireStringLiterals: true }],
+  'valid-typeof': [ 'error', { requireStringLiterals: true } ],
   yoda: 'error'
 };
 

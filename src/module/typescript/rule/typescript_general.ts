@@ -65,7 +65,7 @@ const typescriptGeneralRule: Linter.RulesRecord =
   'ts/no-shadow': error['no-shadow']!,
   'ts/no-unnecessary-qualifier': 'error',
   'ts/no-unsafe-unary-minus': 'error',
-  'ts/no-unused-expressions': [ 'error', { enforceForJSX: true }],
+  'ts/no-unused-expressions': [ 'error', { enforceForJSX: true } ],
   'ts/no-use-before-define': error['no-use-before-define']!,
   'ts/no-useless-empty-export': 'error',
   'ts/only-throw-error': 'error',

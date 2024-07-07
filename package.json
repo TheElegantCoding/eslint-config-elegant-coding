@@ -6,7 +6,7 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.0.1",
+  "version": "9.0.2",
   "repository":
   {
     "type": "git",
@@ -32,7 +32,6 @@
     "code-style"
   ],
   "type": "module",
-  "packageManager": "bun@1.1.18",
   "exports":
   {
     ".":

@@ -111,7 +111,7 @@ const stylisticGeneralRule: Linter.RulesRecord =
       prevent: true
     }
   ],
-  'style/jsx-one-expression-per-line': [ 'error', { allow: 'single-child' }],
+  'style/jsx-one-expression-per-line': [ 'error', { allow: 'single-child' } ],
   'style/jsx-pascal-case': 'error',
   'style/jsx-props-no-multi-spaces': 'error',
   'style/jsx-quotes': [ 'error', 'prefer-single' ],
@@ -204,13 +204,13 @@ const stylisticGeneralRule: Linter.RulesRecord =
       ignoreUrls: true
     }
   ],
-  'style/max-statements-per-line': [ 'error', { max: 1 }],
+  'style/max-statements-per-line': [ 'error', { max: 1 } ],
   'style/member-delimiter-style': 'error',
   'style/multiline-comment-style': [ 'error', 'bare-block' ],
   'style/multiline-ternary': [ 'error', 'always-multiline' ],
   'style/new-parens': 'error',
-  'style/newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 3 }],
-  'style/no-confusing-arrow': [ 'error', { allowParens: true }],
+  'style/newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 3 } ],
+  'style/no-confusing-arrow': [ 'error', { allowParens: true } ],
   'style/no-extra-parens': [
     'error',
     'all',
@@ -296,7 +296,7 @@ const stylisticGeneralRule: Linter.RulesRecord =
     }
   ],
   'style/object-curly-spacing': [ 'error', 'always' ],
-  'style/object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: false }],
+  'style/object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: false } ],
   'style/one-var-declaration-per-line': [ 'error', 'initializations' ],
   'style/operator-linebreak': [
     'error',

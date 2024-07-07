@@ -4,7 +4,7 @@ const error: Linter.RulesRecord =
 {
   'constructor-super': 'error',
   'for-direction': 'error',
-  'getter-return': [ 'error', { allowImplicit: true }],
+  'getter-return': [ 'error', { allowImplicit: true } ],
   'no-alert': 'error',
   'no-array-constructor': 'error',
   'no-async-promise-executor': 'error',
@@ -31,7 +31,7 @@ const error: Linter.RulesRecord =
   'no-dupe-keys': 'error',
   'no-duplicate-case': 'error',
   'no-duplicate-imports': 'error',
-  'no-else-return': [ 'error', { allowElseIf: false }],
+  'no-else-return': [ 'error', { allowElseIf: false } ],
   'no-empty': 'error',
   'no-empty-character-class': 'error',
   'no-empty-function': 'error',
@@ -48,7 +48,7 @@ const error: Linter.RulesRecord =
   'no-func-assign': 'error',
   'no-global-assign': 'error',
   'no-implicit-coercion': 'error',
-  'no-implicit-globals': [ 'error', { lexicalBindings: true }],
+  'no-implicit-globals': [ 'error', { lexicalBindings: true } ],
   'no-implied-eval': 'error',
   'no-import-assign': 'error',
   'no-inline-comments': 'error',
@@ -241,12 +241,12 @@ const error: Linter.RulesRecord =
   ],
   'no-unexpected-multiline': 'error',
   'no-unmodified-loop-condition': 'error',
-  'no-unneeded-ternary': [ 'error', { defaultAssignment: false }],
+  'no-unneeded-ternary': [ 'error', { defaultAssignment: false } ],
   'no-unreachable': 'error',
-  'no-unreachable-loop': [ 'error', { ignore: [] }],
+  'no-unreachable-loop': [ 'error', { ignore: [] } ],
   'no-unsafe-finally': 'error',
-  'no-unsafe-negation': [ 'error', { enforceForOrderingRelations: false }],
-  'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true }],
+  'no-unsafe-negation': [ 'error', { enforceForOrderingRelations: false } ],
+  'no-unsafe-optional-chaining': [ 'error', { disallowArithmeticOperators: true } ],
   'no-unused-expressions': [
     'error',
     {
@@ -257,7 +257,7 @@ const error: Linter.RulesRecord =
   ],
   'no-unused-labels': 'error',
   'no-unused-private-class-members': 'error',
-  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_' }],
+  'no-unused-vars': [ 'error', { argsIgnorePattern: '^_' } ],
   'no-use-before-define': [
     'error',
     {

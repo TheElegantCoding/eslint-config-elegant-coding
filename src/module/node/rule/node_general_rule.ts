@@ -20,7 +20,14 @@ const nodeGeneralRule: Linter.RulesRecord =
   'node/no-unpublished-require': 'error',
   'node/no-unsupported-features/es-builtins': 'error',
   'node/no-unsupported-features/es-syntax': 'error',
-  'node/no-unsupported-features/node-builtins': [ 'error', { ignores: [ 'navigator' ] } ],
+  'node/no-unsupported-features/node-builtins':
+  [
+    'error',
+    {
+      ignores: [ 'navigator' ],
+      version: '21.2.0'
+    }
+  ],
   'node/prefer-global/buffer': [ 'error', 'always' ],
   'node/prefer-global/console': [ 'error', 'always' ],
   'node/prefer-global/process': [ 'error', 'always' ],

@@ -5,7 +5,8 @@ import type { Linter } from 'eslint';
 const astroOverride: Linter.FlatConfig[] =
 [
   {
-    files: [
+    files:
+    [
       '**/*.astro',
       '*.astro',
       '**/*.astro/*.js',
@@ -38,7 +39,9 @@ const astroOverride: Linter.FlatConfig[] =
   {
     files: [ '**/*.astro' ],
     name: 'astro:import',
-    rules: {
+    rules:
+    {
+      'import/exports-last': 'off',
       'import/named': 'off',
       'import/no-named-as-default-member': 'off',
       'import/no-unresolved': 'off'
@@ -49,12 +52,17 @@ const astroOverride: Linter.FlatConfig[] =
     name: 'astro:import:config',
     rules:
     {
-      'import/exports-last': 'off',
       'import/no-anonymous-default-export': 'off'
     }
   },
   {
-    files: [ '**/pages/*.astro', '**/pages/**/*.astro' ],
+    files:
+    [
+      '**/pages/*.astro',
+      '**/pages/**/*.astro',
+      '**/api/*.astro',
+      '**/api/**/*.astro'
+    ],
     name: 'astro:unicorn',
     rules:
     {

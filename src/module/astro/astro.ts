@@ -6,7 +6,9 @@ import parserAstro from 'astro-eslint-parser';
 import pluginAstro from 'eslint-plugin-astro';
 import globals from 'globals';
 
-const astro =
+import type { Linter } from 'eslint';
+
+const astro: Linter.FlatConfig[] =
 [
   {
     name: 'astro',

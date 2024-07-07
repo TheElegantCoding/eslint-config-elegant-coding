@@ -1,4 +1,6 @@
-const error =
+import type { Linter } from 'eslint';
+
+const error: Linter.RulesRecord =
 {
   'constructor-super': 'error',
   'for-direction': 'error',

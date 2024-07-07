@@ -1,4 +1,6 @@
-const typescriptOverrides =
+import type { Linter } from 'eslint';
+
+const typescriptOverrides: Linter.FlatConfig[] =
 [
   {
     files: [ '**/env.d.ts' ],

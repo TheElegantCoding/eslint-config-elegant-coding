@@ -1,4 +1,6 @@
-const disabledRule =
+import type { Linter } from 'eslint';
+
+const disabledRule: Linter.RulesRecord =
 {
   'capitalized-comments': 'off',
   'id-denylist': 'off',

@@ -1,4 +1,6 @@
-const qwikGeneralRule =
+import type { Linter } from 'eslint';
+
+const qwikGeneralRule: Linter.RulesRecord =
 {
   'qwik/jsx-a': 'error',
   'qwik/jsx-key': 'error',

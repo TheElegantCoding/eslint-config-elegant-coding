@@ -3,7 +3,9 @@ import parserHtml from '@html-eslint/parser';
 import { htmlDisabledRule } from '@module/html/rule/html_disabled_rule';
 import { htmlGeneralRule } from '@module/html/rule/html_general_rule';
 
-const html =
+import type { Linter } from 'eslint';
+
+const html: Linter.FlatConfig =
 {
   files: [ '**/*.html' ],
   languageOptions:
@@ -13,9 +15,10 @@ const html =
   name: 'html',
   plugins:
   {
-    html: pluginHtml
+    html: pluginHtml as unknown as Plugin
   },
-  rules: {
+  rules:
+  {
     ...htmlGeneralRule,
     ...htmlDisabledRule
   }

@@ -6,7 +6,9 @@ import { style } from '@module/javascript/rule/style';
 import { variable } from '@module/javascript/rule/variable';
 import globals from 'globals';
 
-const javascript =
+import type { Linter } from 'eslint';
+
+const javascript: Linter.FlatConfig =
 {
   languageOptions:
   {
@@ -35,10 +37,10 @@ const javascript =
   name: 'javascript',
   rules:
   {
+    ...strict,
     ...disabledRule,
     ...style,
     ...error,
-    ...strict,
     ...bestPractice,
     ...variable
   }

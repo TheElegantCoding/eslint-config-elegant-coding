@@ -1,4 +1,6 @@
-const nodeDisabledRule =
+import type { Linter } from 'eslint';
+
+const nodeDisabledRule: Linter.RulesRecord =
 {
   'node/file-extension-in-import': [ 'off', 'always' ],
   'node/no-missing-import': 'off',

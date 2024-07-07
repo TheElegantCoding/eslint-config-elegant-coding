@@ -3,14 +3,17 @@ import { pluginQwik } from '@global/plugin/plugin';
 import { qwikDisabledRule } from '@module/qwik/rule/qwik_disabled_rule';
 import { qwikGeneralRule } from '@module/qwik/rule/qwik_general_rule';
 
-const qwik =
+import type { Linter } from 'eslint';
+
+const qwik: Linter.FlatConfig =
 {
   name: 'qwik',
   plugins:
   {
     qwik: pluginQwik
   },
-  rules: {
+  rules:
+  {
     ...qwikGeneralRule,
     ...qwikDisabledRule
   }

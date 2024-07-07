@@ -8,7 +8,9 @@ import { typescriptStylisticTypeChecked } from '@module/typescript/rule/typescri
 import pluginTs from '@typescript-eslint/eslint-plugin';
 import parserTs from '@typescript-eslint/parser';
 
-const typescript =
+import type { Linter } from 'eslint';
+
+const typescript: Linter.FlatConfig[] =
 [
   {
     files: [ '**/*.?([cm])[jt]s?(x)' ],
@@ -22,10 +24,12 @@ const typescript =
       }
     },
     name: 'typescript',
-    plugins: {
-      ts: pluginTs
+    plugins:
+    {
+      ts: pluginTs as unknown as Plugin
     },
-    rules: {
+    rules:
+    {
       ...typescriptGeneralRule,
       ...typescriptStrict,
       ...typescriptStrictTypedChecked,

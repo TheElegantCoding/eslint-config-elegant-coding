@@ -2,12 +2,14 @@ import { sonarDisabledRule } from '@module/sonar/rule/sonar_disabled_rule';
 import { sonarGeneralRule } from '@module/sonar/rule/sonar_general_rule';
 import pluginSonar from 'eslint-plugin-sonarjs';
 
-const sonar =
+import type { Linter } from 'eslint';
+
+const sonar: Linter.FlatConfig =
 {
   name: 'sonar',
   plugins:
   {
-    sonarjs: pluginSonar
+    sonar: pluginSonar as unknown as Plugin
   },
   rules:
   {

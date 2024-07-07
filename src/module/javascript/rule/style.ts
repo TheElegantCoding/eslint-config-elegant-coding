@@ -1,4 +1,6 @@
-const style =
+import type { Linter } from 'eslint';
+
+const style: Linter.RulesRecord =
 {
   'arrow-body-style':
   [

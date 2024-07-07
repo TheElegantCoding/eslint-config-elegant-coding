@@ -1,4 +1,6 @@
-const regexStylisticRule =
+import type { Linter } from 'eslint';
+
+const regexStylisticRule: Linter.RulesRecord =
 {
   'regex/grapheme-string-literal': 'error',
   'regex/hexadecimal-escape': 'error',

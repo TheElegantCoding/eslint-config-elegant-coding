@@ -1,4 +1,6 @@
-const perfectionistGeneralRule =
+import type { Linter } from 'eslint';
+
+const perfectionistGeneralRule: Linter.RulesRecord =
 {
   'perfectionist/sort-array-includes': [
     'error',

@@ -1,4 +1,6 @@
-const securityDisableRule =
+import type { Linter } from 'eslint';
+
+const securityDisableRule: Linter.RulesRecord =
 {
   'security/detect-non-literal-regexp': 'off'
 };

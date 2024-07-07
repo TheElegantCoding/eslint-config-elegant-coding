@@ -1,14 +1,17 @@
+/* eslint-disable ts/no-non-null-assertion */
 import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_general_rule';
 
-const jsonGeneralRule =
+import type { Linter } from 'eslint';
+
+const jsonGeneralRule: Linter.RulesRecord =
 {
-  'json/array-bracket-newline': stylisticGeneralRule['style/array-bracket-newline'],
-  'json/array-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing'],
-  'json/array-element-newline': stylisticGeneralRule['style/array-element-newline'],
-  'json/comma-dangle': stylisticGeneralRule['style/comma-dangle'],
-  'json/comma-style': stylisticGeneralRule['style/comma-style'],
-  'json/indent': stylisticGeneralRule['style/indent'],
-  'json/key-spacing': stylisticGeneralRule['style/key-spacing'],
+  'json/array-bracket-newline': stylisticGeneralRule['style/array-bracket-newline']!,
+  'json/array-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing']!,
+  'json/array-element-newline': stylisticGeneralRule['style/array-element-newline']!,
+  'json/comma-dangle': stylisticGeneralRule['style/comma-dangle']!,
+  'json/comma-style': stylisticGeneralRule['style/comma-style']!,
+  'json/indent': stylisticGeneralRule['style/indent']!,
+  'json/key-spacing': stylisticGeneralRule['style/key-spacing']!,
   'json/no-bigint-literals': 'error',
   'json/no-binary-expression': 'error',
   'json/no-binary-numeric-literals': 'error',
@@ -34,13 +37,10 @@ const jsonGeneralRule =
   'json/no-undefined-value': 'error',
   'json/no-unicode-codepoint-escapes': 'error',
   'json/no-useless-escape': 'error',
-  'json/object-curly-newline': stylisticGeneralRule['style/object-curly-newline'],
-  'json/object-curly-spacing': stylisticGeneralRule['style/object-curly-spacing'],
-  'json/object-property-newline': stylisticGeneralRule['style/object-property-newline'],
-  'json/quote-props': [
-    'error',
-    'always'
-  ],
+  'json/object-curly-newline': stylisticGeneralRule['style/object-curly-newline']!,
+  'json/object-curly-spacing': stylisticGeneralRule['style/object-curly-spacing']!,
+  'json/object-property-newline': stylisticGeneralRule['style/object-property-newline']!,
+  'json/quote-props': [ 'error', 'always' ],
   'json/quotes': [
     'error',
     'double',

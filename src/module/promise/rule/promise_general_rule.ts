@@ -1,4 +1,6 @@
-const promiseGeneralRule =
+import type { Linter } from 'eslint';
+
+const promiseGeneralRule: Linter.RulesRecord =
 {
   'promise/always-return': 'error',
   'promise/avoid-new': 'error',

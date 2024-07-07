@@ -3,7 +3,9 @@ import { pluginPromise } from '@global/plugin/plugin';
 import { promiseDisabledRule } from '@module/promise/rule/promise_disable_rule';
 import { promiseGeneralRule } from '@module/promise/rule/promise_general_rule';
 
-const promise =
+import type { Linter } from 'eslint';
+
+const promise: Linter.FlatConfig =
 {
   name: 'promise',
   plugins:

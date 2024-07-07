@@ -1,4 +1,6 @@
-const unicornDisabledRule =
+import type { Linter } from 'eslint';
+
+const unicornDisabledRule: Linter.RulesRecord =
 {
   'unicorn/expiring-todo-comments': 'off',
   'unicorn/no-array-for-each': 'off',

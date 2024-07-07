@@ -1,7 +1,10 @@
+/* eslint-disable ts/no-non-null-assertion */
 import { bestPractice } from '@module/javascript/rule/best_practice';
 import { error } from '@module/javascript/rule/error';
 
-const typescriptStrictTypedChecked =
+import type { Linter } from 'eslint';
+
+const typescriptStrictTypedChecked: Linter.RulesRecord =
 {
   'no-implied-eval': 'off',
   'no-throw-literal': 'off',
@@ -14,9 +17,10 @@ const typescriptStrictTypedChecked =
   'ts/no-duplicate-type-constituents': 'error',
   'ts/no-floating-promises': 'error',
   'ts/no-for-in-array': 'error',
-  'ts/no-implied-eval': error['no-implied-eval'],
+  'ts/no-implied-eval': error['no-implied-eval']!,
   'ts/no-meaningless-void-operator': 'error',
-  'ts/no-misused-promises': [
+  'ts/no-misused-promises':
+  [
     'error',
     {
       checksVoidReturn: {
@@ -40,10 +44,10 @@ const typescriptStrictTypedChecked =
   'ts/no-unsafe-return': 'error',
   'ts/only-throw-error': 'error',
   'ts/prefer-includes': 'error',
-  'ts/prefer-promise-reject-errors': bestPractice['prefer-promise-reject-errors'],
+  'ts/prefer-promise-reject-errors': bestPractice['prefer-promise-reject-errors']!,
   'ts/prefer-reduce-type-parameter': 'error',
   'ts/prefer-return-this-type': 'error',
-  'ts/require-await': bestPractice['require-await'],
+  'ts/require-await': bestPractice['require-await']!,
   'ts/restrict-plus-operands': 'error',
   'ts/restrict-template-expressions': 'error',
   'ts/unbound-method': 'error',

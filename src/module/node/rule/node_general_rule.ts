@@ -1,4 +1,6 @@
-const nodeGeneralRule =
+import type { Linter } from 'eslint';
+
+const nodeGeneralRule: Linter.RulesRecord =
 {
   'node/callback-return': 'error',
   'node/exports-style': [ 'error', 'module.exports' ],

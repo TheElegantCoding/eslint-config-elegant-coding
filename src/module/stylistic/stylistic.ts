@@ -2,7 +2,9 @@ import { stylisticDisabledRule } from '@module/stylistic/rule/stylistic_disabled
 import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_general_rule';
 import pluginStylistic from '@stylistic/eslint-plugin';
 
-const stylistic =
+import type { Linter } from 'eslint';
+
+const stylistic: Linter.FlatConfig =
 {
   name: 'stylistic',
   plugins:

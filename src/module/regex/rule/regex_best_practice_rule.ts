@@ -1,4 +1,6 @@
-const regexBestPracticeRule =
+import type { Linter } from 'eslint';
+
+const regexBestPracticeRule: Linter.RulesRecord =
 {
   'regex/confusing-quantifier': 'error',
   'regex/control-character-escape': 'error',

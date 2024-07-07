@@ -1,4 +1,6 @@
-const astroDisabledRule =
+import type { Linter } from 'eslint';
+
+const astroDisabledRule: Linter.RulesRecord =
 {
   'astro/jsx-a11y/label-has-associated-control': 'off',
   'astro/jsx-a11y/media-has-caption': 'off',

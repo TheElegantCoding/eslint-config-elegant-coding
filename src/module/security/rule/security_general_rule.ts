@@ -1,4 +1,6 @@
-const securityGeneralRule =
+import type { Linter } from 'eslint';
+
+const securityGeneralRule: Linter.RulesRecord =
 {
   'security/detect-bidi-characters': 'error',
   'security/detect-buffer-noassert': 'error',

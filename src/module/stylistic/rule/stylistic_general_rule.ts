@@ -1,8 +1,10 @@
 /* eslint-disable max-lines */
+import type { Linter } from 'eslint';
+
 const indent = 2;
 const maxLength = 120;
 
-const stylisticGeneralRule =
+const stylisticGeneralRule: Linter.RulesRecord =
 {
   'style/array-bracket-newline': [
     'error',
@@ -11,14 +13,8 @@ const stylisticGeneralRule =
       multiline: true
     }
   ],
-  'style/array-bracket-spacing': [
-    'error',
-    'always',
-    {
-      arraysInArrays: false,
-      objectsInArrays: false
-    }
-  ],
+  'style/array-bracket-spacing':
+  [ 'error', 'always' ],
   'style/array-element-newline': [
     'error',
     {
@@ -54,7 +50,7 @@ const stylisticGeneralRule =
   'style/eol-last': [ 'error', 'never' ],
   'style/func-call-spacing': [ 'error', 'never' ],
   'style/function-call-argument-newline': [ 'error', 'consistent' ],
-  'style/function-paren-newline': [ 'error', 'never' ],
+  'style/function-paren-newline': [ 'error', 'multiline-arguments' ],
   'style/generator-star-spacing': [
     'error',
     {

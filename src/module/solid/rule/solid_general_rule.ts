@@ -1,11 +1,13 @@
-const solidGeneralRule =
+import type { Linter } from 'eslint';
+
+const solidGeneralRule: Linter.RulesRecord =
 {
   'solid/components-return-once': 'error',
   'solid/event-handlers': 'error',
   'solid/imports': 'error',
   'solid/jsx-no-duplicate-props': 'error',
   'solid/jsx-no-script-url': 'error',
-  'solid/jsx-no-undef': [ 'error', { typescriptEnabled: true }],
+  'solid/jsx-no-undef': [ 'error', { typescriptEnabled: true } ],
   'solid/jsx-uses-vars': 'error',
   'solid/no-array-handlers': 'error',
   'solid/no-destructure': 'error',

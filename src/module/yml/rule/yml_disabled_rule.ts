@@ -1,4 +1,6 @@
-const ymlDisabledRule =
+import type { Linter } from 'eslint';
+
+const ymlDisabledRule: Linter.RulesRecord =
 {
   'yml/key-name-casing': 'off',
   'yml/sort-keys': 'off',

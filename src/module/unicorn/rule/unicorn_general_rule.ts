@@ -1,4 +1,7 @@
-const unicornGeneralRule = {
+import type { Linter } from 'eslint';
+
+const unicornGeneralRule: Linter.RulesRecord =
+{
   'unicorn/better-regex': 'error',
   'unicorn/catch-error-name': 'error',
   'unicorn/consistent-destructuring': 'error',
@@ -128,7 +131,12 @@ const unicornGeneralRule = {
         res: true
       },
       checkShorthandProperties: true,
-      ignore: [ '\\.e2e$', '\\.e2e-spec$', 'env.d', 'ImportMetaEnv' ]
+      ignore: [
+        String.raw `\.e2e$`,
+        String.raw `\.e2e-spec$`,
+        'env.d',
+        'ImportMetaEnv'
+      ]
     }
   ],
   'unicorn/relative-url-style': 'error',

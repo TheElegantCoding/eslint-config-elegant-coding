@@ -1,4 +1,6 @@
-const qwikDisabledRule =
+import type { Linter } from 'eslint';
+
+const qwikDisabledRule: Linter.RulesRecord =
 {
   'qwik/jsx-img': 'off'
 };

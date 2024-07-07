@@ -22,26 +22,31 @@ import { yml } from '@module/yml/yml';
 import type { ConfigurationOption } from '@global/type/configuration_option';
 import type { Linter } from 'eslint';
 
-const elegantCoding = (option: ConfigurationOption, override: Linter.FlatConfig | Linter.FlatConfig[] = []) =>
+const elegantCoding = (
+  option: ConfigurationOption,
+  override: Linter.FlatConfig | Linter.FlatConfig[] = []
+): Linter.FlatConfig[] =>
 {
-  const config = [];
+  const config: Linter.FlatConfig[] = [];
 
   const generalConfig =
   {
     ignores: [ ...IGNORE, ...option.ignore ?? [] ]
   };
 
-  config.push(generalConfig,
+  config.push(
+    generalConfig,
     javascript,
     ...imports,
     unicorn,
     perfectionist,
-    promise,
     // github,
+    promise,
     security,
     node,
     sonar,
-    regex);
+    regex
+  );
 
   if(option.stylistic)
   {

@@ -1,4 +1,6 @@
-const astroGeneralRule =
+import type { Linter } from 'eslint';
+
+const astroGeneralRule: Linter.RulesRecord =
 {
   'astro/jsx-a11y/alt-text': 'error',
   'astro/jsx-a11y/anchor-ambiguous-text': 'error',

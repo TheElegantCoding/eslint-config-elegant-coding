@@ -1,6 +1,8 @@
+import type { Linter } from 'eslint';
+
 const indent = 2;
 
-const htmlGeneralRule =
+const htmlGeneralRule: Linter.RulesRecord =
 {
   'html/attrs-newline':
   [
@@ -21,7 +23,7 @@ const htmlGeneralRule =
   'html/no-duplicate-id': 'error',
   'html/no-extra-spacing-attrs': 'error',
   'html/no-inline-styles': 'error',
-  'html/no-multiple-empty-lines': [ 'error', { max: 1 }],
+  'html/no-multiple-empty-lines': [ 'error', { max: 1 } ],
   'html/no-multiple-h1': 'error',
   'html/no-non-scalable-viewport': 'error',
   'html/no-obsolete-tags': 'error',
@@ -42,7 +44,7 @@ const htmlGeneralRule =
   'html/require-meta-viewport': 'error',
   'html/require-open-graph-protocol': 'error',
   'html/require-title': 'error',
-  'html/sort-attrs': [ 'error', { priority: [] }]
+  'html/sort-attrs': [ 'error', { priority: [] } ]
 };
 
 export { htmlGeneralRule };

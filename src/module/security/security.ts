@@ -2,7 +2,9 @@ import { securityDisableRule } from '@module/security/rule/security_disabled_rul
 import { securityGeneralRule } from '@module/security/rule/security_general_rule';
 import pluginSecurity from 'eslint-plugin-security';
 
-const security =
+import type { Linter } from 'eslint';
+
+const security: Linter.FlatConfig =
 {
   name: 'security',
   plugins:

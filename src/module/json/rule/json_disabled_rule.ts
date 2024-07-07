@@ -1,4 +1,6 @@
-const jsonDisabledRule =
+import type { Linter } from 'eslint';
+
+const jsonDisabledRule: Linter.RulesRecord =
 {
   'json/auto': 'off',
   'json/key-name-casing': [

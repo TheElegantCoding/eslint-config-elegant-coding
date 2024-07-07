@@ -3,13 +3,15 @@ import { importDisabledRule } from '@module/import/rule/import_disabled_rule';
 import { importGeneralRule } from '@module/import/rule/import_general_rule';
 import { importOverride } from '@module/import/rule/import_override';
 
-const imports =
+import type { Linter } from 'eslint';
+
+const imports: Linter.FlatConfig[] =
 [
   {
     name: 'import',
     plugins:
     {
-      import: pluginImport as unknown
+      import: pluginImport as unknown as Plugin
     },
     rules:
     {

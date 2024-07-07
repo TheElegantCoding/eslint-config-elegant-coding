@@ -1,4 +1,6 @@
-const typescriptDisabledRule =
+import type { Linter } from 'eslint';
+
+const typescriptDisabledRule: Linter.RulesRecord =
 {
   'ts/explicit-function-return-type': 'off',
   'ts/explicit-member-accessibility': 'off',

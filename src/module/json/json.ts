@@ -4,10 +4,17 @@ import { jsonOverride } from '@module/json/rule/json_override';
 import pluginJson from 'eslint-plugin-jsonc';
 import parserJson from 'jsonc-eslint-parser';
 
-const json =
+import type { Linter } from 'eslint';
+
+const json: Linter.FlatConfig[] =
 [
   {
-    files: [ '**/*.json', '**/*.json5', '**/*.jsonc' ],
+    files:
+    [
+      '**/*.json',
+      '**/*.json5',
+      '**/*.jsonc'
+    ],
     languageOptions:
     {
       parser: parserJson
@@ -15,7 +22,7 @@ const json =
     name: 'json',
     plugins:
     {
-      json: pluginJson
+      json: pluginJson as unknown as Plugin
     },
     rules:
     {

@@ -1,4 +1,6 @@
-const jsxA11yGeneralRule =
+import type { Linter } from 'eslint';
+
+const jsxA11yGeneralRule: Linter.RulesRecord =
 {
   'jsx-a11y/alt-text': 'error',
   'jsx-a11y/anchor-ambiguous-text': 'error',

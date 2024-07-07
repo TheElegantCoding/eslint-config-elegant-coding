@@ -1,4 +1,6 @@
-const importOverride =
+import type { Linter } from 'eslint';
+
+const importOverride: Linter.FlatConfig[] =
 [
   {
     files:
@@ -8,14 +10,16 @@ const importOverride =
       'eslint.config.js'
     ],
     name: 'import:vite',
-    rules: {
+    rules:
+    {
       'import/no-anonymous-default-export': 'off'
     }
   },
   {
     files: [ '*.ts', '*.tsx' ],
     name: 'import:typescript',
-    rules: {
+    rules:
+    {
       'import/named': 'off',
       'import/no-named-as-default-member': 'off',
       'import/no-unresolved': 'off'

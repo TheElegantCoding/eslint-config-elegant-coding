@@ -1,4 +1,6 @@
-const variable =
+import type { Linter } from 'eslint';
+
+const variable: Linter.RulesRecord =
 {
   'block-scoped-var': 'error',
   'one-var': [ 'error', 'never' ],

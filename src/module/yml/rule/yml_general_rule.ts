@@ -1,27 +1,34 @@
+/* eslint-disable ts/no-non-null-assertion */
 import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_general_rule';
+
+import type { Linter } from 'eslint';
 
 const indent = 2;
 
-const ymlGeneralRule =
+const ymlGeneralRule: Linter.RulesRecord =
 {
   'yml/block-mapping': 'error',
   'yml/block-mapping-colon-indicator-newline': 'error',
   'yml/block-mapping-question-indicator-newline': 'error',
   'yml/block-sequence': 'error',
   'yml/block-sequence-hyphen-indicator-newline': 'error',
-  'yml/file-extension': [
-    'error', {
+  'yml/file-extension':
+  [
+    'error',
+    {
       caseSensitive: true,
       extension: 'yml'
     }
   ],
   'yml/flow-mapping-curly-newline': 'error',
-  'yml/flow-mapping-curly-spacing': stylisticGeneralRule['style/object-curly-spacing'],
-  'yml/flow-sequence-bracket-newline': stylisticGeneralRule['style/array-bracket-newline'],
-  'yml/flow-sequence-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing'],
+  'yml/flow-mapping-curly-spacing': stylisticGeneralRule['style/object-curly-spacing']!,
+  'yml/flow-sequence-bracket-newline': stylisticGeneralRule['style/array-bracket-newline']!,
+  'yml/flow-sequence-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing']!,
   'yml/indent': [ 'error', indent ],
-  'yml/key-spacing': [
-    'error', {
+  'yml/key-spacing':
+  [
+    'error',
+    {
       afterColon: true,
       beforeColon: false,
       mode: 'strict'
@@ -32,12 +39,14 @@ const ymlGeneralRule =
   'yml/no-empty-mapping-value': 'error',
   'yml/no-empty-sequence-entry': 'error',
   'yml/no-irregular-whitespace': 'error',
-  'yml/no-multiple-empty-lines': [ 'error', { max: 1 }],
+  'yml/no-multiple-empty-lines': [ 'error', { max: 1 } ],
   'yml/no-tab-indent': 'error',
   'yml/no-trailing-zeros': 'error',
   'yml/plain-scalar': 'error',
-  'yml/quotes': [
-    'error', {
+  'yml/quotes':
+  [
+    'error',
+    {
       avoidEscape: false,
       prefer: 'single'
     }

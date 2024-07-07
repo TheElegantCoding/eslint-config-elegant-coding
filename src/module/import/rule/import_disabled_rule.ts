@@ -1,4 +1,6 @@
-const importDisabledRule =
+import type { Linter } from 'eslint';
+
+const importDisabledRule: Linter.RulesRecord =
 {
   'import/dynamic-import-chunkname': 'off',
   'import/max-dependencies': 'off',

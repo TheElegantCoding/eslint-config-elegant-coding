@@ -1,8 +1,10 @@
+import type { Linter } from 'eslint';
+
 const complexity = 20;
 const maxDepth = 4;
 const maxStatements = 10;
 
-const bestPractice =
+const bestPractice: Linter.RulesRecord =
 {
   'accessor-pairs': 'error',
   'array-callback-return': [ 'error', { allowImplicit: true }],
@@ -46,7 +48,11 @@ const bestPractice =
   'guard-for-in': 'error',
   'id-length': [ 'error', { min: 2 }],
   'init-declarations': 'error',
-  'logical-assignment-operators': [ 'error', 'always', { enforceForIfStatements: true }],
+  'logical-assignment-operators': [
+    'error',
+    'always',
+    { enforceForIfStatements: true }
+  ],
   'max-classes-per-file': [ 'error', 1 ],
   'max-depth': [ 'error', maxDepth ],
   'max-lines': [

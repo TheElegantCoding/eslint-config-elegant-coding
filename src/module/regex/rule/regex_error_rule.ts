@@ -1,4 +1,6 @@
-const regexErrorRule =
+import type { Linter } from 'eslint';
+
+const regexErrorRule: Linter.RulesRecord =
 {
   'regex/no-contradiction-with-assertion': 'error',
   'regex/no-control-character': 'error',

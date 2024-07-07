@@ -3,7 +3,9 @@ import { ymlGeneralRule } from '@module/yml/rule/yml_general_rule';
 import pluginYml from 'eslint-plugin-yml';
 import parserYml from 'yaml-eslint-parser';
 
-const yml =
+import type { Linter } from 'eslint';
+
+const yml: Linter.FlatConfig =
 {
   files: [ '**/*.y?(a)ml' ],
   languageOptions:
@@ -13,7 +15,7 @@ const yml =
   name: 'yml',
   plugins:
   {
-    yml: pluginYml as unknown
+    yml: pluginYml as unknown as Plugin
   },
   rules:
   {

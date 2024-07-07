@@ -1,4 +1,6 @@
-const importGeneralRule =
+import type { Linter } from 'eslint';
+
+const importGeneralRule: Linter.RulesRecord =
 {
   'import/consistent-type-specifier-style': [ 'error', 'prefer-top-level' ],
   'import/default': 'error',
@@ -50,7 +52,7 @@ const importGeneralRule =
         '**/protractor.conf.{js,cjs,mjs,ts,cts,mts}',
         '**/protractor.conf.*.{js,cjs,mjs,ts,cts,mts}',
         '**/karma.conf.{js,cjs,mjs,ts,cts,mts}',
-        '**/.eslintrc.{js,cjs,mjs,ts,cts,mts}'
+        '**/.eslint.config.{js,cjs,mjs,ts,cts,mts}'
       ],
       includeTypes: true,
       optionalDependencies: false,

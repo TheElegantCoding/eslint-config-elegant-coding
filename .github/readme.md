@@ -229,6 +229,48 @@ Extra settings that can be added.
   });
 ```
 
+To add or override plugins and options, you can pass a second attribute to the function with an array like a normal configuration of eslint:
+
+```ts
+export default elegantCoding({
+  stylistic: true,
+  typescript: true
+}, [
+  {
+    rules:
+    {
+      'style/indent': 'off'
+    }
+  },
+  {
+    plugin: 'customPlugin',
+    rules:
+    {
+      // Extra rules...
+    }
+  }
+]);
+```
+
+The list of the used plugins and the names are here:
+
+| New name | Original | Source |
+| -------- | -------- | ------ |
+| `import` | `import-x` | `eslint-plugin-import-x` |
+| `unicorn` | `unicorn` | `eslint-plugin-unicorn` |
+| `perfectionist` | `perfectionist` | `eslint-plugin-perfectionist` |
+| `promise` | `promise` | `eslint-plugin-promise` |
+| `security` | `eslint-plugin-security` | `eslint-plugin-security` |
+| `node` | `n` | `eslint-plugin-n` |
+| `sonar` | `sonarjs` | `eslint-plugin-sonarjs` |
+| `regex` | `regexp` | `eslint-plugin-regexp` |
+| `style` | `@stylistic` | `@stylistic/eslint-plugin` |
+| `ts` | `@typescript-eslint` | `@typescript-eslint/eslint-plugin` |
+| `html` | `@html-eslint` | `@html-eslint/eslint-plugin` |
+| `json` | `jsonc` | `eslint-plugin-jsonc` |
+| `yml` | `yml` | `eslint-plugin-yml` |
+| `astro` | `astro` | `eslint-plugin-astro` |
+
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">
     <img src="./asset/icon/arrow_up.svg" width="20px" align="center" />

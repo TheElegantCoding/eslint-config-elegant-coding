@@ -38,7 +38,6 @@ const typescriptStrict =
   'ts/no-var-requires': 'error',
   'ts/prefer-as-const': 'error',
   'ts/prefer-literal-enum-member': 'error',
-  'ts/prefer-ts-expect-error': 'error',
   'ts/triple-slash-reference': 'error',
   'ts/unified-signatures': 'error'
 };

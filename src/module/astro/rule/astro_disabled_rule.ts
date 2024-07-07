@@ -1,5 +1,6 @@
 const astroDisabledRule =
 {
+  'astro/jsx-a11y/label-has-associated-control': 'off',
   'astro/jsx-a11y/media-has-caption': 'off',
   'astro/no-set-html-directive': 'off',
   'astro/no-set-text-directive': 'off',

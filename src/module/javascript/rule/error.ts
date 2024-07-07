@@ -66,7 +66,20 @@ const error =
     {
       detectObjects: false,
       enforceConst: true,
-      ignore: [ 0, 1 ],
+      ignore: [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        100
+      ],
       ignoreArrayIndexes: true,
       ignoreClassFieldInitialValues: true,
       ignoreDefaultValues: true
@@ -201,7 +214,8 @@ const error =
   'no-sequences': 'error',
   'no-setter-return': 'error',
   'no-shadow': [
-    'error', {
+    'error',
+    {
       builtinGlobals: false,
       hoist: 'all',
       ignoreOnInitialization: false

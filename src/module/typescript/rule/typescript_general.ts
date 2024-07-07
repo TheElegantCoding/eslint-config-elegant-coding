@@ -19,7 +19,8 @@ const typescriptGeneralRule =
   'no-use-before-define': 'off',
   'ts/consistent-return': bestPractice['consistent-return'],
   'ts/consistent-type-exports': 'error',
-  'ts/consistent-type-imports': [
+  'ts/consistent-type-imports':
+  [
     'error',
     {
       fixStyle: 'separate-type-imports',
@@ -30,7 +31,8 @@ const typescriptGeneralRule =
   'ts/max-params': bestPractice['max-params'],
   'ts/member-ordering': 'error',
   'ts/method-signature-style': 'error',
-  'ts/naming-convention': [
+  'ts/naming-convention':
+  [
     'error',
     {
       // eslint-disable-next-line unicorn/no-null
@@ -63,6 +65,7 @@ const typescriptGeneralRule =
   'ts/no-unused-expressions': [ 'error', { enforceForJSX: true }],
   'ts/no-use-before-define': error['no-use-before-define'],
   'ts/no-useless-empty-export': 'error',
+  'ts/only-throw-error': 'error',
   'ts/parameter-properties': 'error',
   'ts/prefer-find': 'error',
   'ts/prefer-readonly': 'error',

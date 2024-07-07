@@ -13,7 +13,7 @@ const yml =
   name: 'yml',
   plugins:
   {
-    yml: pluginYml
+    yml: pluginYml as unknown
   },
   rules:
   {

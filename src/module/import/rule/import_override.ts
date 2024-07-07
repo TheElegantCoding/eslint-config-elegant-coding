@@ -1,7 +1,12 @@
 const importOverride =
 [
   {
-    files: [ 'vite.config.ts', 'vite.config.js' ],
+    files:
+    [
+      'vite.config.ts',
+      'vite.config.js',
+      'eslint.config.js'
+    ],
     name: 'import:vite',
     rules: {
       'import/no-anonymous-default-export': 'off'

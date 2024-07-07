@@ -1,7 +1,13 @@
 const style =
 {
-  'arrow-body-style': [ 'error', 'as-needed', { requireReturnForObjectLiteral: false }],
-  camelcase: [
+  'arrow-body-style':
+  [
+    'error',
+    'as-needed',
+    { requireReturnForObjectLiteral: false }
+  ],
+  camelcase:
+  [
     'error',
     {
       ignoreDestructuring: false,
@@ -11,19 +17,16 @@ const style =
   curly: [ 'error', 'all' ],
   'dot-notation': 'error',
   'func-style': [ 'error', 'expression' ],
-  'line-comment-position': [
-    'error',
-    {
-      applyDefaultPatterns: true,
-      position: 'above'
-    }
-  ],
-  'multiline-comment-style': [ 'error', 'bare-block' ],
-  'new-cap': [
+  'new-cap':
+  [
     'error',
     {
       capIsNew: false,
-      capIsNewExceptions: [ 'Immutable.Map', 'Immutable.Set', 'Immutable.List' ],
+      capIsNewExceptions: [
+        'Immutable.Map',
+        'Immutable.Set',
+        'Immutable.List'
+      ],
       newIsCap: true,
       newIsCapExceptions: []
     }

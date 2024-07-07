@@ -2,6 +2,14 @@ const indent = 2;
 
 const htmlGeneralRule =
 {
+  'html/attrs-newline':
+  [
+    'error',
+    {
+      closeStyle: 'newline',
+      ifAttrsThan: 2
+    }
+  ],
   'html/element-newline': 'error',
   'html/id-naming-convention': 'error',
   'html/indent': [ 'error', indent ],

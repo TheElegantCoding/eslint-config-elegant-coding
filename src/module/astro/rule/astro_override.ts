@@ -3,14 +3,6 @@ import { typescriptDisableTypeAware } from '@module/typescript/rule/typescript_d
 const astroOverride =
 [
   {
-    files: [ '**/*.astro' ],
-    name: 'astro:promise',
-    rules:
-    {
-      'promise/no-native': 'off'
-    }
-  },
-  {
     files: [
       '**/*.astro',
       '*.astro',
@@ -25,7 +17,6 @@ const astroOverride =
       'style/eol-last': 'off',
       'style/indent': 'off',
       'style/jsx-closing-tag-location': 'off',
-      'style/jsx-indent': 'off',
       'style/jsx-one-expression-per-line': 'off',
       'style/no-multiple-empty-lines': 'off'
     }

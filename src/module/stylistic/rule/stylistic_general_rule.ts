@@ -22,11 +22,8 @@ const stylisticGeneralRule =
   'style/array-element-newline': [
     'error',
     {
-      ArrayExpression: 'consistent',
-      ArrayPattern: {
-        minItems: 5,
-        multiline: true
-      }
+      minItems: 3,
+      multiline: true
     }
   ],
   'style/arrow-parens': [ 'error', 'always' ],
@@ -94,15 +91,6 @@ const stylisticGeneralRule =
   'style/jsx-equals-spacing': 'error',
   'style/jsx-first-prop-new-line': [ 'error', 'multiline-multiprop' ],
   'style/jsx-function-call-newline': [ 'error', 'multiline' ],
-
-  'style/jsx-indent': [
-    indent,
-    indent,
-    {
-      checkAttributes: false,
-      indentLogicalExpressions: true
-    }
-  ],
   'style/jsx-indent-props': [
     indent,
     {
@@ -113,8 +101,11 @@ const stylisticGeneralRule =
   'style/jsx-max-props-per-line': [
     'error',
     {
-      maximum: 1,
-      when: 'always'
+      maximum:
+      {
+        multi: 1,
+        single: 2
+      }
     }
   ],
   'style/jsx-newline': [
@@ -188,6 +179,13 @@ const stylisticGeneralRule =
       }
     }
   ],
+  'style/line-comment-position': [
+    'error',
+    {
+      applyDefaultPatterns: true,
+      position: 'above'
+    }
+  ],
   'style/linebreak-style': [ 'error', 'unix' ],
   'style/lines-around-comment': [
     'error',
@@ -212,6 +210,7 @@ const stylisticGeneralRule =
   ],
   'style/max-statements-per-line': [ 'error', { max: 1 }],
   'style/member-delimiter-style': 'error',
+  'style/multiline-comment-style': [ 'error', 'bare-block' ],
   'style/multiline-ternary': [ 'error', 'always-multiline' ],
   'style/new-parens': 'error',
   'style/newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 3 }],
@@ -303,7 +302,17 @@ const stylisticGeneralRule =
   'style/object-curly-spacing': [ 'error', 'always' ],
   'style/object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: false }],
   'style/one-var-declaration-per-line': [ 'error', 'initializations' ],
-  'style/operator-linebreak': [ 'error', 'after' ],
+  'style/operator-linebreak': [
+    'error',
+    'after',
+    {
+      overrides:
+      {
+        ':': 'before',
+        '?': 'before'
+      }
+    }
+  ],
   'style/padded-blocks': [
     'error',
     {

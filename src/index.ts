@@ -1,7 +1,6 @@
 /* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
 import { astro } from '@module/astro/astro';
-import { github } from '@module/github/gihub';
 import { html } from '@module/html/html';
 import { imports } from '@module/import/import';
 import { javascript } from '@module/javascript/javascript';
@@ -21,8 +20,9 @@ import { unicorn } from '@module/unicorn/unicorn';
 import { yml } from '@module/yml/yml';
 
 import type { ConfigurationOption } from '@global/type/configuration_option';
+import type { Linter } from 'eslint';
 
-const elegantCoding = (option: ConfigurationOption) =>
+const elegantCoding = (option: ConfigurationOption, override: Linter.FlatConfig | Linter.FlatConfig[] = []) =>
 {
   const config = [];
 
@@ -37,7 +37,7 @@ const elegantCoding = (option: ConfigurationOption) =>
     unicorn,
     perfectionist,
     promise,
-    github,
+    // github,
     security,
     node,
     sonar,
@@ -86,6 +86,11 @@ const elegantCoding = (option: ConfigurationOption) =>
   if(option.astro)
   {
     config.push(...astro);
+  }
+
+  if(Object.keys(override).length > 0)
+  {
+    config.push(...Array.isArray(override) ? override : [ override ]);
   }
 
   return config;

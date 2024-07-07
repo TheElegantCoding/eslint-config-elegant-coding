@@ -17,7 +17,6 @@ const githubRule =
   'github/no-innerText': 'error',
   'github/no-then': 'error',
   'github/no-useless-passive': 'error',
-  'github/prefer-observers': 'error',
   'github/require-passive-events': 'error',
   'github/unescaped-html-literal': 'error'
 };

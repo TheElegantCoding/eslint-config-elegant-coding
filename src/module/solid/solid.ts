@@ -4,7 +4,7 @@ import pluginSolid from 'eslint-plugin-solid';
 
 import type { Linter } from 'eslint';
 
-const solid: Linter.FlatConfig =
+const solid: Linter.Config =
 {
   name: 'solid',
   plugins:

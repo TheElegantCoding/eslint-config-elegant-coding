@@ -15,7 +15,6 @@ const typescriptStylistic: Linter.RulesRecord =
   'ts/consistent-type-assertions': 'error',
   'ts/consistent-type-definitions': [ 'error', 'type' ],
   'ts/no-empty-function': error['no-empty-function']!,
-  'ts/no-empty-interface': 'error',
   'ts/no-inferrable-types': 'error',
   'ts/prefer-for-of': 'error',
   'ts/prefer-function-type': 'error',

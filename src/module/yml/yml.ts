@@ -5,7 +5,7 @@ import parserYml from 'yaml-eslint-parser';
 
 import type { Linter } from 'eslint';
 
-const yml: Linter.FlatConfig =
+const yml: Linter.Config =
 {
   files: [ '**/*.y?(a)ml' ],
   languageOptions:

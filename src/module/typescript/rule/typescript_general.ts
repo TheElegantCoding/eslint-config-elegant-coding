@@ -63,6 +63,7 @@ const typescriptGeneralRule: Linter.RulesRecord =
   'ts/no-require-imports': 'error',
   'ts/no-restricted-imports': error['no-restricted-imports']!,
   'ts/no-shadow': error['no-shadow']!,
+  'ts/no-unnecessary-parameter-property-assignment': 'error',
   'ts/no-unnecessary-qualifier': 'error',
   'ts/no-unsafe-unary-minus': 'error',
   'ts/no-unused-expressions': [ 'error', { enforceForJSX: true } ],

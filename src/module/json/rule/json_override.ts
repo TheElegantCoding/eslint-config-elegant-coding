@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint';
 
-const jsonOverride: Linter.FlatConfig[] =
+const jsonOverride: Linter.Config[] =
 [
   {
     files: [ '**/package.json' ],

@@ -6,7 +6,7 @@ import parserJson from 'jsonc-eslint-parser';
 
 import type { Linter } from 'eslint';
 
-const json: Linter.FlatConfig[] =
+const json: Linter.Config[] =
 [
   {
     files:

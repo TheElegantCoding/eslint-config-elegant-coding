@@ -5,7 +5,7 @@ import { jsxA11yGeneralRule } from '@module/jsx_a11y/rule/jsx_a11y_general_rule'
 
 import type { Linter } from 'eslint';
 
-const jsxA11y: Linter.FlatConfig =
+const jsxA11y: Linter.Config =
 {
   name: 'jsx-a11y',
   plugins:

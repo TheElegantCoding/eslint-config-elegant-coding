@@ -4,7 +4,7 @@ import pluginSonar from 'eslint-plugin-sonarjs';
 
 import type { Linter } from 'eslint';
 
-const sonar: Linter.FlatConfig =
+const sonar: Linter.Config =
 {
   name: 'sonar',
   plugins:

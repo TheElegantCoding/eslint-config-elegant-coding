@@ -5,7 +5,7 @@ import { promiseGeneralRule } from '@module/promise/rule/promise_general_rule';
 
 import type { Linter } from 'eslint';
 
-const promise: Linter.FlatConfig =
+const promise: Linter.Config =
 {
   name: 'promise',
   plugins:

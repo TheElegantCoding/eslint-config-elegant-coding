@@ -2,17 +2,20 @@ import type { Linter } from 'eslint';
 
 const perfectionistGeneralRule: Linter.RulesRecord =
 {
-  'perfectionist/sort-array-includes': [
+  'perfectionist/sort-array-includes':
+  [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'natural'
     }
   ],
-  'perfectionist/sort-classes': [
+  'perfectionist/sort-classes':
+  [
     'error',
     {
-      groups: [
+      groups:
+      [
         'static-property',
         'private-property',
         'property',
@@ -28,7 +31,7 @@ const perfectionistGeneralRule: Linter.RulesRecord =
   'perfectionist/sort-enums': [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'line-length'
     }
   ],
@@ -39,10 +42,12 @@ const perfectionistGeneralRule: Linter.RulesRecord =
       type: 'line-length'
     }
   ],
-  'perfectionist/sort-imports': [
+  'perfectionist/sort-imports':
+  [
     'error',
     {
-      groups: [
+      groups:
+      [
         'builtin',
         'external',
         'internal',
@@ -61,7 +66,7 @@ const perfectionistGeneralRule: Linter.RulesRecord =
         'object',
         'style'
       ],
-      'newlines-between': 'always',
+      newlinesBetween: 'always',
       order: 'asc',
       type: 'natural'
     }
@@ -69,7 +74,7 @@ const perfectionistGeneralRule: Linter.RulesRecord =
   'perfectionist/sort-interfaces': [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'line-length'
     }
   ],
@@ -83,14 +88,14 @@ const perfectionistGeneralRule: Linter.RulesRecord =
   'perfectionist/sort-jsx-props': [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'line-length'
     }
   ],
   'perfectionist/sort-maps': [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'natural'
     }
   ],
@@ -111,14 +116,15 @@ const perfectionistGeneralRule: Linter.RulesRecord =
   'perfectionist/sort-object-types': [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'line-length'
     }
   ],
-  'perfectionist/sort-objects': [
+  'perfectionist/sort-objects':
+  [
     'error',
     {
-      'ignore-case': true,
+      ignoreCase: true,
       type: 'natural'
     }
   ],

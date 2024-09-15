@@ -5,7 +5,7 @@ import pluginRegex from 'eslint-plugin-regexp';
 
 import type { Linter } from 'eslint';
 
-const regex: Linter.FlatConfig =
+const regex: Linter.Config =
 {
   name: 'regex',
   plugins:

@@ -4,7 +4,7 @@ import pluginNode from 'eslint-plugin-n';
 
 import type { Linter } from 'eslint';
 
-const node: Linter.FlatConfig =
+const node: Linter.Config =
 {
   name: 'node',
   plugins:

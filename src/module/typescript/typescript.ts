@@ -10,7 +10,7 @@ import parserTs from '@typescript-eslint/parser';
 
 import type { Linter } from 'eslint';
 
-const typescript: Linter.FlatConfig[] =
+const typescript: Linter.Config[] =
 [
   {
     files: [ '**/*.?([cm])[jt]s?(x)' ],

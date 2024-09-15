@@ -4,7 +4,7 @@ import pluginSecurity from 'eslint-plugin-security';
 
 import type { Linter } from 'eslint';
 
-const security: Linter.FlatConfig =
+const security: Linter.Config =
 {
   name: 'security',
   plugins:

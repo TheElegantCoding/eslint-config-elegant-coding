@@ -8,7 +8,7 @@ import globals from 'globals';
 
 import type { Linter } from 'eslint';
 
-const astro: Linter.FlatConfig[] =
+const astro: Linter.Config[] =
 [
   {
     name: 'astro',

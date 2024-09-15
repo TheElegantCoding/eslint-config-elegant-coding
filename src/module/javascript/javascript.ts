@@ -8,7 +8,7 @@ import globals from 'globals';
 
 import type { Linter } from 'eslint';
 
-const javascript: Linter.FlatConfig =
+const javascript: Linter.Config =
 {
   languageOptions:
   {

@@ -19,6 +19,7 @@ const astroGeneralRule: Linter.RulesRecord =
   'astro/jsx-a11y/iframe-has-title': 'error',
   'astro/jsx-a11y/img-redundant-alt': 'error',
   'astro/jsx-a11y/interactive-supports-focus': 'error',
+  'astro/jsx-a11y/label-has-associated-control': 'error',
   'astro/jsx-a11y/lang': 'error',
   'astro/jsx-a11y/mouse-events-have-key-events': 'error',
   'astro/jsx-a11y/no-access-key': 'error',

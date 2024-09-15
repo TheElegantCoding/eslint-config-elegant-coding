@@ -5,7 +5,7 @@ import { importOverride } from '@module/import/rule/import_override';
 
 import type { Linter } from 'eslint';
 
-const imports: Linter.FlatConfig[] =
+const imports: Linter.Config[] =
 [
   {
     name: 'import',

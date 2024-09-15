@@ -1,6 +1,6 @@
 import type { Linter } from 'eslint';
 
-const importOverride: Linter.FlatConfig[] =
+const importOverride: Linter.Config[] =
 [
   {
     files:

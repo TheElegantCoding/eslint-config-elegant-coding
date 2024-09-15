@@ -12,7 +12,8 @@ const unicornGeneralRule: Linter.RulesRecord =
   'unicorn/error-message': 'error',
   'unicorn/escape-case': 'error',
   'unicorn/explicit-length-check': 'error',
-  'unicorn/filename-case': [
+  'unicorn/filename-case':
+  [
     'error',
     {
       cases:
@@ -41,6 +42,7 @@ const unicornGeneralRule: Linter.RulesRecord =
   'unicorn/no-instanceof-array': 'error',
   'unicorn/no-invalid-fetch-options': 'error',
   'unicorn/no-invalid-remove-event-listener': 'error',
+  'unicorn/no-length-as-slice-end': 'error',
   'unicorn/no-lonely-if': 'error',
   'unicorn/no-magic-array-flat-depth': 'error',
   'unicorn/no-negated-condition': 'error',
@@ -96,7 +98,8 @@ const unicornGeneralRule: Linter.RulesRecord =
   'unicorn/prefer-negative-index': 'error',
   'unicorn/prefer-node-protocol': 'error',
   'unicorn/prefer-number-properties': 'error',
-  'unicorn/prefer-object-from-entries': [
+  'unicorn/prefer-object-from-entries':
+  [
     'error',
     {
       functions: [ 'fromPairs', 'R.fromPairs' ]
@@ -119,7 +122,8 @@ const unicornGeneralRule: Linter.RulesRecord =
   'unicorn/prefer-ternary': 'error',
   'unicorn/prefer-top-level-await': 'error',
   'unicorn/prefer-type-error': 'error',
-  'unicorn/prevent-abbreviations': [
+  'unicorn/prevent-abbreviations':
+  [
     'error',
     {
       allowList: {

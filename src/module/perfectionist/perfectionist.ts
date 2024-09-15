@@ -4,7 +4,7 @@ import { perfectionistGeneralRule } from '@module/perfectionist/rule/perfectioni
 
 import type { Linter } from 'eslint';
 
-const perfectionist: Linter.FlatConfig =
+const perfectionist: Linter.Config =
 {
   name: 'perfectionist',
   plugins:

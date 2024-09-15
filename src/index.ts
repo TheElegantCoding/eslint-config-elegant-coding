@@ -24,10 +24,10 @@ import type { Linter } from 'eslint';
 
 const elegantCoding = (
   option: ConfigurationOption,
-  override: Linter.FlatConfig | Linter.FlatConfig[] = []
-): Linter.FlatConfig[] =>
+  override: Linter.Config | Linter.Config[] = []
+): Linter.Config[] =>
 {
-  const config: Linter.FlatConfig[] = [];
+  const config: Linter.Config[] = [];
 
   const generalConfig =
   {

@@ -2,7 +2,7 @@ import { typescriptDisableTypeAware } from '@module/typescript/rule/typescript_d
 
 import type { Linter } from 'eslint';
 
-const astroOverride: Linter.FlatConfig[] =
+const astroOverride: Linter.Config[] =
 [
   {
     files:

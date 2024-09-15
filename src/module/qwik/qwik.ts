@@ -5,7 +5,7 @@ import { qwikGeneralRule } from '@module/qwik/rule/qwik_general_rule';
 
 import type { Linter } from 'eslint';
 
-const qwik: Linter.FlatConfig =
+const qwik: Linter.Config =
 {
   name: 'qwik',
   plugins:

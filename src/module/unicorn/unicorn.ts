@@ -5,7 +5,7 @@ import { unicornGeneralRule } from '@module/unicorn/rule/unicorn_general_rule';
 
 import type { Linter } from 'eslint';
 
-const unicorn: Linter.FlatConfig =
+const unicorn: Linter.Config =
 {
   name: 'unicorn',
   plugins:

@@ -4,7 +4,7 @@ import pluginStylistic from '@stylistic/eslint-plugin';
 
 import type { Linter } from 'eslint';
 
-const stylistic: Linter.FlatConfig =
+const stylistic: Linter.Config =
 {
   name: 'stylistic',
   plugins:

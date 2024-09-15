@@ -5,7 +5,7 @@ import { htmlGeneralRule } from '@module/html/rule/html_general_rule';
 
 import type { Linter } from 'eslint';
 
-const html: Linter.FlatConfig =
+const html: Linter.Config =
 {
   files: [ '**/*.html' ],
   languageOptions:

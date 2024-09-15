@@ -36,7 +36,6 @@ const regexBestPracticeRule: Linter.RulesRecord =
   'regex/prefer-regexp-test': 'error',
   'regex/prefer-set-operation': 'error',
   'regex/require-unicode-regexp': 'error',
-  'regex/require-unicode-sets-regexp': 'error',
   'regex/simplify-set-operations': 'error',
   'regex/sort-alternatives': 'error',
   'regex/use-ignore-case': 'error'

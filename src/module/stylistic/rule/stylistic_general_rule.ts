@@ -211,9 +211,10 @@ const stylisticGeneralRule: Linter.RulesRecord =
   'style/new-parens': 'error',
   'style/newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 3 } ],
   'style/no-confusing-arrow': [ 'error', { allowParens: true } ],
-  'style/no-extra-parens': [
+  'style/no-extra-parens':
+  [
     'error',
-    'all',
+    'functions',
     {
       conditionalAssign: true,
       ignoreJSX: 'all'

@@ -1,4 +1,5 @@
 import { regexBestPracticeRule } from '@module/regex/rule/regex_best_practice_rule';
+import { regexDisabledRule } from '@module/regex/rule/regex_disabled_rule';
 import { regexErrorRule } from '@module/regex/rule/regex_error_rule';
 import { regexStylisticRule } from '@module/regex/rule/regex_stylistic';
 import pluginRegex from 'eslint-plugin-regexp';
@@ -16,7 +17,8 @@ const regex: Linter.Config =
   {
     ...regexBestPracticeRule,
     ...regexErrorRule,
-    ...regexStylisticRule
+    ...regexStylisticRule,
+    ...regexDisabledRule
   }
 };
 

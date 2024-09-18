@@ -5,7 +5,7 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.1.8",
+  "version": "9.1.9",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheElegantCoding/eslint-config-elegant-coding"
@@ -61,8 +61,8 @@
     "@html-eslint/eslint-plugin": "0.26.0",
     "@html-eslint/parser": "0.26.0",
     "@stylistic/eslint-plugin": "2.8.0",
-    "@typescript-eslint/eslint-plugin": "8.5.0",
-    "@typescript-eslint/parser": "8.5.0",
+    "@typescript-eslint/eslint-plugin": "8.6.0",
+    "@typescript-eslint/parser": "8.6.0",
     "astro-eslint-parser": "1.0.3",
     "eslint": "9.10.0",
     "eslint-plugin-astro": "1.2.4",
@@ -70,10 +70,10 @@
     "eslint-plugin-import-x": "4.2.1",
     "eslint-plugin-jsonc": "2.16.0",
     "eslint-plugin-jsx-a11y": "6.10.0",
-    "eslint-plugin-n": "17.10.2",
+    "eslint-plugin-n": "17.10.3",
     "eslint-plugin-perfectionist": "3.6.0",
     "eslint-plugin-promise": "7.1.0",
-    "eslint-plugin-qwik": "1.8.0",
+    "eslint-plugin-qwik": "1.9.0",
     "eslint-plugin-regexp": "^2.6.0",
     "eslint-plugin-security": "3.0.1",
     "eslint-plugin-solid": "0.14.3",
@@ -87,7 +87,7 @@
   "devDependencies": {
     "@eslint/config-inspector": "0.5.4",
     "@types/eslint": "9.6.1",
-    "tsup": "8.2.4",
+    "tsup": "8.3.0",
     "typescript": "5.6.2"
   }
 }

@@ -24,7 +24,7 @@ const nodeGeneralRule: Linter.RulesRecord =
   [
     'error',
     {
-      ignores: [ 'navigator' ],
+      ignores: [ 'navigator', 'localStorage' ],
       version: '21.2.0'
     }
   ],

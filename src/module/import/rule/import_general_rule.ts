@@ -26,7 +26,7 @@ const importGeneralRule: Linter.RulesRecord =
       devDependencies: [
         '**/test/**',
         '**/script/**',
-        '**/tests/**',
+        '**/tes**',
         '**/spec/**',
         '**/__tests__/**',
         '**/__mocks__/**',

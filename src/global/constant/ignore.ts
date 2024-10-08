@@ -19,6 +19,7 @@ const IGNORE =
   '**/.cache',
   '**/.output',
   '**/.vite-inspect',
+  '**/.eslint-config-inspector',
 
   '**/CHANGELOG*.md',
   '**/*.min.*',

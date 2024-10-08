@@ -18,10 +18,7 @@ const astroOverride: Linter.Config[] =
     rules:
     {
       'style/eol-last': 'off',
-      'style/indent': 'off',
-      'style/jsx-closing-tag-location': 'off',
-      'style/jsx-one-expression-per-line': 'off',
-      'style/no-multiple-empty-lines': 'off'
+      'style/jsx-one-expression-per-line': 'off'
     }
   },
   {

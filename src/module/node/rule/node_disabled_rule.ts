@@ -8,7 +8,15 @@ const nodeDisabledRule: Linter.RulesRecord =
   'node/no-restricted-import': 'off',
   'node/no-restricted-require': 'off',
   'node/no-sync': 'off',
-  'node/no-unpublished-bin': 'off'
+  'node/no-unpublished-bin': 'off',
+  'node/no-unsupported-features/node-builtins':
+  [
+    'off',
+    {
+      ignores: [ 'navigator', 'localStorage' ],
+      version: '20.10.0'
+    }
+  ]
 };
 
 export { nodeDisabledRule };

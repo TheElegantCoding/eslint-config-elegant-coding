@@ -116,7 +116,6 @@ const bestPractice: Linter.RulesRecord =
   'prefer-template': 'error',
   radix: 'error',
   'require-await': 'error',
-  'require-unicode-regexp': 'error',
   'require-yield': 'error',
   'symbol-description': 'error',
   'use-isnan': 'error',

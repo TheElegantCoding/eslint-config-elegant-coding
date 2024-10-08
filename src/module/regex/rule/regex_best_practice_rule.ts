@@ -13,7 +13,6 @@ const regexBestPracticeRule: Linter.RulesRecord =
   'regex/no-non-standard-flag': 'error',
   'regex/no-obscure-range': 'error',
   'regex/no-octal': 'error',
-  'regex/no-standalone-backslash': 'error',
   'regex/no-trivially-nested-assertion': 'error',
   'regex/no-trivially-nested-quantifier': 'error',
   'regex/no-unused-capturing-group': 'error',
@@ -28,16 +27,11 @@ const regexBestPracticeRule: Linter.RulesRecord =
   'regex/no-zero-quantifier': 'error',
   'regex/optimal-lookaround-quantifier': 'error',
   'regex/optimal-quantifier-concatenation': 'error',
-  'regex/prefer-escape-replacement-dollar-char': 'error',
   'regex/prefer-predefined-assertion': 'error',
   'regex/prefer-quantifier': 'error',
   'regex/prefer-range': 'error',
-  'regex/prefer-regexp-exec': 'error',
-  'regex/prefer-regexp-test': 'error',
   'regex/prefer-set-operation': 'error',
-  'regex/require-unicode-regexp': 'error',
   'regex/simplify-set-operations': 'error',
-  'regex/sort-alternatives': 'error',
   'regex/use-ignore-case': 'error'
 };
 

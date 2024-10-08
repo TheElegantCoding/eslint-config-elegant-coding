@@ -1,19 +1,13 @@
-/* eslint-disable max-statements */
 import { IGNORE } from '@global/constant/ignore';
 import { astro } from '@module/astro/astro';
 import { html } from '@module/html/html';
 import { imports } from '@module/import/import';
 import { javascript } from '@module/javascript/javascript';
 import { json } from '@module/json/json';
-import { jsxA11y } from '@module/jsx_a11y/jsx_a11y';
 import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
-import { promise } from '@module/promise/promise';
-import { qwik } from '@module/qwik/qwik';
 import { regex } from '@module/regex/regex';
-import { security } from '@module/security/security';
 import { solid } from '@module/solid/solid';
-import { sonar } from '@module/sonar/sonar';
 import { stylistic } from '@module/stylistic/stylistic';
 import { typescript } from '@module/typescript/typescript';
 import { unicorn } from '@module/unicorn/unicorn';
@@ -22,67 +16,8 @@ import { yml } from '@module/yml/yml';
 import type { ConfigurationOption } from '@global/type/configuration_option';
 import type { Linter } from 'eslint';
 
-const elegantCoding = (
-  option: ConfigurationOption,
-  override: Linter.Config | Linter.Config[] = []
-): Linter.Config[] =>
+const eslintFramework = (config: Linter.Config[], option: ConfigurationOption) =>
 {
-  const config: Linter.Config[] = [];
-
-  const generalConfig =
-  {
-    ignores: [ ...IGNORE, ...option.ignore ?? [] ]
-  };
-
-  config.push(
-    generalConfig,
-    javascript,
-    ...imports,
-    unicorn,
-    perfectionist,
-    // github,
-    promise,
-    security,
-    node,
-    sonar,
-    regex
-  );
-
-  if(option.stylistic)
-  {
-    config.push(stylistic);
-  }
-
-  if(option.typescript)
-  {
-    config.push(...typescript);
-  }
-
-  if(option.html)
-  {
-    config.push(html);
-  }
-
-  if(option.json)
-  {
-    config.push(...json);
-  }
-
-  if(option.yml)
-  {
-    config.push(yml);
-  }
-
-  if(option.jsxA11y)
-  {
-    config.push(jsxA11y);
-  }
-
-  if(option.qwik)
-  {
-    config.push(qwik);
-  }
-
   if(option.solid)
   {
     config.push(solid);
@@ -92,6 +27,59 @@ const elegantCoding = (
   {
     config.push(...astro);
   }
+};
+
+const eslintLanguage = (config: Linter.Config[], option: ConfigurationOption) =>
+{
+  if(option.typescript)
+  {
+    config.push(...typescript);
+  }
+
+  if(option.html)
+  {
+    config.push(html);
+  }
+};
+
+const eslintFileConfiguration = (config: Linter.Config[], option: ConfigurationOption) =>
+{
+  if(option.json)
+  {
+    config.push(...json);
+  }
+
+  if(option.yml)
+  {
+    config.push(yml);
+  }
+};
+
+const elegantCoding = (
+  option: ConfigurationOption,
+  override: Linter.Config | Linter.Config[] = []
+): Linter.Config[] =>
+{
+  const config: Linter.Config[] = [];
+
+  config.push(
+    { ignores: [ ...IGNORE, ...option.ignore ?? [] ] },
+    javascript,
+    ...imports,
+    unicorn,
+    perfectionist,
+    node,
+    regex
+  );
+
+  if(option.stylistic)
+  {
+    config.push(stylistic);
+  }
+
+  eslintFileConfiguration(config, option);
+  eslintFramework(config, option);
+  eslintLanguage(config, option);
 
   if(Object.keys(override).length > 0)
   {

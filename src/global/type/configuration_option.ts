@@ -1,7 +1,6 @@
 type ConfigurationOption =
 {
   readonly yml?: boolean;
-  readonly qwik?: boolean;
   readonly html?: boolean;
   readonly json?: boolean;
   readonly solid?: boolean;

@@ -10,4 +10,11 @@ export default elegantCoding({
   stylistic: true,
   typescript: true,
   yml: true
-});
+}, [
+  {
+    rules:
+    {
+      'unicorn/no-null': 'off'
+    }
+  }
+]);

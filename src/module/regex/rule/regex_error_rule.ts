@@ -3,7 +3,6 @@ import type { Linter } from 'eslint';
 const regexErrorRule: Linter.RulesRecord =
 {
   'regex/no-contradiction-with-assertion': 'error',
-  'regex/no-control-character': 'error',
   'regex/no-dupe-disjunctions': 'error',
   'regex/no-empty-alternative': 'error',
   'regex/no-empty-capturing-group': 'error',
@@ -19,7 +18,6 @@ const regexErrorRule: Linter.RulesRecord =
   'regex/no-optional-assertion': 'error',
   'regex/no-potentially-useless-backreference': 'error',
   'regex/no-super-linear-backtracking': 'error',
-  'regex/no-super-linear-move': 'error',
   'regex/no-useless-assertions': 'error',
   'regex/no-useless-backreference': 'error',
   'regex/no-useless-dollar-replacements': 'error',

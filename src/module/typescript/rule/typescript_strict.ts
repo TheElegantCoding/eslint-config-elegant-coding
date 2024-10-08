@@ -1,4 +1,3 @@
-/* eslint-disable ts/no-non-null-assertion */
 import { error } from '@module/javascript/rule/error';
 
 import type { Linter } from 'eslint';
@@ -19,7 +18,7 @@ const typescriptStrict: Linter.RulesRecord =
       'ts-nocheck': true
     }
   ],
-  'ts/no-array-constructor': error['no-array-constructor']!,
+  'ts/no-array-constructor': error['no-array-constructor'] ?? 'off',
   'ts/no-duplicate-enum-values': 'error',
   'ts/no-dynamic-delete': 'error',
   'ts/no-explicit-any': 'error',
@@ -34,8 +33,8 @@ const typescriptStrict: Linter.RulesRecord =
   'ts/no-this-alias': 'error',
   'ts/no-unnecessary-type-constraint': 'error',
   'ts/no-unsafe-declaration-merging': 'error',
-  'ts/no-unused-vars': error['no-unused-vars']!,
-  'ts/no-useless-constructor': error['no-useless-constructor']!,
+  'ts/no-unused-vars': error['no-unused-vars'] ?? 'off',
+  'ts/no-useless-constructor': error['no-useless-constructor'] ?? 'off',
   'ts/prefer-as-const': 'error',
   'ts/prefer-literal-enum-member': 'error',
   'ts/triple-slash-reference': 'error',

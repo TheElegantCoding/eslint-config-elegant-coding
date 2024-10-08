@@ -78,20 +78,14 @@ The configuration enforces consistent coding style and best practices, making yo
 
 - <img src="./asset/icon/eslint.svg" width="24px" align="center" /> `Eslint` - Eslint linter
 - <img src="./asset/icon/astro.svg" width="24px" align="center" /> `Astro` - Catch errors and write awesome Astro components!
-- <img src="./asset/icon/github.svg" width="24px" align="center" /> `Github` - Github rules for javascript errors
 - <img src="./asset/icon/html.svg" width="24px" align="center" /> `Html` - Keep your HTML files tidy and consistent.
 - <img src="./asset/icon/import.svg" width="24px" align="center" /> `Import` - Make your imports easy to find and manage.
 - <img src="./asset/icon/javascript.svg" width="24px" align="center" /> `Javascript` - Write clean and maintainable JavaScript code.
 - <img src="./asset/icon/json.svg" width="24px" align="center" /> `Json` - Ensure your JSON data is well-structured.
-- <img src="./asset/icon/a11y.svg" width="24px"  align="center" /> `Jsx a11y` -  Write code that's accessible to everyone.
 - <img src="./asset/icon/node.svg" width="24px"  align="center" /> `Node` - Follow recommended practices for Node.js environments.
 - <img src="./asset/icon/perfectionist.svg" width="24px" align="center" /> `Perfectionist` -  Go beyond the basics with stricter code quality checks.
-- <img src="./asset/icon/promise.svg" width="24px" align="center" /> `Promise` - Write clear and easy-to-understand promises.
-- <img src="./asset/icon/qwik.svg" width="24px" align="center" /> `Qwik` - Build high-quality Qwik components.
 - <img src="./asset/icon/regex.svg" width="24px" align="center" /> `Regex` - Craft powerful and maintainable regular expressions.
-- <img src="./asset/icon/security.svg" width="24px" align="center" /> `Security` - Identify potential security vulnerabilities.
 - <img src="./asset/icon/solid.svg" width="24px" align="center" /> `Solid` -  Write robust Solid components with confidence.
-- <img src="./asset/icon/sonar.svg" width="24px" align="center" /> `Sonar` - Sonar eslint rules for javascript
 - <img src="./asset/icon/stylistic.svg" width="24px" align="center" /> `Stylistic` - Improve readability and maintainability with stylistic rules.
 - <img src="./asset/icon/typescript.svg" width="24px" align="center" /> `Typescript` -  Enforce type safety and keep your code clear.
 - <img src="./asset/icon/unicorn.svg" width="24px" align="center" /> `Unicorn` - Leverage advanced rules for an extra quality boost.
@@ -111,8 +105,8 @@ The configuration enforces consistent coding style and best practices, making yo
   Requirements
 </h2>
 
-- <img src="./asset/icon/node.svg" width="20px" align="center" /> node >= **18.16.0**
-- <img src="./asset/icon/eslint.svg" width="20px" align="center" /> eslint >= **8.40**
+- <img src="./asset/icon/node.svg" width="20px" align="center" /> node >= **20.10.0**
+- <img src="./asset/icon/eslint.svg" width="20px" align="center" /> eslint >= **9.12**
 
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">
@@ -199,9 +193,6 @@ Extra settings that can be added.
     // This line enables ESLint rules for YAML files.
     yml: true,
 
-    // This line enables ESLint rules for Qwik components.
-    qwik: true,
-
     // This line enables ESLint rules for HTML files.
     html: true,
 
@@ -217,9 +208,6 @@ Extra settings that can be added.
     // This line specifies a file to ignore from linting.
     // In this case, 'postcss.config.cjs' will not be processed by ESLint.
     ignore: [ 'postcss.config.cjs' ],
-
-    // This line enables ESLint rules for accessibility in JSX code.
-    jsxA11y: true,
 
     // This line enables ESLint rules for stylistic concerns in your code.
     stylistic: true,
@@ -259,10 +247,7 @@ The list of the used plugins and the names are here:
 | `import` | `import-x` | `eslint-plugin-import-x` |
 | `unicorn` | `unicorn` | `eslint-plugin-unicorn` |
 | `perfectionist` | `perfectionist` | `eslint-plugin-perfectionist` |
-| `promise` | `promise` | `eslint-plugin-promise` |
-| `security` | `eslint-plugin-security` | `eslint-plugin-security` |
 | `node` | `n` | `eslint-plugin-n` |
-| `sonar` | `sonarjs` | `eslint-plugin-sonarjs` |
 | `regex` | `regexp` | `eslint-plugin-regexp` |
 | `style` | `@stylistic` | `@stylistic/eslint-plugin` |
 | `ts` | `@typescript-eslint` | `@typescript-eslint/eslint-plugin` |

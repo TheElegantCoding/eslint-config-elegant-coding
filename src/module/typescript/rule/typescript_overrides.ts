@@ -7,7 +7,8 @@ const typescriptOverrides: Linter.Config[] =
     name: 'typescript:definitions',
     rules:
     {
-      'ts/consistent-type-definitions': 'off'
+      'ts/consistent-type-definitions': 'off',
+      'ts/triple-slash-reference': 'off'
     }
   }
 ];

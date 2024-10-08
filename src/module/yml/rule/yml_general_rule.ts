@@ -1,4 +1,3 @@
-/* eslint-disable ts/no-non-null-assertion */
 import { stylisticGeneralRule } from '@module/stylistic/rule/stylistic_general_rule';
 
 import type { Linter } from 'eslint';
@@ -21,9 +20,9 @@ const ymlGeneralRule: Linter.RulesRecord =
     }
   ],
   'yml/flow-mapping-curly-newline': 'error',
-  'yml/flow-mapping-curly-spacing': stylisticGeneralRule['style/object-curly-spacing']!,
-  'yml/flow-sequence-bracket-newline': stylisticGeneralRule['style/array-bracket-newline']!,
-  'yml/flow-sequence-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing']!,
+  'yml/flow-mapping-curly-spacing': stylisticGeneralRule['style/object-curly-spacing'] ?? 'off',
+  'yml/flow-sequence-bracket-newline': stylisticGeneralRule['style/array-bracket-newline'] ?? 'off',
+  'yml/flow-sequence-bracket-spacing': stylisticGeneralRule['style/array-bracket-spacing'] ?? 'off',
   'yml/indent': [ 'error', indent ],
   'yml/key-spacing':
   [

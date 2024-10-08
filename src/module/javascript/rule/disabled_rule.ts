@@ -18,6 +18,7 @@ const disabledRule: Linter.RulesRecord =
   'no-ternary': 'off',
   'no-undefined': 'off',
   'prefer-named-capture-group': 'off',
+  'require-unicode-regexp': 'off',
   'sort-imports': 'off',
   'sort-keys': 'off',
   'sort-vars': 'off'

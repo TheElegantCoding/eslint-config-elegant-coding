@@ -13,8 +13,7 @@ const stylisticGeneralRule: Linter.RulesRecord =
       multiline: true
     }
   ],
-  'style/array-bracket-spacing':
-  [ 'error', 'always' ],
+  'style/array-bracket-spacing': [ 'error', 'always' ],
   'style/array-element-newline': [
     'error',
     {
@@ -66,7 +65,7 @@ const stylisticGeneralRule: Linter.RulesRecord =
   ],
   'style/jsx-child-element-spacing': 'error',
   'style/jsx-closing-bracket-location': 'error',
-  'style/jsx-closing-tag-location': 'error',
+  'style/jsx-closing-tag-location': [ 'error', 'tag-aligned' ],
   'style/jsx-curly-brace-presence': 'error',
   'style/jsx-curly-newline': [
     'error',
@@ -214,9 +213,8 @@ const stylisticGeneralRule: Linter.RulesRecord =
   'style/no-extra-parens':
   [
     'error',
-    'functions',
+    'all',
     {
-      conditionalAssign: true,
       ignoreJSX: 'all'
     }
   ],

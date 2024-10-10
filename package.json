@@ -5,7 +5,7 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.2.0",
+  "version": "9.2.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheElegantCoding/eslint-config-elegant-coding"
@@ -81,6 +81,7 @@
   "devDependencies": {
     "@eslint/config-inspector": "0.5.4",
     "@types/eslint": "9.6.1",
+    "eslint-plugin-jsx-a11y": "6.10.0",
     "tsup": "8.3.0",
     "typescript": "5.6.2"
   }

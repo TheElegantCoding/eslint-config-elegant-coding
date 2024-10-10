@@ -5,10 +5,10 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.2.3",
+  "version": "9.3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheElegantCoding/eslint-config-elegant-coding"
+    "url": "git+https://github.com/TheElegantCoding/eslint-config-elegant-coding.git"
   },
   "keywords": [
     "eslint",

@@ -6,7 +6,6 @@ type ConfigurationOption =
   readonly solid?: boolean;
   readonly astro?: boolean;
   readonly ignore?: string[];
-  readonly jsxA11y?: boolean;
   readonly stylistic?: boolean;
   readonly typescript?: boolean;
 };

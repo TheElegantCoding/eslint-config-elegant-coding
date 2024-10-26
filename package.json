@@ -6,7 +6,7 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.5.1",
+  "version": "9.5.2",
   "repository":
   {
     "type": "git",
@@ -94,7 +94,6 @@
   {
     "@eslint/config-inspector": "0.5.5",
     "@types/eslint": "9.6.1",
-    "tailwindcss": "3.4.14",
     "tsup": "8.3.5",
     "typescript": "5.6.3"
   }

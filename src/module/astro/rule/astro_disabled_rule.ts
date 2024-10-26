@@ -7,6 +7,7 @@ const astroDisabledRule: Linter.RulesRecord =
   'astro/no-set-text-directive': 'off',
   'astro/prefer-object-class-list': 'off',
   'astro/prefer-split-class-list': 'off',
+  'astro/sort-attributes': 'off',
   'no-duplicate-imports': 'off'
 };
 

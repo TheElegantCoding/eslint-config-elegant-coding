@@ -6,6 +6,7 @@ export default elegantCoding({
   json: true,
   solid: true,
   stylistic: true,
+  tailwind: true,
   typescript: true,
   yml: true
 }, [

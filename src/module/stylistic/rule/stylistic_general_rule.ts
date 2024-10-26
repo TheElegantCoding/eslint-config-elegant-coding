@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 import type { Linter } from 'eslint';
 
 const indent = 2;

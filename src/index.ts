@@ -9,9 +9,11 @@ import { perfectionist } from '@module/perfectionist/perfectionist';
 import { regex } from '@module/regex/regex';
 import { solid } from '@module/solid/solid';
 import { stylistic } from '@module/stylistic/stylistic';
+import { tailwind } from '@module/tailwind/tailwind';
 import { typescript } from '@module/typescript/typescript';
 import { unicorn } from '@module/unicorn/unicorn';
 import { yml } from '@module/yml/yml';
+import oxlint from 'eslint-plugin-oxlint';
 
 import type { ConfigurationOption } from '@global/type/configuration_option';
 import type { Linter } from 'eslint';
@@ -26,6 +28,11 @@ const eslintFramework = (config: Linter.Config[], option: ConfigurationOption) =
   if(option.astro)
   {
     config.push(...astro);
+  }
+
+  if(option.tailwind)
+  {
+    config.push(tailwind);
   }
 };
 
@@ -55,6 +62,14 @@ const eslintFileConfiguration = (config: Linter.Config[], option: ConfigurationO
   }
 };
 
+const pushRules = (config: Linter.Config[], option: ConfigurationOption) =>
+{
+  eslintFileConfiguration(config, option);
+  eslintFramework(config, option);
+  eslintLanguage(config, option);
+  config.push(oxlint.configs['flat/all']);
+};
+
 const elegantCoding = (
   option: ConfigurationOption,
   override: Linter.Config | Linter.Config[] = []
@@ -77,9 +92,7 @@ const elegantCoding = (
     config.push(stylistic);
   }
 
-  eslintFileConfiguration(config, option);
-  eslintFramework(config, option);
-  eslintLanguage(config, option);
+  pushRules(config, option);
 
   if(Object.keys(override).length > 0)
   {

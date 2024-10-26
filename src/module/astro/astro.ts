@@ -65,7 +65,6 @@ const astro: Linter.Config[] =
       parser: parserTs,
       parserOptions:
       {
-        // eslint-disable-next-line unicorn/no-null
         project: null
       },
       sourceType: 'module'

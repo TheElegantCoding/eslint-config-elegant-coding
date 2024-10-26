@@ -205,6 +205,9 @@ Extra settings that can be added.
     // This line enables ESLint rules for Astro components.
     astro: true,
 
+    // This line enables ESLint rules for tailwind classes.
+    tailwind: true,
+
     // This line specifies a file to ignore from linting.
     // In this case, 'postcss.config.cjs' will not be processed by ESLint.
     ignore: [ 'postcss.config.cjs' ],
@@ -255,6 +258,7 @@ The list of the used plugins and the names are here:
 | `json` | `jsonc` | `eslint-plugin-jsonc` |
 | `yml` | `yml` | `eslint-plugin-yml` |
 | `astro` | `astro` | `eslint-plugin-astro` |
+| `tailwind` | `tailwindcss` | `eslint-plugin-tailwindcss` |
 
 <p align="right">
   ( <a href="#eslint-config-elegant-coding">

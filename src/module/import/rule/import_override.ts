@@ -9,7 +9,8 @@ const importOverride: Linter.Config[] =
       'vite.config.js',
       'eslint.config.js',
       'tsup.config.ts',
-      'astro.config.ts'
+      'astro.config.ts',
+      'tailwind.config.js'
     ],
     name: 'import:vite',
     rules:

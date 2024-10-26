@@ -67,7 +67,6 @@ const pushRules = (config: Linter.Config[], option: ConfigurationOption) =>
   eslintFileConfiguration(config, option);
   eslintFramework(config, option);
   eslintLanguage(config, option);
-  config.push(oxlint.configs['flat/all']);
 };
 
 const elegantCoding = (
@@ -98,6 +97,8 @@ const elegantCoding = (
   {
     config.push(...Array.isArray(override) ? override : [ override ]);
   }
+
+  config.push(oxlint.configs['flat/all']);
 
   return config;
 };

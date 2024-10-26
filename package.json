@@ -1,16 +1,19 @@
 {
   "name": "eslint-config-elegant-coding",
   "description": "⚙️ Eslint configuration for help you to identify and fix these errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
-  "author": {
+  "author":
+  {
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.4.0",
-  "repository": {
+  "version": "9.5.1",
+  "repository":
+  {
     "type": "git",
     "url": "git+https://github.com/TheElegantCoding/eslint-config-elegant-coding.git"
   },
-  "keywords": [
+  "keywords":
+  [
     "eslint",
     "eslintconfig",
     "eslint-config",
@@ -29,8 +32,10 @@
     "code-style"
   ],
   "type": "module",
-  "exports": {
-    ".": {
+  "exports":
+  {
+    ".":
+    {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
@@ -38,13 +43,15 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [ "./dist" ],
-  "engines": {
+  "engines":
+  {
     "node": ">=20.10.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">=8.0.0"
   },
-  "scripts": {
+  "scripts":
+  {
     "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "npx @eslint/config-inspector --config eslint.config.js",
@@ -54,10 +61,12 @@
     "lint": "pnpm lint-eslint",
     "lint-eslint": "eslint . --fix "
   },
-  "peerDependencies": {
+  "peerDependencies":
+  {
     "eslint": ">=9.13.0"
   },
-  "dependencies": {
+  "dependencies":
+  {
     "@html-eslint/eslint-plugin": "0.27.0",
     "@html-eslint/parser": "0.27.0",
     "@stylistic/eslint-plugin": "2.9.0",
@@ -81,7 +90,8 @@
     "jsonc-eslint-parser": "2.4.0",
     "yaml-eslint-parser": "1.2.3"
   },
-  "devDependencies": {
+  "devDependencies":
+  {
     "@eslint/config-inspector": "0.5.5",
     "@types/eslint": "9.6.1",
     "tailwindcss": "3.4.14",

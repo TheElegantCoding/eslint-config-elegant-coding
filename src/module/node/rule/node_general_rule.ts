@@ -9,7 +9,6 @@ const nodeGeneralRule: Linter.RulesRecord =
   'node/no-callback-literal': 'error',
   'node/no-deprecated-api': 'error',
   'node/no-exports-assign': 'error',
-  'node/no-extraneous-import': 'error',
   'node/no-extraneous-require': 'error',
   'node/no-missing-require': 'error',
   'node/no-mixed-requires': 'error',

@@ -38,6 +38,11 @@
       "fixable": true
     },
     {
+      "rule": "perfectionist/*",
+      "severity": "off",
+      "fixable": true
+    },
+    {
       "rule": "*-indent",
       "severity": "off",
       "fixable": true

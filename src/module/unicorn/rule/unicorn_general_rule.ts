@@ -25,7 +25,6 @@ const unicornGeneralRule: Linter.RulesRecord =
         }
     }
   ],
-  'unicorn/import-style': 'error',
   'unicorn/new-for-builtins': 'error',
   'unicorn/no-abusive-eslint-disable': 'error',
   'unicorn/no-anonymous-default-export': 'error',

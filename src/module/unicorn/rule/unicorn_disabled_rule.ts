@@ -3,6 +3,7 @@ import type { Linter } from 'eslint';
 const unicornDisabledRule: Linter.RulesRecord =
 {
   'unicorn/expiring-todo-comments': 'off',
+  'unicorn/import-style': 'off',
   'unicorn/no-array-for-each': 'off',
   'unicorn/no-array-reduce': 'off',
   'unicorn/no-keyword-prefix': 'off',

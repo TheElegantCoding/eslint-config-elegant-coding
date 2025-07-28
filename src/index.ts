@@ -13,7 +13,6 @@ import { tailwind } from '@module/tailwind/tailwind';
 import { typescript } from '@module/typescript/typescript';
 import { unicorn } from '@module/unicorn/unicorn';
 import { yml } from '@module/yml/yml';
-import oxlint from 'eslint-plugin-oxlint';
 
 import type { ConfigurationOption } from '@global/type/configuration_option';
 import type { Linter } from 'eslint';
@@ -97,8 +96,6 @@ const elegantCoding = (
   {
     config.push(...Array.isArray(override) ? override : [ override ]);
   }
-
-  config.push(oxlint.configs['flat/all']);
 
   return config;
 };

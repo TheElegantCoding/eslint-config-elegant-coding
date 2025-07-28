@@ -5,10 +5,16 @@
     "name": "Luis Monsalve <TheElegantCoding>",
     "email": "luismonsalve1941@gmail.com"
   },
-  "version": "9.9.0",
+  "version": "9.11.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheElegantCoding/eslint-config-elegant-coding.git"
+  },
+  "engines": {
+    "node": ">=22.17.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": ">=10.13.1"
   },
   "keywords": [
     "eslint",
@@ -37,13 +43,7 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [ "./dist" ],
-  "engines": {
-    "node": ">=20.10.0",
-    "npm": "please-use-pnpm",
-    "yarn": "please-use-pnpm",
-    "pnpm": ">=8.0.0"
-  },
+  "files": ["./dist"],
   "scripts": {
     "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
@@ -70,7 +70,6 @@
     "eslint-plugin-jsonc": "2.20.1",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-n": "17.21.0",
-    "eslint-plugin-oxlint": "1.6.0",
     "eslint-plugin-perfectionist": "4.15.0",
     "eslint-plugin-regexp": "^2.7.0",
     "eslint-plugin-solid": "0.14.5",

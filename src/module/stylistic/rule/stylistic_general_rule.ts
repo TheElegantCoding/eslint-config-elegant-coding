@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import type { Linter } from 'eslint';
 
 const indent = 2;
@@ -46,7 +47,6 @@ const stylisticGeneralRule: Linter.RulesRecord =
   'style/computed-property-spacing': [ 'error', 'never' ],
   'style/dot-location': [ 'error', 'property' ],
   'style/eol-last': [ 'error', 'never' ],
-  'style/func-call-spacing': [ 'error', 'never' ],
   'style/function-call-argument-newline': [ 'error', 'consistent' ],
   'style/function-paren-newline': [ 'error', 'multiline-arguments' ],
   'style/generator-star-spacing': [

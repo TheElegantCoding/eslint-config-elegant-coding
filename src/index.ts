@@ -7,7 +7,6 @@ import { json } from '@module/json/json';
 import { node } from '@module/node/node';
 import { perfectionist } from '@module/perfectionist/perfectionist';
 import { regex } from '@module/regex/regex';
-import { solid } from '@module/solid/solid';
 import { stylistic } from '@module/stylistic/stylistic';
 import { tailwind } from '@module/tailwind/tailwind';
 import { typescript } from '@module/typescript/typescript';
@@ -19,11 +18,6 @@ import type { Linter } from 'eslint';
 
 const eslintFramework = (config: Linter.Config[], option: ConfigurationOption) =>
 {
-  if(option.solid)
-  {
-    config.push(solid);
-  }
-
   if(option.astro)
   {
     config.push(...astro);

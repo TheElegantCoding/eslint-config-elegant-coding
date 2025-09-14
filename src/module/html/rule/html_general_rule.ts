@@ -23,6 +23,7 @@ const htmlGeneralRule: Linter.RulesRecord =
   'html/no-duplicate-id': 'error',
   'html/no-extra-spacing-attrs': 'error',
   'html/no-heading-inside-button': 'error',
+  'html/no-ineffective-attrs': 'error',
   'html/no-inline-styles': 'error',
   'html/no-invalid-role': 'error',
   'html/no-multiple-empty-lines': [ 'error', { max: 1 } ],

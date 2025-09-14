@@ -8,8 +8,7 @@ const typescriptDisabledRule: Linter.RulesRecord =
   'ts/init-declarations': 'off',
   'ts/prefer-enum-initializers': 'off',
   'ts/prefer-readonly-parameter-types': [ 'off', { ignoreInferredTypes: true } ],
-  'ts/strict-boolean-expressions': 'off',
-  'ts/typedef': 'off'
+  'ts/strict-boolean-expressions': 'off'
 };
 
 export { typescriptDisabledRule };
